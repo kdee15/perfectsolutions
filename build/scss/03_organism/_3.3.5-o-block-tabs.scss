@@ -1,0 +1,127 @@
+// 3. ORGANISM [ 3.1. CARDS ] #########################################################################################
+
+// A. GLOBAL STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// A.1. GENERAL CARDS -------------------------------------------------------------------------------------------------
+
+.o-tab {
+  &.slide-content { display: flex;flex-direction: column; bottom: 50px; transform: translateY(120%);
+    &#details { transform: translateY(0) translateX(-100%); right: auto; width: 100%;
+      &.on { transform: translateY(0) translateX(0); }
+    }
+    .o-wrapper { max-width: 1440px; margin: 0 auto; width: 100%; position: relative; }
+
+    .m-detail { flex: 1;
+      &.project-info { flex: 2;
+        .a-title { color: white; background: #2C2C2C; margin: 0 0 15px 0; padding: 10px 15px; }
+        p { color: white; margin: 0 0 15px 0; padding: 0 15px; }
+        ul { color: white; }
+      }
+      &.date { display: flex; align-items: center;
+        .a-title { flex: 1; margin: 0; padding: 0; font-size: 14px; color: white; }
+        .a-detail { flex: 3; margin: 0; padding: 0; font-size: 14px; color: white; }
+        &.date-start { background-color: $kd-blue; max-height: 50px; padding: 0 0 0 15px; }
+        &.date-end { background-color: $kd-blue; max-height: 50px; padding: 0 0 0 15px; }
+      }
+    }
+    &.on { transform: translateY(0%); }
+  }
+}
+
+// A.1. END -----------------------------------------------------------------------------------------------------------
+
+// A.2. DEMO TABS -----------------------------------------------------------------------------------------------------
+
+.demo-tab { margin-right: 10px; cursor: pointer; display: none; text-decoration: none;
+  &.show { display: inline-block; }
+  &.home, &.back { float: right; }
+  .m-icon { padding: 0; margin: 0; display: inline-block; vertical-align: middle;
+    .a-icon { height: 20px;
+      &.cog { width: 20px; }
+      &.laptop {}
+      &.tablet { width: 15px; }
+      &.mobile { width: 10px; }
+      &.prev { width: 20px; }
+      &.caret { width: 20px; }
+      path { fill: white; }
+    }
+  }
+  .a-icon-text { margin: 0; padding: 0; display: none; line-height: normal; vertical-align: middle; color: white; }
+  &:hover { text-decoration: none;
+    .m-icon {
+      .a-icon {
+        path { fill: $kd-blue; }
+      }
+    }
+    .a-icon-text { color: $kd-blue; }
+  }
+}
+
+// A.2. END -----------------------------------------------------------------------------------------------------------
+
+// A. GLOBAL STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// B. MAX-WIDTH: 767px ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@media ($sm-dn) {} 
+
+// B. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// C. MIN-WIDTH: 768px ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@media ($sm-up) {
+
+  // A.2. DEMO TABS ---------------------------------------
+
+  .demo-tab {
+    .m-icon {
+      .a-icon { height: 20px;
+        &.cog { width: 20px; }
+        &.laptop {}
+        &.tablet { width: 15px; }
+        &.mobile { width: 10px; }
+        &.prev { width: 20px; }
+        &.caret { width: 20px; }
+        path { fill: white; }
+      }
+    }
+    .a-icon-text { display: inline-block; }
+
+  }
+
+  // A.2. END ---------------------------------------------
+
+}
+
+// C. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// D. MIN-WIDTH: 992px ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@media ($md-up) {
+
+  .o-tab {
+    &.slide-content {
+      &#details { right: auto; width: 30%; max-width: 450px; }
+      .m-detail {
+        &.project-info {  }
+        &.date {
+          .a-title {  }
+          .a-detail { flex: 4;  }
+          &.date-start {  }
+          &.date-end {  }
+        }
+      }
+    }
+  }
+
+}
+
+// D. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// E. MIN-WIDTH: 1200px +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@media ($lg-up) {} 
+
+// E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// END OF FILE ########################################################################################################

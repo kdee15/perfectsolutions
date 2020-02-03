@@ -1,0 +1,22 @@
+// 0.2 MOLECULE [ 2.0. GLOBAL ]  ######################################################################################
+
+// A. +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// A.1. VIDEO BLOCK ELEMENTS ------------------------------
+
+.a-video-play { @include middle-align(); background: red; width: 100px; height: 100px; z-index: 1; }
+.a-video-close { position: fixed; top: 0; right: 0; background: red; width: 100px; height: 100px; z-index: 1000; display: none;
+  &.active { display: block; }
+}
+
+.m-video-preloader { @include position(fixed,0); width: 100%!important; height: 100%!important; z-index: 0; }
+
+.m-video-player { display: none; @include position(fixed,0); z-index: 100; width: 100%!important; height: 100%!important;
+  &.active { display: block; }
+}
+
+// A.1. END -----------------------------------------------
+
+// A. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// END OF FILE ########################################################################################################

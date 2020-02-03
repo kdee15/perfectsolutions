@@ -1,0 +1,14 @@
+_site/
+.sass-cache/
+.jekyll-metadata
+
+/**/*/.DS_Store
+**/*/.DS_Store
+*/.DS_Store
+.DS_Store
+.idea
+node_modules/
+
+dist/css/style.*
+dist/js/app.*
+static-html
