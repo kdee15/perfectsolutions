@@ -22,7 +22,7 @@ body.home { height: 100%;
 
     #o-header {  }
 
-    .p-main { height: 100%;
+    .p-main { height: 100%; z-index: 100; position: relative;
       .o-header { height: 100%; position: relative; }
 
       .o-block {

@@ -1,17 +1,12 @@
 <section class="o-block o-video-banner h-100" style="background-image: url('http://placehold.it/1920x1080?text=VIDEO');">
 
-  <button id="play-button" class="a-video-play video-control">PLAY</button>
-  <button id="pause-button" class="a-video-close video-control">PAUSE</button>
+  <button id="play-button" class="a-video-play video-control"></button>
+  <button id="pause-button" class="a-video-close video-control"></button>
 
   <video class="m-video-preloader" width="320" height="240" autoplay loop>
     <source src="wp-content/themes/kdee/dist/videos/preloader-video.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
-
-<!--  <video class="m-video-player" id="m-video-player" width="320" height="240" controls>-->
-<!--    <source src="https://www.youtube.com/watch?v=SJvHeuCLJAs" type="video/mp4">-->
-<!--    Your browser does not support the video tag.-->
-<!--  </video>-->
 
   <iframe class="m-video-player" id="video" src="https://www.youtube.com/embed/SJvHeuCLJAs?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
 
