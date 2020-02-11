@@ -80,6 +80,39 @@ add_action( 'widgets_init', 'arphabet_widgets_init' );
 
 // A.4 END ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+// A.4.1. HOMEPAGE BLOCKS ---------------------------------
+
+function homeblocks() {
+  $labels = array(
+    'Title'              => _x( 'Homeblock', 'post type general name' ),
+    'singular_name'      => _x( 'Homeblock', 'post type singular name' ),
+//    'add_new'            => _x( 'Add New', 'Homeblock' ),
+    'add_new_item'       => __( 'Add New Homeblock' ),
+    'edit_item'          => __( 'Edit Homeblocks' ),
+//    'new_item'           => __( 'New Homeblock' ),
+//    'all_items'          => __( 'All Homeblocks' ),
+    'view_item'          => __( 'View Homeblocks' ),
+    'parent_item_colon'  => '',
+    'menu_name'          => 'Home Blocks'
+  );
+
+  $args = array(
+    'labels'         => $labels,
+    'description'   => 'A list of Home Blocks',
+    'public'        => true,
+    'menu_position' => 1,
+    'supports'      => array( 'title', 'editor', 'thumbnail', 'taxonomies', 'categories', 'media', 'content' ),
+    'has_archive'   => true,
+
+  );
+
+  register_post_type( 'homeblocks', $args );
+}
+
+add_action( 'init', 'homeblocks' );
+
+// A.4.1. End ---------------------------------------------
+
 // A.4.1. PROJECTS ----------------------------------------
 
 function services() {
