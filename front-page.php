@@ -21,6 +21,8 @@ get_header();
 
     <?php get_template_part( 'section-about' ); ?>
 
+    <?php get_template_part( 'section-companies' ); ?>
+
     <?php get_template_part( 'section-services' ); ?>
 
     <?php get_template_part( 'section-contact' ); ?>

@@ -1,0 +1,47 @@
+// 0.2 MOLECULE [ 2.1.0 PUZZLE PIECES ]  ##############################################################################
+
+// A. +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// A.1. PUZZLE BLOCK ELEMENTS -----------------------------
+
+.m-puzzle-piece { @include aspect-ratio(50%, 100%); display: inline-block; float: left; transition: 0.3s;
+  &.piece-1 {
+    .a-puzzle-piece { background: linear-gradient( to left, $gold, $brass); }
+  }
+  &.piece-2 {
+    .a-puzzle-piece { background: black; color: white; }
+  }
+  &.piece-3 {
+    .a-puzzle-piece { background: black; color: white; }
+  }
+  &.piece-4 {
+    .a-puzzle-piece { background: linear-gradient( to left, $gold, $brass); }
+  }
+  .a-puzzle-piece { @include position(absolute, 0); transition: 0.3s; display: flex; align-items: center; z-index: 10;
+    .a-title { display: block; text-align: center; padding: 0 25px; font-size: 20px; font-weight: 500; }
+  }
+  .a-puzzle-text { @include position(absolute, 0); z-index: 1; display: flex; align-items: center;
+    p { padding: 30px; margin: 0; font-size: 14px; line-height: 1.5; font-weight: 400; }
+  }
+
+  &:hover {
+    &.piece-1 {
+      .a-puzzle-piece { transform: translateX(-100%); }
+    }
+    &.piece-2 {
+      .a-puzzle-piece { transform: translateX(100%); }
+    }
+    &.piece-3 {
+      .a-puzzle-piece { transform: translateX(-100%); }
+    }
+    &.piece-4 {
+      .a-puzzle-piece { transform: translateX(100%); }
+    }
+  }
+}
+
+// A.1. END -----------------------------------------------
+
+// A. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// END OF FILE ########################################################################################################

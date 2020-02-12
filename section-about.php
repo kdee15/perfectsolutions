@@ -1,7 +1,7 @@
-<section class="o-block about-block" id="about-us">
+<section class="o-section about-section" id="about-us">
   <div class="m-title-block">
     <div class="container">
-      <h2>PERFECT SOLUTIONS PROJECT MANAGEMENT CONSULTANCY</h2>
+      <h2 class="a-block-title">PERFECT SOLUTIONS PROJECT MANAGEMENT CONSULTANCY</h2>
     </div>
   </div>
   <div class="container o-content-container">
@@ -23,29 +23,42 @@
     </div>
   </div>
 
+</section>
+
+<section class="o-section four-pillars">
+
   <div class="m-title-block">
     <div class="container">
-      <h2>The journey of expanding the business is based on</h2>
-      <h2>four fundamental pillars</h2>
+      <h2 class="a-block-title"><span class="a-sub-text">The journey of expanding the business is based on</span>four fundamental pillars</h2>
     </div>
   </div>
 
   <div class="container o-content-container">
-    <div class="row">
-      <aside class="m-aside puzzle-piece piece-1">1</aside>
-      <aside class="m-aside puzzle-piece piece-2">2</aside>
-    </div>
-    <div class="row">
-      <aside class="m-aside puzzle-piece piece-3">3</aside>
-      <aside class="m-aside puzzle-piece piece-4">4</aside>
+    <div class="o-puzzle">
+      <aside class="m-puzzle-piece piece-1">
+        <div class="a-puzzle-piece"><span class="a-title">Youth empowerment and development</span></div>
+        <div class="a-puzzle-text">
+          <p>Perfect Solutions seeks out talented, upcoming young people who have a passion for business and entrepreneurship. These entrepreneurs are groomed in every aspect of business with access to further opportunities such as becoming embedded or becoming a partner of the business and eventually growing with business.</p>
+        </div>
+      </aside>
+      <aside class="m-puzzle-piece piece-2">
+        <div class="a-puzzle-piece"><span class="a-title">Youth empowerment and development</span></div>
+        <div class="a-puzzle-text">
+          <p>Perfect Solutions seeks out talented, upcoming young people who have a passion for business and entrepreneurship. These entrepreneurs are groomed in every aspect of business with access to further opportunities such as becoming embedded or becoming a partner of the business and eventually growing with business.</p>
+        </div>
+      </aside>
+      <aside class="m-puzzle-piece piece-3">
+        <div class="a-puzzle-piece"><span class="a-title">Youth empowerment and development</span></div>
+        <div class="a-puzzle-text">
+          <p>Perfect Solutions seeks out talented, upcoming young people who have a passion for business and entrepreneurship. These entrepreneurs are groomed in every aspect of business with access to further opportunities such as becoming embedded or becoming a partner of the business and eventually growing with business.</p>
+        </div>
+      </aside>
+      <aside class="m-puzzle-piece piece-4">
+        <div class="a-puzzle-piece"><span class="a-title">Youth empowerment and development</span></div>
+        <div class="a-puzzle-text">
+          <p>Perfect Solutions seeks out talented, upcoming young people who have a passion for business and entrepreneurship. These entrepreneurs are groomed in every aspect of business with access to further opportunities such as becoming embedded or becoming a partner of the business and eventually growing with business.</p>
+        </div>
+      </aside>
     </div>
   </div>
-
-
-
-
-
-
-
-
 </section>
