@@ -9,22 +9,22 @@
   <div class="container o-content-container">
     <div class="o-company-block">
       <div class="m-holding">
-        <div class="m-co-wrapper"><span class="a-title">perfect solutions</span></div>
+        <div class="m-co-wrapper"><span class="a-title">Perfect Solutions Holdings</span></div>
       </div>
       <div class="m-company co-1">
-        <div class="m-co-wrapper"><span class="a-title">perfect solutions</span></div>
+        <a class="m-co-wrapper" href="#"><span class="a-title">Perfect Solutions Through the Line Marketing Agency</span></a>
       </div>
       <div class="m-company co-2">
-        <div class="m-co-wrapper"><span class="a-title">perfect solutions</span></div>
+        <a class="m-co-wrapper" href="#"><span class="a-title">De Leca Media Agency</span></a>
       </div>
       <div class="m-company co-3">
-        <div class="m-co-wrapper"><span class="a-title">perfect solutions</span></div>
+        <a class="m-co-wrapper" href="#"><span class="a-title">Perfect Solutions Integrated Marketing Communications Agency Mauritius</span></a>
       </div>
       <div class="m-company co-4">
-        <div class="m-co-wrapper"><span class="a-title">perfect solutions</span></div>
+        <a class="m-co-wrapper" href="#"><span class="a-title">Perfect Solutions Project Management Consultancy</span></a>
       </div>
       <div class="m-company co-5">
-        <div class="m-co-wrapper"><span class="a-title">perfect solutions</span></div>
+        <a class="m-co-wrapper" href="#"><span class="a-title">Perfect Solutions Live Management</span></a>
       </div>
     </div>
   </div>

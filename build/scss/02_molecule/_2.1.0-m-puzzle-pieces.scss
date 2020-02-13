@@ -18,7 +18,7 @@
     .a-puzzle-piece { background: linear-gradient( to left, $gold, $brass); }
   }
   .a-puzzle-piece { @include position(absolute, 0); transition: 0.3s; display: flex; align-items: center; z-index: 10;
-    .a-title { display: block; text-align: center; padding: 0 25px; font-size: 20px; font-weight: 500; }
+    .a-title { display: block; text-align: center; padding: 0 25px; font-size: 20px; font-weight: 500; width: 100%; }
   }
   .a-puzzle-text { @include position(absolute, 0); z-index: 1; display: flex; align-items: center;
     p { padding: 30px; margin: 0; font-size: 14px; line-height: 1.5; font-weight: 400; }

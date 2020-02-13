@@ -4,20 +4,20 @@
 
 // A.1. COMPANY BLOCK ELEMENTS ----------------------------
 
+.m-co-wrapper {
+  @include position(absolute, 15px); border-radius: 100px; display: flex; align-items: center; text-decoration: none; color: black; font-weight: 400; transition: 0.3s;
+  .a-title { text-align: center; display: block; width: 100%; margin: 0 25px; }
+}
+
 .m-holding { @include aspect-ratio(20%, 100%); margin: 0 auto 50px;
-  &:after { content: ''; @include center-align(); position: absolute; width: 2px; background: black; top: 50%; height: 100%; }
-  .m-co-wrapper {
-    @include position(absolute, 15px); border-radius: 100px; display: flex; align-items: center; z-index: 10; background: linear-gradient( to top, $gold, $brass);
-    .a-title {  text-align: center; display: block; width: 100%; }
-  }
+  &:after { content: ''; @include center-align(); position: absolute; width: 2px; background: white; top: 50%; height: 100%; }
+  .m-co-wrapper { z-index: 10; background: linear-gradient( to top, $gold, $brass); }
 }
 
 .m-company { @include aspect-ratio(20%, 100%); float: left;
-  &:after { position: absolute; top: -15px; left: 0; right: 0; height: 2px; background: black; content: ''; }
-  .m-co-wrapper {
-    &:after { content: ''; @include center-align(); position: absolute; width: 2px; background: black; top: -30px; height: 30px; }
-    @include position(absolute, 15px); border-radius: 100px; display: flex; align-items: center; background: linear-gradient( $gold, $brass);
-    .a-title {  text-align: center; display: block; width: 100%; }
+  &:after { position: absolute; top: -15px; left: 0; right: 0; height: 2px; background: white; content: ''; }
+  .m-co-wrapper { background: linear-gradient( $gold, $brass);
+    &:after { content: ''; @include center-align(); position: absolute; width: 2px; background: white; top: -30px; height: 30px; }
   }
   &:nth-child(2) {
     &:after { left: 50%; }
@@ -25,7 +25,14 @@
   &:last-child {
     &:after { right: 50%; }
   }
+  //&:hover {
+  //  &:after { }
+  //  .m-co-wrapper { text-decoration: none; @include position(absolute, 5px);
+  //    &:after { transition: 0.3s; top: -20px; height: 20px; }
+  //  }
+  //}
 }
+
 
 // A.1. END -----------------------------------------------
 
