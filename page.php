@@ -12,37 +12,45 @@ get_header();
 ?>
 
 <!-- C. WORK AREA +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<!-- C.2. SECTIONS -------------------------------- -->
+
+<?php while ( have_posts() ) : the_post(); ?>
 
 <!-- C.1. PAGE HEADER --------------------------------- -->
 
-<?php get_template_part( 'inc/page-header' ); ?>
+<section class="o-section header-section">
+  <div class="m-title-block">
+    <div class="container">
+      <h2 class="a-block-title"><?php the_title(); ?></h2>
+    </div>
+  </div>
+</section>
 
-<?php get_template_part( 'inc/navigation-page' ); ?>
 
 <!-- C.1. END ----------------------------------------- -->
 
-<main class="p-main page default-page">
-
-  <div class="container" id="container">
-
-    <!-- C.2. SECTIONS -------------------------------- -->
-
-    <?php while ( have_posts() ) : the_post(); ?>
-      <?php get_template_part( 'content', 'page' ); ?>
-      <?php comments_template( '', true ); ?>
-    <?php endwhile; // end of the loop. ?>
-
-    <!-- C.2. END ------------------------------------- -->
-
+<section class="o-section section-content">
+  <div class="container p-container">
+    <div class="row">
+      <div class="col-12 offset-md-6 col-md-6">
+        <?php the_content(); ?>
+      </div>
+      <div class="o-block-sidebar">
+        <?php the_field('features') ?>
+      </div>
+    </div>
   </div>
+</section>
 
-  <!-- C.3. FOOTER  ----------------------------------- -->
+<?php endwhile; // end of the loop. ?>
 
-  <?php get_footer(); ?>
+<!-- C.2. END ------------------------------------- -->
 
-  <!-- C.3. END --------------------------------------- -->
+<!-- C.3. FOOTER  ----------------------------------- -->
 
-</main>
+<?php get_footer(); ?>
+
+<!-- C.3. END --------------------------------------- -->
 
 <!-- C. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 

@@ -12,19 +12,19 @@
         <div class="m-co-wrapper"><span class="a-title">Perfect Solutions Holdings</span></div>
       </div>
       <div class="m-company co-1">
-        <a class="m-co-wrapper" href="#"><span class="a-title">Perfect Solutions Through the Line Marketing Agency</span></a>
+        <a class="m-co-wrapper" href="<?php bloginfo('url'); ?>/?p=45"><span class="a-title">Perfect Solutions Through the Line Marketing Agency</span></a>
       </div>
       <div class="m-company co-2">
-        <a class="m-co-wrapper" href="#"><span class="a-title">De Leca Media Agency</span></a>
+        <a class="m-co-wrapper" href="<?php bloginfo('url'); ?>/?p=46"><span class="a-title">De Leca Media Agency</span></a>
       </div>
       <div class="m-company co-3">
-        <a class="m-co-wrapper" href="#"><span class="a-title">Perfect Solutions Integrated Marketing Communications Agency Mauritius</span></a>
+        <a class="m-co-wrapper" href="<?php bloginfo('url'); ?>/?p=47"><span class="a-title">Perfect Solutions Integrated Marketing Communications Agency Mauritius</span></a>
       </div>
       <div class="m-company co-4">
-        <a class="m-co-wrapper" href="#"><span class="a-title">Perfect Solutions Project Management Consultancy</span></a>
+        <a class="m-co-wrapper" href="<?php bloginfo('url'); ?>/?p=48"><span class="a-title">Perfect Solutions Project Management Consultancy</span></a>
       </div>
       <div class="m-company co-5">
-        <a class="m-co-wrapper" href="#"><span class="a-title">Perfect Solutions Live Management</span></a>
+        <a class="m-co-wrapper" href="<?php bloginfo('url'); ?>/?p=49"><span class="a-title">Perfect Solutions Live Management</span></a>
       </div>
     </div>
   </div>

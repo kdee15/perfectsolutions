@@ -80,25 +80,25 @@ add_action( 'widgets_init', 'arphabet_widgets_init' );
 
 // A.4 END ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-// A.4.1. HOMEPAGE BLOCKS ---------------------------------
+// A.4.1. PROJECTS ----------------------------------------
 
-function homeblocks() {
+function companies() {
   $labels = array(
-    'Title'              => _x( 'Homeblock', 'post type general name' ),
-    'singular_name'      => _x( 'Homeblock', 'post type singular name' ),
-//    'add_new'            => _x( 'Add New', 'Homeblock' ),
-    'add_new_item'       => __( 'Add New Homeblock' ),
-    'edit_item'          => __( 'Edit Homeblocks' ),
-//    'new_item'           => __( 'New Homeblock' ),
-//    'all_items'          => __( 'All Homeblocks' ),
-    'view_item'          => __( 'View Homeblocks' ),
+    'Title'              => _x( 'Companies', 'post type general name' ),
+    'singular_name'      => _x( 'Companies', 'post type singular name' ),
+    'add_new'            => __( 'Add New', 'Company' ),
+    'add_new_item'       => __( 'Add New Company' ),
+    'edit_item'          => __( 'Edit Companies' ),
+    'new_item'           => __( 'New Company' ),
+    'all_items'          => __( 'All Companies' ),
+    'view_item'          => __( 'View Company' ),
     'parent_item_colon'  => '',
-    'menu_name'          => 'Home Blocks'
+    'menu_name'          => 'Companies'
   );
 
   $args = array(
     'labels'         => $labels,
-    'description'   => 'A list of Home Blocks',
+    'description'   => 'A list of Services',
     'public'        => true,
     'menu_position' => 1,
     'supports'      => array( 'title', 'editor', 'thumbnail', 'taxonomies', 'categories', 'media', 'content' ),
@@ -106,10 +106,10 @@ function homeblocks() {
 
   );
 
-  register_post_type( 'homeblocks', $args );
+  register_post_type( 'companies', $args );
 }
 
-add_action( 'init', 'homeblocks' );
+add_action( 'init', 'companies' );
 
 // A.4.1. End ---------------------------------------------
 
