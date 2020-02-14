@@ -121,13 +121,13 @@ $radius-lrg:              15px;
   outline: none!important;
   &:hover { border-color: #CCC; background-color: #CCC; }
 }
-.a-video-play { @include middle-align(); width: 100px; height: 100px; z-index: 1; }
+.a-video-play { @include middle-align(); width: 60px; height: 60px; z-index: 1; top: 25%; }
 .a-video-close {
   position: fixed; top: 15px; @include center-align(); width: 50px; height: 50px; z-index: 1000; display: none;
   &.active { display: block; }
 }
 
-#play-button { background-image: url("../images/icons/icon--play.svg"); }
+#play-button { background-image: url("../images/icons/icon--play.svg"); background-size: 45%; }
 #pause-button { background-image: url("../images/icons/icon--close.svg"); background-size: 20px; }
 
 // A.2. END - TEXT LINK -----------------------------------

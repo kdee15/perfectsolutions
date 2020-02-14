@@ -27,10 +27,17 @@
 
   .o-content-container { margin: 100px auto 50px; }
 
-
   // A.1.1. PROJECTS BLOCK --------------------------------
   &.projects-block { padding-top: 50px;
     .a-btn { margin: 30px 0 0; }
+  }
+
+  // A.1.1. PROMO BLOCK -----------------------------------
+  &.section-promos { padding: 100px 0 50px; background: $gold;
+    .m-features {
+      .m-promo-player { display: block; margin: 0 auto 30px; outline: none!important; }
+      span { display: block; font-size: 12px; text-align: center; }
+    }
   }
 
   // A.1.2. CONTACT BLOCK ---------------------------------

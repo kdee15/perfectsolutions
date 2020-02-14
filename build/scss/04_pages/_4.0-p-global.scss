@@ -2,12 +2,24 @@
 
 // A. GLOBAL STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-// A.1. SINGLE PAGE ---------------------------------------------------------------------------------------------------
-
-
-// A.1. END -----------------------------------------------------------------------------------------------------------
-
 // A.3. DEFAULT PAGE LAYOUT -------------------------------------------------------------------------------------------
+
+html { height: 100%;
+  .home { height: 100%; }
+}
+
+.o-section { position: relative;
+  &.o-skew {
+    &:after { position: absolute; top: 0; left: 0; bottom: 0; width: 45%; transform: skewX(4deg); content: ''; background: black; z-index: 0; }
+    &:before { position: absolute; top: 0; left: 0; bottom: 0; width: 20%; content: ''; background: black; z-index: 0; }
+    .p-container { position: relative; z-index: 1;
+      .m-features {
+        * { color: $gold; }
+      }
+    }
+
+  }
+}
 
 // A.3. END -----------------------------------------------------------------------------------------------------------
 

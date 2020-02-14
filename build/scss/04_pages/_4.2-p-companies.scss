@@ -37,31 +37,23 @@
 
 @media ($sm-dn) {
 
-
-  // A.2. HOMEPAGE ----------------------------------------
-
-  body.home {
-    &.blog {
-
-      #o-header {  }
-
-      .p-main {
-        .o-header {}
-
-        .o-block {
-          &.blog-posts { margin-top: 0;
-            .container { padding: 0; }
-          }
-        }
+  .o-section {
+    &.header-section {
+      .m-title-block {
+        &:before { top: 25%; }
       }
+    }
+    &.section-content { position: relative; padding: 100px 0 0 0; background-color: black;
+      &:after { content: none; }
+      &:before { content: none; }
 
-
+      .container { width: 100%; padding-left: 0; padding-right: 0; max-width: none;
+        .row { margin-right: 0; margin-left: 0; }
+        .m-features { padding: 30px 25px 50px;}
+        .m-text { padding: 50px 25px; background: white; }
+      }
     }
   }
-
-  // A.2. END ---------------------------------------------
-
-
 }
 
 // B.2. MIN-WIDTH: 768px ----------------------------------
@@ -72,7 +64,14 @@
 
 // D. MIN-WIDTH: 992px ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-@media ($md-up) {}
+@media ($md-up) {
+
+  html.single-companies { height: 100%; }
+  .single-companies { height: 100%; display: flex; flex-direction: column;
+    .section-content {flex: 2; }
+  }
+
+}
 
 // D. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 

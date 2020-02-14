@@ -7,6 +7,7 @@
     @ini_set( 'file_uploads', 'on' );
     @ini_set( 'max_execution_time', '300' );
 
+
     // Add RSS links to <head> section
     automatic_feed_links();
 
@@ -80,7 +81,7 @@ add_action( 'widgets_init', 'arphabet_widgets_init' );
 
 // A.4 END ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-// A.4.1. PROJECTS ----------------------------------------
+// A.4.1. COMPANIES ---------------------------------------
 
 function companies() {
   $labels = array(
@@ -110,6 +111,39 @@ function companies() {
 }
 
 add_action( 'init', 'companies' );
+
+// A.4.1. End ---------------------------------------------
+
+// A.4.1. PROMOS ------------------------------------------
+
+function promos() {
+  $labels = array(
+    'Title'              => _x( 'Promos', 'post type general name' ),
+    'singular_name'      => _x( 'Promos', 'post type singular name' ),
+    'add_new'            => __( 'Add New', 'Promo' ),
+    'add_new_item'       => __( 'Add New Promo' ),
+    'edit_item'          => __( 'Edit Promos' ),
+    'new_item'           => __( 'New Promo' ),
+    'all_items'          => __( 'All Promos' ),
+    'view_item'          => __( 'View Promo' ),
+    'parent_item_colon'  => '',
+    'menu_name'          => 'Promos'
+  );
+
+  $args = array(
+    'labels'         => $labels,
+    'description'   => 'A list of Promos',
+    'public'        => true,
+    'menu_position' => 2,
+    'supports'      => array( 'title', 'editor', 'thumbnail', 'taxonomies', 'categories', 'media', 'content' ),
+    'has_archive'   => true,
+
+  );
+
+  register_post_type( 'promos', $args );
+}
+
+add_action( 'init', 'promos' );
 
 // A.4.1. End ---------------------------------------------
 

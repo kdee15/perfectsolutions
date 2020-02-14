@@ -5,37 +5,52 @@
 // A.1. PUZZLE BLOCK ELEMENTS -----------------------------
 
 .m-puzzle-piece { @include aspect-ratio(50%, 100%); display: inline-block; float: left; transition: 0.3s;
-  &.piece-1 {
-    .a-puzzle-piece { background: linear-gradient( to left, $gold, $brass); }
+  &.piece-1 { z-index: 10;
+    .a-puzzle-piece { background: linear-gradient( to left, $gold, $brass);
+      &:after { background: $gold; right: -15%; }
+    }
   }
-  &.piece-2 {
-    .a-puzzle-piece { background: black; color: white; }
+  &.piece-2 { z-index: 9;
+    .a-puzzle-piece { background: black; color: white;
+      &:after { background: black; bottom: -15%; @include center-align(); left: 50%; }
+    }
   }
-  &.piece-3 {
-    .a-puzzle-piece { background: black; color: white; }
+  &.piece-3 { z-index: 7;
+    .a-puzzle-piece { background: black; color: white;
+      &:after { background: black; top: -15%; @include center-align(); left: 50%; }
+    }
   }
-  &.piece-4 {
-    .a-puzzle-piece { background: linear-gradient( to left, $gold, $brass); }
+  &.piece-4 { z-index: 8;
+    .a-puzzle-piece { background: linear-gradient( to left, $gold, $brass);
+      &:after { background: $brass; left: -15%; }
+    }
   }
   .a-puzzle-piece { @include position(absolute, 0); transition: 0.3s; display: flex; align-items: center; z-index: 10;
-    .a-title { display: block; text-align: center; padding: 0 25px; font-size: 20px; font-weight: 500; width: 100%; }
+    &:after { position: absolute; width: 18%; height: 18%; content: ''; border-radius: 50px; }
+    .a-title { display: block; text-align: center; padding: 0 50px; font-size: 20px; font-weight: 500; width: 100%; }
   }
-  .a-puzzle-text { @include position(absolute, 0); z-index: 1; display: flex; align-items: center;
+  .a-puzzle-text { @include position(absolute, 0); z-index: 1; display: flex; align-items: center; background: white;
     p { padding: 30px; margin: 0; font-size: 14px; line-height: 1.5; font-weight: 400; }
   }
 
   &:hover {
+    .a-puzzle-text {
+      p { padding: 30px 60px; }
+    }
     &.piece-1 {
       .a-puzzle-piece { transform: translateX(-100%); }
+      .a-puzzle-text { right: -100%;}
     }
     &.piece-2 {
       .a-puzzle-piece { transform: translateX(100%); }
+      .a-puzzle-text { bottom: -100%; align-items: normal; }
     }
     &.piece-3 {
       .a-puzzle-piece { transform: translateX(-100%); }
     }
     &.piece-4 {
       .a-puzzle-piece { transform: translateX(100%); }
+      .a-puzzle-text { left: -100%; }
     }
   }
 }
