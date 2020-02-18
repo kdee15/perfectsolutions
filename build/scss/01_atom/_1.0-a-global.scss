@@ -10,21 +10,9 @@ html, body {
   background: $white;
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
-}
-
-body {
-  &.fixed,
-  &.modal-open { @include position(absolute, 0); overflow: hidden;
-    &:before { @include position (absolute, 0); content: ''; background-color: rgba(0,0,0,0.9); z-index: 1000; bottom: -2000%; }
-    .p-main { @include position (absolute, 0); transform: translateX(-100%); transition: 0.3s; bottom: -2000%; }
-  }
-  &.home {
-    &.fixed,
-    &.modal-open {
-      &:before { bottom: -2000%; }
-      .p-main { bottom: -2000%; }
-    }
-  }
+  height: 100%;
+  overflow: auto;
+  .home { height: 100%; }
 }
 
 .p-main { position: relative; z-index: 100; background: white; }

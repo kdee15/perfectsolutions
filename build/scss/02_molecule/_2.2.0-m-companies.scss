@@ -6,7 +6,7 @@
 
 .m-co-wrapper {
   @include position(absolute, 15px); border-radius: 100px; display: flex; align-items: center; text-decoration: none; color: black; font-weight: 400; transition: 0.3s;
-  .a-title { text-align: center; display: block; width: 100%; margin: 0 25px; }
+  .a-title { text-align: center; display: block; width: 100%; margin: 0 15px; font-size: 16px; }
 }
 
 .m-holding { @include aspect-ratio(20%, 100%); margin: 0 auto 50px;
@@ -37,5 +37,77 @@
 // A.1. END -----------------------------------------------
 
 // A. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// B. MAX-WIDTH: 767px ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@media ($sm-dn) {
+
+  .m-holding { margin: 0 auto 50px 0; width: auto;
+    &:before { padding-top: 0; }
+    &:after { content: none; }
+    .m-co-wrapper { @include position(relative, auto);background: transparent; display: block;
+      * { color: white; }
+      .a-title { text-align: left; margin: 0; padding-left: 45px; font-size: 20px; }
+      &:after { transform: none; left: -15px; }
+      &:before { @include vertical-align(absolute); width: 30px; height: 30px; background: $gold; content: ''; border-radius: 50px; }
+    }
+  }
+
+  .m-company { float: none; width: 100%; margin-bottom: 15px;
+    &:before { content: ''; width: 30px; height: 30px; background: red; padding-top: 0; @include vertical-align(absolute); }
+    .m-co-wrapper { @include position(relative, auto);background: transparent; display: block;
+      * { color: white; }
+      .a-title { text-align: left; margin: 0; padding-left: 45px; }
+      &:after { transform: none; left: -15px; }
+    }
+    &:after { left: 15px; bottom: -15px; right: auto; width: 2px; height: auto;  }
+    &:before { z-index: 10; border-radius: 30px; background: $gold; }
+    &:nth-child(2) {
+      &:after { left: 15px; top: -61px; }
+    }
+    &:last-child {
+      &:after { bottom: 15px; }
+    }
+  }
+
+}
+
+// B. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// C. MIN-WIDTH: 768px ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@media ($sm-up) {
+
+  .m-co-wrapper {
+    .a-title { margin: 0 15px; font-size: 10px; }
+  }
+
+}
+
+// C. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// D. MIN-WIDTH: 992px ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@media ($md-up) {
+
+  .m-co-wrapper {
+    .a-title { margin: 0 15px; font-size: 12px; }
+  }
+
+}
+
+// D. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// E. MIN-WIDTH: 1200px +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@media ($lg-up) {
+
+  .m-co-wrapper {
+    .a-title { margin: 0 25px; font-size: 16px; }
+  }
+
+}
+
+// E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // END OF FILE ########################################################################################################

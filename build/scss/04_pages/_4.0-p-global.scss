@@ -4,10 +4,6 @@
 
 // A.3. DEFAULT PAGE LAYOUT -------------------------------------------------------------------------------------------
 
-html { height: 100%;
-  .home { height: 100%; }
-}
-
 .o-section { position: relative;
   &.o-skew {
     &:after { position: absolute; top: 0; left: 0; bottom: 0; width: 45%; transform: skewX(4deg); content: ''; background: black; z-index: 0; }
@@ -17,7 +13,6 @@ html { height: 100%;
         * { color: $gold; }
       }
     }
-
   }
 }
 
@@ -51,30 +46,15 @@ html { height: 100%;
 
 @media ($sm-dn) {
 
+  // A.2. PAGE TITLES -------------------------------------
 
-  // A.2. HOMEPAGE ----------------------------------------
-
-  body.home {
-    &.blog {
-
-      #o-header {  }
-
-      .p-main {
-        .o-header {}
-
-        .o-block {
-          &.blog-posts { margin-top: 0;
-            .container { padding: 0; }
-          }
-        }
-      }
-
-
+  .o-section {
+    .m-title-block {
+      &:before { top: 20%; }
     }
   }
 
   // A.2. END ---------------------------------------------
-
 
 }
 

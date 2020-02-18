@@ -11,6 +11,7 @@ get_header();
 
 ?>
 
+<?php get_template_part( 'inc/navigation-home' ); ?>
 <?php get_template_part( 'section-front' ); ?>
 
 <!-- C. WORK AREA +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
@@ -20,6 +21,8 @@ get_header();
     <!-- C.2. SECTIONS -------------------------------- -->
 
     <?php get_template_part( 'section-about' ); ?>
+    <?php get_template_part( 'section-footprint' ); ?>
+    <?php get_template_part( 'section-pillars' ); ?>
 
     <?php get_template_part( 'section-companies' ); ?>
 

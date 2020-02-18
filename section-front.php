@@ -1,4 +1,4 @@
-<section class="o-block o-video-banner h-100" style="background-image: url('http://placehold.it/1920x1080?text=VIDEO');">
+<section class="o-block o-video-banner">
 
   <button id="play-button" class="a-video-play video-control"></button>
   <button id="pause-button" class="a-video-close video-control"></button>

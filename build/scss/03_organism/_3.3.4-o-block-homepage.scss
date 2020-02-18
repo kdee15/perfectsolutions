@@ -5,32 +5,10 @@
 // A.1. GENERAL CARDS -------------------------------------------------------------------------------------------------
 
 .o-section {
-  .m-title-block { display: block; text-align: right; position: relative; z-index: 10;
-    .a-block-title { margin: 0; padding: 30px 0; position: relative; z-index: 10; display: block; text-align: right;
-      .a-sub-text { display: block; font-size: 22px; }
-    }
-
-    &:before {
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      transform: skewY(-1.5deg);
-      background: $gold;
-      background: linear-gradient($gold, $brass);
-      z-index: 2;
-    }
-    &:after { content: ''; @include position(absolute, 0); background-color: $gold; z-index: 1; }
-  }
-
   .o-content-container { margin: 100px auto 50px; }
 
   // A.1.1. PROJECTS BLOCK --------------------------------
-  &.projects-block { padding-top: 50px;
-    .a-btn { margin: 30px 0 0; }
-  }
+  &.section-footprint { background: black; overflow: auto; padding-bottom: 10px; }
 
   // A.1.1. PROMO BLOCK -----------------------------------
   &.section-promos { padding: 100px 0 50px; background: $gold;
@@ -56,6 +34,7 @@
 
   // A.1.2. ABOUT BLOCK -----------------------------------
   &.about-section { position: relative; overflow: hidden;
+    .m-footprint-image { z-index: 1000; margin-top: 220px; padding-left: 15px; }
     .o-content-container {
       .o-block-sidebar { display: block; width: 40%; position: absolute; top: 0; bottom: 0; left: 0;
         &:before { content: ''; @include position(absolute, 0); background-color: black; z-index: 1; }
@@ -88,13 +67,46 @@
 
 // B. MAX-WIDTH: 767px ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-@media ($sm-dn) {} 
+@media ($sm-dn) {
+
+  .o-section {
+    &.about-section {
+      .o-content-container {
+        .o-block-sidebar { display: none; }
+      }
+    }
+    &.section-promos {
+      &.o-skew {
+        &:before, &:after { content: none; }
+        .m-features { padding-bottom: 30px;
+          .m-promo-player { width: 100%; }
+          span, a { color: black; }
+        }
+      }
+    }
+  }
+
+}
 
 // B. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // C. MIN-WIDTH: 768px ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-@media ($sm-up) {} 
+@media ($sm-up) {
+
+  .o-section {
+
+    // A.1.1. PROJECTS BLOCK --------------------------------
+    &.section-footprint { padding-bottom: 70px;
+      .m-footprint-image {
+        .a-office-info { left: 0; bottom: 0; padding: 10px 30px 10px 10px;
+          span { font-size: 12px; }
+        }
+      }
+    }
+  }
+
+}
 
 // C. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 

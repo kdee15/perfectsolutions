@@ -3,3 +3,5 @@
 $( document ).ready(function() {
 
   // LOAD FUNCTIONS ---------------------------------------
+  initPuzzle();
+

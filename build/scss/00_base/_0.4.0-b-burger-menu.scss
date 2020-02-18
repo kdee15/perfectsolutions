@@ -10,7 +10,7 @@ $BarHeight:             3px;
 $BarSpace:              3px;
 $BarColor:              $grey-cc;
 $BarColorHover:         $black;
-$BarColorActive:        $white;
+$BarColorActive:        $black;
 $BarColorActiveHover:   $black;
 $BarRounded:            0px;
 
@@ -110,10 +110,10 @@ $BarRounded:            0px;
   right: 0;
   bottom: 0;
   width: 100%;
-  max-width: none;
-  //background: $grey-33;
+  max-width: 500px;
+  background: $gold;
   display: block;
-  transform: translateX(80%);
+  transform: translateX(100%);
   transition: 0.3s;
   z-index: 10000;
 
@@ -207,7 +207,7 @@ body { transition: 0.3s;
 @media ($sm-up) {
 
   .a-burger-menu,
-  .navbar-collapse  { max-width: none; }
+  .navbar-collapse  { max-width: 500px; }
 
   .a-burger,
   .navbar-toggler {
