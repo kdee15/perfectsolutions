@@ -1,50 +1,29 @@
-<section class="o-block o-video-banner">
+<style>
 
-  <button id="play-button" class="a-video-play video-control"></button>
-  <button id="pause-button" class="a-video-close video-control"></button>
+  html, body { background: black; }
 
-  <video class="m-video-preloader" width="320" height="240" autoplay loop>
-    <source src="wp-content/themes/kdee/dist/videos/preloader-video.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+  .hero-section { margin: 0; height: 100vh; background: black; }
 
-  <iframe class="m-video-player" id="video" src="https://www.youtube.com/embed/SJvHeuCLJAs?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+  .card { position: absolute; width: 40vmin; height: 40vmin; transform: translateX(-50%) translateY(-50%); }
+  .face { position: absolute; width: 40vmin; height: 40vmin; }
+
+  .card { top: 50%; left: 50%; animation: rot 4s linear infinite; background: transparent; }
+  .card .a-image { width: 100%; height: 100%; }
+
+  @keyframes rot {
+    25% { transform: translateX(-50%) translateY(-50%) rotate(-90deg); }
+    50% { transform: translateX(-50%) translateY(-50%) rotate(-180deg); }
+    75% { transform: translateX(-50%) translateY(-50%) rotate(-270deg); }
+    100% { transform: translateX(-50%) translateY(-50%) rotate(-360deg); }
+  }
+
+</style>
+
+<section class="o-section hero-section h-100">
+  <div class='card'>
+    <div class='face'>
+      <img src="<?php echo get_template_directory_uri(); ?>/dist/images/site/logo-icon.png" class="a-image" />
+    </div>
+  </div>
 
 </section>
-
-<script>
-
-  // Inject YouTube API script
-  var tag = document.createElement('script');
-  tag.src = "//www.youtube.com/player_api";
-  var firstScriptTag = document.getElementsByTagName('script')[0];
-  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-  var player;
-
-  function onYouTubePlayerAPIReady() {
-    // create the global player from the specific iframe (#video)
-    player = new YT.Player('video', {
-      events: {
-        // call this function when player is ready to use
-        'onReady': onPlayerReady
-      }
-    });
-  }
-
-  function onPlayerReady(event) {
-
-    // bind events
-    var playButton = document.getElementById("play-button");
-    playButton.addEventListener("click", function() {
-      player.playVideo();
-    });
-
-    var pauseButton = document.getElementById("pause-button");
-    pauseButton.addEventListener("click", function() {
-      player.pauseVideo();
-    });
-
-  }
-
-</script>

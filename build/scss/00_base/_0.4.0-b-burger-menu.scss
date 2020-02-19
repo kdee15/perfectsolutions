@@ -126,7 +126,7 @@ $BarRounded:            0px;
       ul,.primary-menu { list-style-type: none; margin: 0; padding: 0; margin-top: $base-xl;
         li,.menu-item { display: inline-block; width: 100%;
           a { display: block; padding: $base-sm $base; color: $black; font-weight: 400;
-            &:hover { background-color: $grey-blue; color: white; text-decoration: none; }
+            &:hover { background-color: black; color: white; text-decoration: none; }
           }
         }
       }
