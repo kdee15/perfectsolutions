@@ -117,6 +117,42 @@
         }
     }
 
+// D.1.1. RIGHT ARROW -------------------------------------
+
+    @mixin arrow-right ($size, $color, $padding) {
+        outline: 0;
+
+        &:after {
+            content: '';
+            outline: 0;
+            width: 0;
+            height: 0;
+            right: $padding;
+            border-bottom: $size solid transparent;
+            border-top: $size solid transparent;
+            border-left: $size solid $color;
+            @include vertical-align(absolute);
+        }
+    }
+
+// D.1.1. LEFT ARROW -------------------------------------
+
+    @mixin arrow-left ($size, $color, $padding) {
+        outline: 0;
+
+        &:after {
+            content: '';
+            outline: 0;
+            width: 0;
+            height: 0;
+            left: $padding;
+            border-bottom: $size solid transparent;
+            border-top: $size solid transparent;
+            border-right: $size solid $color;
+            @include vertical-align(absolute);
+        }
+    }
+
 // D. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // E. ANIMATIONS ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -161,5 +197,29 @@
 // E.1. END -----------------------------------------------
 
 // E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// A.1. SKEW ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@mixin skew-effect ($angle,$position,$height,$color) {
+
+    position: relative; z-index: 10; margin-#{$position}: $height!important;
+
+    @media ($sm-dn) { margin-#{$position}: $height/3*2.25!important; }
+
+    &:before {
+        content: '';
+        position: absolute;
+        height: $height;
+        #{$position}: -#{$height/2};
+        left: 0;
+        width: 100%;
+        background-color: $color;
+        transform: skewY(#{$angle}deg);
+        z-index: 0;
+    }
+
+}
+
+// A.1. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // END OF FILE ########################################################################################################

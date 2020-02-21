@@ -1,0 +1,147 @@
+// 0.2 MOLECULE [ 2.3.0 TIMELINE ]  ###################################################################################
+
+// A. +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// A.0. VARIABLES -----------------------------------------------------------------------------------------------------
+
+$ald-blue-e3: $gold;
+$ald-blue-0f: $gold;
+$ald-orange: $gold;
+$ald-blue: $gold;
+$ald-med: arial;
+
+// A.0. END -----------------------------------------------------------------------------------------------------------
+// A.1. TIMELINE MOLECULES --------------------------------------------------------------------------------------------
+
+// A.1.1. TIMELINE HEADER BLOCK ---------------------------
+
+.m-timeline-header { text-align: center; max-width: 850px; margin: 0 auto;
+  .a-block-header { margin-top: 65px; margin-bottom: 50px; }
+  .a-block-description { font-size: 30px; font-family: $ald-med; }
+}
+
+// A.1.1. END ---------------------------------------------
+
+// A.1.1. TIMELINE DATE BLOCK -----------------------------
+
+.m-timeline-date { position: relative; padding-top: 8px;
+  .m-card {
+    &.timeline-date-card { display: inline-block; background: $ald-blue-0f; position: relative; padding: 0 15px;
+      &:before {
+        position: absolute; left: 0; right: 0; top: -4px; height: 20px; transform: skewY(4deg); content: ''; background: $ald-blue-0f;
+      }
+      .timeline-date { font-size: 36px; padding: 30px 0; display: block; color: white; line-height: 1; }
+    }
+  }
+}
+
+// A.1.1. END ---------------------------------------------
+
+// A.1.2. TIMELINE TRACK ----------------------------------
+
+.m-timeline-bar { position: relative; }
+
+// A.1.2. END ---------------------------------------------
+
+// A.1.3. TIMELINE RECORD BLOCK ---------------------------
+
+.m-timeline-record {
+  .m-card {
+    &.timeline-card { margin-bottom: 50px;
+      .m-image-wrap { max-width: 525px; max-height: 186px; overflow: hidden;
+        .m-card-image {
+          @include aspect-ratio(100%, 35.5%);
+          background-image: url('http://placehold.it/523x184');
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          transition: all 2s ease;
+
+        }
+      }
+      .m-card-body { background: white;
+        .m-square-bullets {
+          .a-list-item { padding: 6px 25px 6px 75px;
+            &:after { left: 45px; }
+            .a-item-content { font-size: 16px;
+              &.date { font-style: italic; color: $ald-orange; }
+            }
+          }
+        }
+      }
+      &.toggle-content { opacity: 0; overflow: hidden; height: 0; transition: 0.3s; display: block;
+        &.on { opacity: 1; overflow: visible; height: auto; transition: 0.3s; overflow: hidden; }
+      }
+
+      &:hover {
+        .m-card-image { transform: scale(1.1); }
+      }
+    }
+  }
+}
+
+// A.1.3. END ---------------------------------------------
+
+// A.1. END -----------------------------------------------------------------------------------------------------------
+
+// A. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// B. MAX-WIDTH: 767px ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@media ($sm-dn) {
+
+  .m-timeline-header {
+    .a-block-header { margin-top: 66px; }
+    .a-block-description { margin-left: 15px; margin-right: 15px;}
+  }
+
+  .m-timeline-date { z-index: 10; margin-bottom: -45px;
+    .m-card {
+      &.timeline-date-card { @include arrow-down (10px, $ald-blue-0f, -10px);
+        &:before { right: 1px; }
+        .timeline-date {  }
+      }
+    }
+  }
+
+  .m-timeline-record {
+    .m-card {
+      &.timeline-card {
+        &.toggle-content { opacity: 1; overflow: auto; height: auto; margin-left: 15px; margin-right: 15px; }
+        .m-image-wrap {max-height: none; max-width: none; }
+      }
+    }
+  }
+
+}
+
+// B. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// C. MIN-WIDTH: 768px ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@media ($sm-up) {
+
+  .m-timeline-date {
+    .m-card {
+      &.timeline-date-card { margin-bottom: 50px;
+        .timeline-date {  }
+      }
+    }
+  }
+
+}
+
+// C. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// D. MIN-WIDTH: 992px ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@media ($md-up) {}
+
+// D. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// E. MIN-WIDTH: 1200px +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@media ($lg-up) {}
+
+// E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// END OF FILE ########################################################################################################

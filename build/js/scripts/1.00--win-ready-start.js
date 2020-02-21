@@ -5,7 +5,7 @@ $(window).on('load', function() {
   // PRELOADER --------------------------------------------
 
   $('html').removeClass('preloader');
-  $('html').addClass('lab-app');
+  $('html').addClass('kd-app');
 
   // LOAD FUNCTIONS ---------------------------------------
 

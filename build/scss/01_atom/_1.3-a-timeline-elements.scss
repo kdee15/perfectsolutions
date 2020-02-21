@@ -1,0 +1,118 @@
+// 3. ORGANISM [ ATOM 1.9. TIMELINE ELEMENTS ##########################################################################
+
+// A. GLOBAL STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// A.0. VARIABLES -----------------------------------------------------------------------------------------------------
+
+$ald-blue-e3: $gold;
+$ald-blue-0f: $gold;
+$ald-blue-bd: $gold;
+$ald-orange: $gold;
+$ald-blue: $gold;
+$ald-med: arial;
+
+// A.0. END -----------------------------------------------------------------------------------------------------------
+// A.1. GENERAL  ------------------------------------------------------------------------------------------------------
+
+// A.1.1. TIMELINE TAGS
+
+.a-timeline-tag {
+  font-size: 14px;
+  font-family: $default;
+  line-height: 1;
+  padding: 5px 10px;
+  display: inline-block;
+  color: white;
+  margin: 20px 0 0px 45px;
+  &.new { background: $ald-orange; }
+}
+
+// A.1.1. END
+
+// A.1.1. END
+
+.a-timeline-bullet {
+  @include center-align();
+  content: '';
+  width: 44px;
+  height: 44px;
+  top: 35px;
+  background: $ald-blue-bd;
+  border: 2px solid $ald-blue-0f;
+  border-radius: 44px;
+  z-index: 10;
+  transition: 0.3s;
+  &:after {
+    @include middle-align();
+    content: '';
+    width: 20px;
+    height: 2px;
+    background: $ald-blue-0f;
+  }
+
+  &:before {
+    @include middle-align();
+    content: '';
+    width: 20px;
+    height: 2px;
+    background: $ald-blue-0f;
+    z-index: 100;
+    transform: translateX(-50%) translateY(-50%) rotate(90deg);
+    transition: 0.3s;
+  }
+
+  &.on { transition: 0.3s;
+    &:before { transform: translateX(-50%) translateY(-50%) rotate(0deg); transition: 0.3s; }
+  }
+
+  &.on { transition: 0.3s;
+    &:after { transform: translateX(-50%) translateY(-50%) rotate(180deg); transition: 0.3s; }
+  }
+
+  &:hover { box-shadow: 0 0 3px black; cursor: pointer; width: 46px; height: 46px; }
+  &:active { box-shadow: 0 0 0px black; cursor: pointer; width: 44px; height: 44px; transition: 0s; }
+
+}
+
+// A.1.1. END
+
+// A.1.1. END
+
+.a-timeline-track { @include center-align(); content: ''; width: 2px; background: $ald-blue-0f; bottom: -50px; top: 50px; }
+
+// A.1.1. END
+
+
+// A.1. END -----------------------------------------------------------------------------------------------------------
+
+// A. GLOBAL STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// B. MAX-WIDTH: 767px ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@media ($sm-dn) {
+
+  .a-timeline-bullet { display: none; }
+  .a-timeline-track {  top: -50px; }
+
+}
+
+// B. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// C. MIN-WIDTH: 768px ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@media ($sm-up) {}
+
+// C. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// D. MIN-WIDTH: 992px ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@media ($md-up) {}
+
+// D. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// E. MIN-WIDTH: 1200px +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@media ($lg-up) {}
+
+// E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// END OF FILE ########################################################################################################

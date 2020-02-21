@@ -17,6 +17,10 @@ html, body {
 
 .p-main { position: relative; z-index: 100; background: white; }
 
+.a-mail-us { position: fixed; right: 0; bottom: 5%; background: $grey-80; z-index: 1000;
+  span { color: white; padding: 20px 10px; box-shadow: 0 0 5px black; display: block; }
+}
+
 .slide-content {
   @include position(absolute,0); background-color: rgba(0,0,0,0.96); transform: translateY(100%); transition: 0.3s;
   &.on { transform: translateY(0%); transition: 0.3s; }

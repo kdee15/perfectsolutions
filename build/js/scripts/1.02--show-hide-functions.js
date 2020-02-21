@@ -78,6 +78,22 @@ function initToggleFunctions() {
 
     // A.2.1. END -----------------------------------------
 
+    // A.2.4. TOGGLE SWITCH & CONTENT ---------------------
+
+    var togAllContent = '';
+
+    $('.toggle-both').on('click', function (e) {
+
+        e.preventDefault();
+        togAllContent = $(this).attr('name');
+
+        $('.' + togAllContent).toggleClass('on');
+        $('#' + togAllContent).toggleClass('on');
+
+    });
+
+    // A.2.4. END -----------------------------------------
+
 // A.3. END -----------------------------------------------------------------------------------------------------------
 
 // A.4. SCROLL TO LINK ------------------------------------------------------------------------------------------------

@@ -1,0 +1,123 @@
+// 3. ORGANISM [ 3.3.6 TIMELINE ] #####################################################################################
+
+// A. GLOBAL STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// A.0. VARIABLES -----------------------------------------------------------------------------------------------------
+
+$ald-blue-e3: $gold;
+$ald-blue-0f: $gold;
+$ald-blue: $gold;
+$ald-bld: arial;
+
+// A.0. END -----------------------------------------------------------------------------------------------------------
+// A.1. GENERAL BLOCKS ------------------------------------------------------------------------------------------------
+
+.o-timeline-block {
+  .m-cta-wrapper { position: relative; text-align: center; padding-bottom: 50px;
+    .a-timeline-bullet { position: relative; left: auto; top: 0; margin: 15px auto; transform: none;
+      &:before { transform: translateX(-50%) translateY(-50%) rotate(90deg); }
+    }
+  }
+}
+
+.o-timeline-wrapper { margin-top: 80px; position: relative; z-index: 10; }
+
+// A.1. END -----------------------------------------------------------------------------------------------------------
+
+// A.1. TIMELINE CARDS ------------------------------------------------------------------------------------------------
+
+.m-timeline-item { display: flex; width: 100%; margin: 0 auto;
+  aside { flex: 2; width: 100%;
+    &.m-timeline-date { text-align: right; }
+    &.m-timeline-bar { flex: 1; max-width: 120px; }
+  }
+}
+
+// A.1. END -----------------------------------------------------------------------------------------------------------
+
+// A. GLOBAL STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// B. MAX-WIDTH: 767px ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@media ($sm-dn) {
+
+  .o-timeline-block {
+    .m-cta-wrapper {
+      .a-timeline-bullet { display: block; }
+      .a-cta-text { color: $ald-blue; font-size: 20px; font-family: $ald-bld; }
+    }
+  }
+
+  .m-timeline-item { display: flex; flex-direction: column;
+    aside {
+      &.m-timeline-date { text-align: center; }
+      &.m-timeline-bar { order: 3; max-width: 100%; }
+      &.m-timeline-record { order: 2; }
+    }
+  }
+
+
+}
+
+// B. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// C. MIN-WIDTH: 768px ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@media ($sm-up)  {
+
+  .o-timeline-block {
+    .m-cta-wrapper { display: none; }
+  }
+
+  .o-timeline-item-wrapper {
+    &:nth-child(odd) {
+      .m-timeline-item {
+        aside {
+          &.m-timeline-date {
+            .m-card {
+              &.timeline-date-card { @include arrow-right (10px, $ald-blue-0f, -10px); }
+            }
+          }
+        }
+      }
+    }
+    &:nth-child(even) {
+      .m-timeline-item {
+        aside {
+          &.m-timeline-date { order: 3; text-align: left;
+            .m-card {
+              &.timeline-date-card { @include arrow-left (10px, $ald-blue-0f, -10px);
+                &:before { transform: skewY(-4deg); }
+              }
+            }
+          }
+          &.m-timeline-bar {  order: 2; }
+          &.m-timeline-record {  order: 1; }
+        }
+      }
+    }
+    &:last-of-type {
+      .m-timeline-item {
+        .m-timeline-bar {
+          .a-timeline-track { display: none; }
+        }
+      }
+    }
+  }
+
+}
+
+// C. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// D. MIN-WIDTH: 992px ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@media ($md-up) {}
+
+// D. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// E. MIN-WIDTH: 1200px +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@media ($lg-up) {}
+
+// E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// END OF FILE ########################################################################################################

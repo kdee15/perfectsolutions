@@ -1,10 +1,70 @@
-// 3. ORGANISM [ 3.1. CARDS ] #########################################################################################
+// 3. ORGANISM [ 3.3.0. BLOCKS ] ######################################################################################
 
 // A. GLOBAL STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // A.1. GENERAL CARDS -------------------------------------------------------------------------------------------------
 
-.o-header {}  
+.o-section {
+  .o-content-container { margin: 100px auto 50px; }
+
+  // A.1.0. HERO BLOCK ------------------------------------
+  .hero-section {
+
+  }
+
+  // A.1.1. PROJECTS BLOCK --------------------------------
+  &.section-footprint { background: black; overflow: auto; padding-bottom: 10px; }
+
+  // A.1.1. PROMO BLOCK -----------------------------------
+  &.section-promos { padding: 100px 0 50px; background: $gold;
+    .m-features {
+      .m-promo-player { display: block; margin: 0 auto 30px; outline: none!important; }
+      span { display: block; font-size: 12px; text-align: center; }
+    }
+  }
+
+  // A.1.2. CONTACT BLOCK ---------------------------------
+  &.contact-block { background: #CCC; overflow: auto; text-align: center; background-size: cover; padding: 100px 0;
+    .section-header { width: 100%; max-width: 200px; margin: 50px auto;
+      .icon {
+        path { fill: white; }
+      }
+      h2 { text-align: center; color: white; }
+    }
+    * { color: white; }
+    .linked-in { max-width: 200px; margin: 50px auto; display: block;
+      path { fill: $kd-blue; }
+    }
+  }
+
+  // A.1.2. ABOUT BLOCK -----------------------------------
+  &.about-section { position: relative; overflow: hidden;
+    .m-footprint-image { z-index: 1000; margin-top: 220px; padding-left: 15px; }
+    .o-content-container {
+      .o-block-sidebar { display: block; width: 40%; position: absolute; top: 0; bottom: 0; left: 0;
+        &:before { content: ''; @include position(absolute, 0); background-color: black; z-index: 1; }
+        &:after {
+          position: absolute;
+          top: 0;
+          left: 15%;
+          width: 100%;
+          height: 100%;
+          right: 0;
+          transform: skewX(4deg);
+          content: '';
+          background-color: black;
+          z-index: 1;
+        }
+      }
+    }
+
+  }
+
+  // A.1.3. FOUR PILLARS BLOCK ----------------------------
+  &.four-pillars { position: relative; overflow: hidden; background-color: white; padding-bottom: 70px;
+    .o-puzzle { display: block; width: 100%; max-width: 600px; margin: 0 auto; }
+  }
+}
 
 // A.1. END -----------------------------------------------------------------------------------------------------------
 
@@ -12,25 +72,66 @@
 
 // B. MAX-WIDTH: 767px ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-@media ($sm-dn) {} 
+@media ($sm-dn) {
+
+  .o-section {
+    &.about-section {
+      .o-content-container {
+        .o-block-sidebar { display: none; }
+      }
+    }
+    &.section-promos {
+      &.o-skew {
+        &:before, &:after { content: none; }
+        .m-features { padding-bottom: 30px;
+          .m-promo-player { width: 100%; }
+          span, a { color: black; }
+        }
+      }
+    }
+  }
+
+}
 
 // B. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // C. MIN-WIDTH: 768px ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-@media ($sm-up) {} 
+@media ($sm-up) {
+
+  .o-section {
+
+    // A.1.1. PROJECTS BLOCK --------------------------------
+    &.section-footprint { padding-bottom: 70px; display: none;
+      .m-footprint-image {
+        .a-office-info { left: 0; bottom: 0; padding: 10px 30px 10px 10px;
+          span { font-size: 12px; }
+        }
+      }
+    }
+  }
+
+}
 
 // C. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // D. MIN-WIDTH: 992px ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-@media ($md-up) {} 
+@media ($md-up) {
+
+  .o-block {
+    &.contact-block {
+      p { font-size: 18px; }
+    }
+  }
+
+}
 
 // D. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // E. MIN-WIDTH: 1200px +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-@media ($lg-up) {} 
+@media ($lg-up) {}
 
 // E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 

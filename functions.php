@@ -114,7 +114,7 @@ add_action( 'init', 'companies' );
 
 // A.4.1. End ---------------------------------------------
 
-// A.4.1. PROMOS ------------------------------------------
+// A.4.2. PROMOS ------------------------------------------
 
 function promos() {
   $labels = array(
@@ -145,9 +145,9 @@ function promos() {
 
 add_action( 'init', 'promos' );
 
-// A.4.1. End ---------------------------------------------
+// A.4.2. End ---------------------------------------------
 
-// A.4.1. PROJECTS ----------------------------------------
+// A.4.3. SERVICES ----------------------------------------
 
 function services() {
   $labels = array(
@@ -178,7 +178,105 @@ function services() {
 
 add_action( 'init', 'services' );
 
-// A.4.1. End ---------------------------------------------
+// A.4.3. End ---------------------------------------------
+
+// A.4.4. MILESTONES ----------------------------------------
+
+function milestones() {
+  $labels = array(
+    'Title'              => _x( 'Milestone', 'post type general name' ),
+    'singular_name'      => _x( 'Milestones', 'post type singular name' ),
+    'add_new'            => __( 'Add New', 'Milestone' ),
+    'add_new_item'       => __( 'Add New Milestone' ),
+    'edit_item'          => __( 'Edit Milestones' ),
+    'new_item'           => __( 'New Milestone' ),
+    'all_items'          => __( 'All Milestones' ),
+    'view_item'          => __( 'View Milestone' ),
+    'parent_item_colon'  => '',
+    'menu_name'          => 'Milestones'
+  );
+
+  $args = array(
+    'labels'         => $labels,
+    'description'   => 'A list of Milestones',
+    'public'        => true,
+    'menu_position' => 4,
+    'supports'      => array( 'title', 'editor', 'thumbnail', 'taxonomies', 'categories', 'media', 'content' ),
+    'has_archive'   => true,
+
+  );
+
+  register_post_type( 'milestones', $args );
+}
+
+add_action( 'init', 'milestones' );
+
+// A.4.4. End ---------------------------------------------
+
+// A.4.5. MILESTONES ----------------------------------------
+
+function testimonials() {
+  $labels = array(
+    'Title'              => _x( 'Testimonial', 'post type general name' ),
+    'singular_name'      => _x( 'Testimonials', 'post type singular name' ),
+    'add_new'            => __( 'Add New', 'Testimonial' ),
+    'add_new_item'       => __( 'Add New Testimonial' ),
+    'edit_item'          => __( 'Edit Testimonials' ),
+    'new_item'           => __( 'New Testimonial' ),
+    'all_items'          => __( 'All Testimonials' ),
+    'view_item'          => __( 'View Testimonial' ),
+    'parent_item_colon'  => '',
+    'menu_name'          => 'Testimonials'
+  );
+
+  $args = array(
+    'labels'         => $labels,
+    'description'   => 'A list of Testimonials',
+    'public'        => true,
+    'menu_position' => 5,
+    'supports'      => array( 'title', 'editor', 'thumbnail', 'taxonomies', 'categories', 'media', 'content' ),
+    'has_archive'   => true,
+
+  );
+
+  register_post_type( 'testimonials', $args );
+}
+
+add_action( 'init', 'testimonials' );
+
+// A.4.5. End ---------------------------------------------
+// A.4.5. MILESTONES ----------------------------------------
+
+function featuredPromo() {
+  $labels = array(
+    'Title'              => _x( 'Featured Promo', 'post type general name' ),
+    'singular_name'      => _x( 'Featured Promos', 'post type singular name' ),
+    'add_new'            => __( 'Add New', 'Featured Promo' ),
+    'add_new_item'       => __( 'Add New Featured Promo' ),
+    'edit_item'          => __( 'Edit Featured Promos' ),
+    'new_item'           => __( 'New Featured Promo' ),
+    'all_items'          => __( 'All Featured Promos' ),
+    'view_item'          => __( 'View Featured Promo' ),
+    'parent_item_colon'  => '',
+    'menu_name'          => 'Featured Promo'
+  );
+
+  $args = array(
+    'labels'         => $labels,
+    'description'   => 'A list of Featured Promos',
+    'public'        => true,
+    'menu_position' => 6,
+    'supports'      => array( 'title', 'editor', 'thumbnail', 'taxonomies', 'categories', 'media', 'content' ),
+    'has_archive'   => true,
+
+  );
+
+  register_post_type( 'featuredPromo', $args );
+}
+
+add_action( 'init', 'featuredPromo' );
+
+// A.4.5. End ---------------------------------------------
 
 // A.4 END ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
