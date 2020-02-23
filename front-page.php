@@ -11,35 +11,46 @@ get_header();
 
 ?>
 
-<?php get_template_part( 'inc/navigation-home' ); ?>
-<?php get_template_part( 'section-front' ); ?>
-
 <!-- C. WORK AREA +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 
-<div class="a-mail-us">
-  <span>GET IN TOUCH</span>
-</div>
+<?php get_template_part( 'inc/preloader' ); ?>
 
-  <main class="p-main">
+<!-- C.1. HEADER ---------------------------------- -->
 
-    <!-- C.2. SECTIONS -------------------------------- -->
+<header class="o-header o-home-header">
+  <div class="o-logo-card">
+    <?php get_template_part( 'inc/3d-spin' ); ?>
+  </div>
+</header>
 
-    <?php get_template_part( 'section-feature-promo' ); ?>
-    <?php get_template_part( 'section-values' ); ?>
-    <?php get_template_part( 'section-testimonials' ); ?>
-    <?php get_template_part( 'section-timeline' ); ?>
-    <?php get_template_part( 'section-brands' ); ?>
-    <?php get_template_part( 'section-contact' ); ?>
+<?php get_template_part( 'inc/navigation-home' ); ?>
 
-    <!-- C.2. END ------------------------------------- -->
+<!-- C.1. END ------------------------------------- -->
 
-    <!-- C.3. FOOTER  --------------------------------- -->
+<!-- C.2. SECTIONS -------------------------------- -->
 
-    <?php get_footer(); ?>
+<?php get_template_part( 'section-front' ); ?>
 
-    <!-- C.3. END ------------------------------------- -->
+<!-- C.2. END ------------------------------------- -->
 
-  </main>
+<main class="p-main">
+
+  <!-- C.3. SECTIONS -------------------------------- -->
+
+  <?php get_template_part( 'section-values' ); ?>
+  <?php get_template_part( 'section-timeline' ); ?>
+  <?php get_template_part( 'section-companies' ); ?>
+  <?php get_template_part( 'section-contact' ); ?>
+
+  <!-- C.3. END ------------------------------------- -->
+
+  <!-- C.4. FOOTER  --------------------------------- -->
+
+  <?php get_footer(); ?>
+
+  <!-- C.4. END ------------------------------------- -->
+
+</main>
 
 <!-- C. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 
@@ -48,5 +59,9 @@ get_header();
 <!-- D.1. FOOTER JS -->
 
 <?php get_template_part( 'inc/footer-scripts' ); ?>
+
+<div class="a-mail-us">
+  <span>GET IN TOUCH</span>
+</div>
 
 <!-- D. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->

@@ -7,15 +7,13 @@
 html, body {
   font-family: $default;
   font-weight: 100;
-  background: $white;
+  background: $black;
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
-  height: 100%;
   overflow: auto;
-  .home { height: 100%; }
 }
 
-.p-main { position: relative; z-index: 100; background: white; }
+
 
 .a-mail-us { position: fixed; right: 0; bottom: 5%; background: $grey-80; z-index: 1000;
   span { color: white; padding: 20px 10px; box-shadow: 0 0 5px black; display: block; }

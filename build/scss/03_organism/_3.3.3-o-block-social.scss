@@ -4,16 +4,21 @@
 
 // A.1. INSTAGRAM BLOCK -----------------------------------------------------------------------------------------------
 
-.social-media { list-style-type: none; text-align: left;
+.o-social-media {
+  list-style-type: none; text-align: left; position: fixed; top: 13px; right: 60px; z-index: 100000; opacity: 0; transition: 0.3s;
   li { list-style-type: none; display: inline-block;
     a { display: block;
-      .icon { margin: 0; padding: 0; background: $kd-blue;
-        svg { width: 50px; height: 50px; display: block;
-          polygon, circle, rect, path { fill: white; }
+      .icon { margin: 0; padding: 0; display: block; border-radius: 50px; overflow: hidden;
+        svg { width: 30px; height: 30px; display: block;
+          polygon, circle, rect, path { fill: $gold; }
         }
       }
       &:hover {
-        .icon { background: $blue-3a; }
+        .icon { background: white; box-shadow: 0 0 10px black;
+          svg {
+            polygon, circle, rect, path { fill: $gold; }
+          }
+        }
       }
     }
   }

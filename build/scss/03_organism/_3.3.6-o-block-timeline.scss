@@ -11,7 +11,7 @@ $ald-bld: arial;
 // A.0. END -----------------------------------------------------------------------------------------------------------
 // A.1. GENERAL BLOCKS ------------------------------------------------------------------------------------------------
 
-.o-timeline-block {
+.o-timeline-section { background-color: $grey-f2; padding-bottom: 50px;
   .m-cta-wrapper { position: relative; text-align: center; padding-bottom: 50px;
     .a-timeline-bullet { position: relative; left: auto; top: 0; margin: 15px auto; transform: none;
       &:before { transform: translateX(-50%) translateY(-50%) rotate(90deg); }
@@ -19,7 +19,7 @@ $ald-bld: arial;
   }
 }
 
-.o-timeline-wrapper { margin-top: 80px; position: relative; z-index: 10; }
+.o-timeline-wrapper { position: relative; z-index: 10; }
 
 // A.1. END -----------------------------------------------------------------------------------------------------------
 
@@ -40,7 +40,7 @@ $ald-bld: arial;
 
 @media ($sm-dn) {
 
-  .o-timeline-block {
+  .o-timeline-section {
     .m-cta-wrapper {
       .a-timeline-bullet { display: block; }
       .a-cta-text { color: $ald-blue; font-size: 20px; font-family: $ald-bld; }
@@ -64,7 +64,7 @@ $ald-bld: arial;
 
 @media ($sm-up)  {
 
-  .o-timeline-block {
+  .o-timeline-section {
     .m-cta-wrapper { display: none; }
   }
 

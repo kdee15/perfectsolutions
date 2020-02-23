@@ -1,7 +1,6 @@
-<section class="o-block o-timeline-block">
-  <div class="m-block-header m-timeline-header ald-timeline">
-    <p class="a-block-header ald-strikethrough-header">MILESTONES</p>
-    <p class="a-block-description">here</p>
+<section class="o-section o-timeline-section">
+  <div class="section-header">
+    <h2>MILESTONES</h2>
   </div>
 
   <div class="container o-timeline-wrapper">
@@ -30,11 +29,11 @@
               </div>
             </aside>
             <aside class="m-timeline-bar">
-              <div class="a-timeline-bullet toggle-both tl-<?php the_id(); ?> on" name="tl-<?php the_id(); ?>"></div>
+              <div class="a-timeline-bullet toggle-both tl-<?php the_id(); ?>" name="tl-<?php the_id(); ?>"></div>
               <div class="a-timeline-track"></div>
             </aside>
             <aside class="m-timeline-record reveal-on-show">
-              <div class="m-card timeline-card toggle-content on" id="tl-<?php the_id(); ?>">
+              <div class="m-card timeline-card toggle-content" id="tl-<?php the_id(); ?>">
                 <div class="m-image-wrap">
                   <div class="m-card-image" style="background-image:url('http://placehold.it/550x200?=TEXT');">
                   </div>
@@ -62,11 +61,6 @@
     wp_reset_query();  // Restore global post data stomped by the_post().
     ?>
 
-  </div>
-
-  <div class="row m-cta-wrapper">
-    <div class="a-timeline-bullet"></div>
-    <span class="a-cta-text">link</span>
   </div>
 
 </section>

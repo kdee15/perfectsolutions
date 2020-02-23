@@ -1,5 +1,8 @@
-<section class="o-three-col-skewed ">
-  <div class="text-center container m-block-wrapper">
+<section class="o-section values-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>OUR VAUES</h2>
+    </div>
     <div class="row">
       <div class="col-xs-12 col-md-3">
         <div data-tilt="" class="m-block m-first-block">

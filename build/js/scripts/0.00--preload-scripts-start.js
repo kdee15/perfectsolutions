@@ -9,3 +9,10 @@ $('html').addClass('preloader');
 // 0.2 LOAD FUNCTIONS -------------------------------------
 
 // 0.2. END -----------------------------------------------
+
+// 0.3. SCREEN SIZE CHECK ---------------------------------
+
+var screenWidth = $( window ).width();
+console.log('screen-width: ' + screenWidth);
+
+// 0.3. END -----------------------------------------------

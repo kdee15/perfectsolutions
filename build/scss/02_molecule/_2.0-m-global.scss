@@ -26,7 +26,7 @@
 
 // A.1. END -----------------------------------------------
 
-// A.1. VIDEO BLOCK ELEMENTS ------------------------------
+// A.2. VIDEO BLOCK ELEMENTS ------------------------------
 
 .m-video-preloader { @include position(fixed,0); width: 100%!important; height: 100%!important; z-index: 0; display: none;
   &.active { display: block; }
@@ -41,9 +41,9 @@
   &.active { display: block; }
 }
 
-// A.1. END -----------------------------------------------
+// A.2. END -----------------------------------------------
 
-// A.1. END -----------------------------------------------
+// A.3. END -----------------------------------------------
 
 .m-footprint-image { width: 100%; max-width: 450px; margin: 0 auto; position: relative;
   img { width: 100%; height: auto; }
@@ -53,7 +53,32 @@
   .a-map-line { position: absolute; bottom: 10px; left: 10%; right: 52.5%; height: 3px; background: $gold; }
 }
 
-// A.1. END -----------------------------------------------
+// A.3. END -----------------------------------------------
+
+// A.4. END -----------------------------------------------
+
+@keyframes rot {
+  50% { transform: rotateY(0.5turn); }
+  100% { transform: rotateY(1turn); }
+}
+
+.o-logo-card { @include middle-align(); @include aspect-ratio(20%, 100%); }
+
+.m-3d-spin-card {
+
+  @include position(absolute, 0);
+  transform-style: preserve-3d;
+  animation: rot 4s linear infinite;
+  background: transparent;
+
+  .a-image { width: 100%; height: 100%; }
+  .m-disc-face { position: absolute; width: 100%; height: 100%;
+    &:last-child { transform: rotateY(0.5turn); }
+  }
+
+}
+
+// A.4. END -----------------------------------------------
 
 // A. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 

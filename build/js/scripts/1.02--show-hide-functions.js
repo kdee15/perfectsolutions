@@ -130,19 +130,14 @@ function initToggleFunctions() {
 
     $(document).scroll(function(){
 
-        if (document.documentElement.clientWidth > 640) {
+        // Hide the logo, and show as you scroll
+        if($(this).scrollTop() > t)
+        {
+            $('body').addClass('sticky');
 
-            // Hide the logo, and show as you scroll
-            if($(this).scrollTop() > t)
-            {
-                $('.logo').css({"display":'block'});
-
-            }else{
-                $('.logo').css({"display":'none'});
-            }
-
-
-        } else {}
+        }else{
+            $('body').removeClass('sticky');
+        }
 
     });
 

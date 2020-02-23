@@ -1,30 +1,92 @@
-<section class="o-section section-companies">
-
-  <div class="m-title-block">
-    <div class="container">
-      <h2 class="a-block-title">PERFECT SOLUTIONS COMPANY STRUCTURE</h2>
-    </div>
+<section class="o-section companies-section">
+  <div class="section-header">
+    <h2>PERFECT SOLUTIONS INVESTMENT HOLDINGS COMPANY STRUCTURE</h2>
   </div>
-
-  <div class="container o-content-container">
+  <div class="container">
     <div class="o-company-block">
       <div class="m-holding">
-        <div class="m-co-wrapper"><span class="a-title">Perfect Solutions Holdings</span></div>
+        <div class="m-co-wrapper" data-tilt="">
+          <span class="a-title">Perfect Solutions Holdings</span>
+          <figure class="a-icon globe-icon">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+              <path class="st0" d="M41.4,28.8L41.4,28.8L41.4,28.8z"/>
+                <path class="st0" d="M41.4,24.2L41.4,24.2L41.4,24.2z"/>
+                <path class="st0" d="M41.4,19.7L41.4,19.7L41.4,19.7z"/>
+                <path d="M5.9,60.1c0.4,0,0.8,0.4,1.1,0.8c0.8,0.4,1.1,0.8,1.9,1.1c0.8,0.4,1.1,0.8,2.3,1.1c0.8,0.8,0.4,0.4,1.9,1.9
+                c1.5,1.5,1.1,1.5,1.5,2.3s0.8,1.5,1.1,2.3c0.4,0.4,1.5,0.8,1.9,1.1c0.4,0.4,1.5,0.8,1.9,0.8c0.4,0,1.9,1.5,2.7,1.5
+                c1.1,0.4,1.1,1.9,1.1,1.9l-1.1,2.3L21.9,80l0.4,1.9c0,0-0.8,1.1-1.5,1.1s-0.8,0.4-1.5,0C12.7,76.9,8.1,68.9,5.9,60.1z M81.5,70.4
+                c0,0.4,0,1.5-0.4,2.3c0,0.8-0.4,1.9-0.4,2.7c-0.4,0.8-1.1,1.9-1.5,2.3c-0.8,0.4-1.5,1.5-1.9,1.5c-0.8,0.4-1.1-1.1-0.8-1.9
+                c0-0.4,1.1-2.3,1.1-2.3s0-1.1,0.4-1.9c0-0.8,1.9-1.5,1.9-1.5l1.5-2.7C81.5,68.9,81.5,69.7,81.5,70.4z M62,36.8
+                c0.4-0.4,1.5,0.4,1.5,0.4s4.6,1.1,5,1.5c0.8,0.4,1.9,0.8,2.3,1.5c0.4,0.4,1.5,1.9,1.9,2.3c0,0.8,0.8,2.7,1.1,3.1
+                c0,0.8,0.8,2.7,1.1,3.4c0.4,0.8,3.4,4.6,4.6,6.1l3.1-0.4c0,0-0.4,1.5-0.8,1.9c-0.4,0.8-1.5,1.9-1.9,2.7c-0.4,0.8-1.1,1.5-2.3,2.7
+                c-1.1,0.8-1.1,1.5-1.5,2.3c-0.4,0.8-1.1,2.3-1.1,2.3s0.4,3.4,0.4,3.8c0.4,0.8-1.1,2.7-1.1,2.7l-1.5,1.5l-1.9,2.7V80
+                c0,0-1.5,1.1-2.3,1.9c-0.8,0.8-0.8,1.1-1.5,1.9s-3.4,1.9-3.8,1.9c-0.8,0.4-4.6,0.8-4.6,0.8V85v-1.9c0,0-0.8-1.9-1.1-2.7
+                c-0.4-0.4-0.4-1.5-1.1-2.3c-0.8-1.1-1.1-1.5-1.1-2.3c-0.4-0.4,0-1.9,0-1.9s0.8-1.9,1.1-2.7s0-1.5-0.4-2.3c-0.4-0.8-0.4-2.3-0.4-3.1
+                c0-0.4-1.5-1.1-1.9-1.5c-0.8-0.8-0.4-1.5-0.4-1.9c0-0.8-0.8-2.3-0.4-3.4c0-1.1-1.5-0.4-2.7,0c-0.8,0.4-1.5-0.4-1.5-1.5
+                c0-1.1-1.9,0-3.1,0.4c-1.1,0.8-2.7,0.8-4.2,1.5c-1.1,0.4-1.9-0.8-1.9-0.8s-1.1-0.8-1.9-1.5c-0.8-0.4-1.9-1.5-2.3-2.3
+                c-0.8-0.8-2.7-3.4-2.7-4.6c-0.4-0.8,0-1.5,0-2.7c0-1.1,0-1.9,0-2.7c0.4-1.1,0.8-1.9,1.1-3.1c0.8-0.8,2.7-1.5,3.1-1.9
+                c0.4-0.4,1.5-1.5,1.5-2.3c0-0.4,0.8-0.8,1.1-1.5c0.4-0.8,1.5-2.3,3.1-1.9c0,0,1.5,0,1.9,0c0.4-0.4,1.9-0.8,2.7-1.1
+                c0.4-0.4,2.3-0.4,2.3-0.4s1.1,0.4,1.9,0.4c0.4,0,1.9-0.4,1.9-0.4s0.8,2.7,0.8,3.1s0.8,1.1,1.5,1.5C56.3,37.2,60.5,38.3,62,36.8z
+                 M39.9,20.8l-0.8-1.1l0.8-1.5l1.5,0.8v-3.1l1.5-0.8l1.5,1.9l1.9,2.3L45.2,20l-3.8,0.8v-1.9L39.9,20.8z M19.6,16.9
+                c3.8-3.8,8.8-6.9,14.1-9.2c-0.4,0.8-1.1,1.5-1.1,1.5s-1.1,0-3.4,2.3c-1.9,2.3-1.5,1.9-1.9,2.3c-0.8,0.8-0.4,1.1-1.5,1.9
+                c-1.5,0.8-1.9,1.9-1.9,1.9l-1.9,0.4l-1.5-0.4c0,0-1.1,0.4-1.1-0.4C19.2,17.3,19.2,16.9,19.6,16.9z M13.9,23.4c0,0.8-0.8,0.8,0,2.7
+                c1.1,1.9,0.4,3.1,0.4,3.1s-3.1,1.9-3.4,2.3c-0.8,0.4-1.9,2.3-1.1,1.9c0.8-0.8,1.9-1.1,1.1,0.4c-1.1,1.1-2.7,3.4-2.7,4.2
+                c-0.4,0.8-2.3,3.1-2.3,3.8c0,1.1-0.8,3.4-0.4,4.2c0,0.4-0.4,2.3-0.8,3.1c0.4-9.6,3.4-18.3,8.8-25.6C13.9,23.4,13.9,23.4,13.9,23.4z
+                 M95.3,50.2c0,0.8,0,1.5,0,2.3c-0.4-0.8-0.8-1.5-1.1-2.3c0-0.4-1.1-3.1-1.1-3.1s-0.8-1.1-1.5-1.5c-0.8-0.4-1.1-1.1-2.3-1.9
+                c-1.5-0.8-1.9-1.1-3.1-1.1c-0.8,0-1.9-1.1-3.1-1.9c-1.1-0.8-1.5-0.4-1.5-0.4s1.5,1.9,1.5,2.7c0,0.4,1.5,1.1,3.1,0.8
+                c0,0,1.1,1.9,1.5,2.7c0.4,0.4,0,0.8-1.1,1.5c-1.1,0.8-0.8,0.4-1.5,1.1c-0.4,0.4-2.3,1.1-2.7,1.5c-0.4,0.4-2.7,1.5-3.4,0.4
+                c-0.8-0.4-0.4-1.5-0.8-2.3c-0.4-0.4-3.8-5.7-5.7-8.4c-0.4-0.4-0.8-1.5-1.5-1.9C70.4,38,72,38,72,38s0-1.1,0-1.9
+                c-0.4-0.8,0-1.9,0-1.9s-1.5,0.8-1.9,1.1c-0.8,0.4-1.1-0.8-1.9-1.5c-0.8-0.8-1.1-1.9-1.5-2.7c0-0.8,0.8-1.1,0.8-1.1l1.5-0.8
+                c0,0,1.9-0.4,3.1-0.4c1.1,0.4,3.1,0.4,3.1,0.4s0.8-1.1,0-1.5c-0.8-0.8-2.3-1.5-3.1-1.5c-0.4,0.4,0.4-0.8,1.1-1.5h-1.9
+                c0,0-1.5,0.8-1.9,0.8c-0.8,0.4-1.5,0.8-2.3,1.5s0.4,1.9-0.4,2.3c-0.8,0.4-1.1,0.4-1.5,0.8c-0.8,0-2.3,0-2.3,0c-1.5,0-0.4,1.5,0,2.3
+                l-1.5-1.9L60.5,28c0,0-1.5-1.1-2.3-1.5c-0.8-0.4-2.7-1.5-2.7-1.5v1.5l1.9,2.3h0.4l0.8,1.1l-2.3,0.4v-1.5c-1.9-0.4-1.5-1.1-1.5-1.1
+                c-0.8-0.4-1.9-1.1-1.9-1.1s-1.9,0.4-2.3,0.4c-0.8,0.4-0.8,0.8-1.9,1.1c-0.8,0.4-1.5,0.8-1.9,1.1c0,0.8-1.1,2.3-1.9,3.1
+                c-0.8,0.4-1.9,0.4-2.7,0.4c-0.4,0-2.7-0.8-2.7-0.8v-2.7c0,0,0.4-1.9,0-2.3l1.5-0.4l2.7-0.4l0.4-0.4l1.1-1.5c0,0-1.1-0.8-0.4-1.9
+                c0.4-0.8,1.9-0.8,2.7-1.1c0.8-0.8,1.9-1.1,1.9-1.1s1.1-0.8,2.3-1.9c0,0,0.8-0.8,1.9-1.1c0,0,2.7,2.7,3.4,2.7c0.4,0,2.3-1.1,2.3-1.1
+                s0.4-1.5,0.4-1.9c-0.4-0.8-1.1-2.3-1.1-2.3s-0.4,0.8-1.1,1.5c-0.4,0.8-0.8,1.5-0.8,1.5s-2.3-0.4-2.7-0.8c0-0.4-0.4-1.5-0.4-1.9
+                c-0.4-0.4-1.5-0.4-2.7,0c-1.1,0.4,0-1.9,0-1.9s1.1-1.1,1.9-1.1c0.8,0,2.3-1.1,2.7-1.1c0.8-0.4,3.1-1.1,3.8-1.1
+                c0.8,0,1.9,0.4,2.3,0.4c0.4,0,2.7,0,2.7,0h3.4c0,0,3.1,1.1,2.3,1.5c0,0,1.1,0.8,1.5,1.5c0.4,0.4,1.5-0.8,2.3-1.1
+                C86.9,19.6,95.3,33.8,95.3,50.2z M50.2,0.5C22.7,0.5,0.5,22.7,0.5,50.2c0,27.1,22.2,49.3,49.7,49.3c27.1,0,49.3-22.2,49.3-49.3
+                C99.5,22.7,77.3,0.5,50.2,0.5z"/>
+            </svg>
+          </figure>
+        </div>
       </div>
       <div class="m-company co-1">
-        <a class="m-co-wrapper" href="<?php bloginfo('url'); ?>/?p=45"><span class="a-title">Perfect Solutions Through the Line Marketing Agency</span></a>
+        <div class="m-co-wrapper">
+          <a data-tilt="" href="<?php bloginfo('url'); ?>/?p=45" class="a-company-link">
+            <span class="a-title">Perfect Solutions Through the Line Marketing Agency</span>
+          </a>
+        </div>
       </div>
       <div class="m-company co-2">
-        <a class="m-co-wrapper" href="<?php bloginfo('url'); ?>/?p=46"><span class="a-title">De Leca Media Agency</span></a>
+        <div class="m-co-wrapper">
+          <a data-tilt="" href="<?php bloginfo('url'); ?>/?p=46" class="a-company-link">
+            <span class="a-title">De Leca Media Agency</span>
+          </a>
+        </div>
       </div>
       <div class="m-company co-3">
-        <a class="m-co-wrapper" href="<?php bloginfo('url'); ?>/?p=47"><span class="a-title">Perfect Solutions Integrated Marketing Communications Agency Mauritius</span></a>
+        <div class="m-co-wrapper">
+          <a data-tilt="" href="<?php bloginfo('url'); ?>/?p=47" class="a-company-link">
+            <span class="a-title">Perfect Solutions Integrated Marketing Communications Agency Mauritius</span>
+          </a>
+        </div>
       </div>
       <div class="m-company co-4">
-        <a class="m-co-wrapper" href="<?php bloginfo('url'); ?>/?p=48"><span class="a-title">Perfect Solutions Project Management Consultancy</span></a>
+        <div class="m-co-wrapper">
+          <a data-tilt="" href="<?php bloginfo('url'); ?>/?p=48" class="a-company-link">
+            <span class="a-title">Perfect Solutions Project Management Consultancy</span>
+          </a>
+        </div>
       </div>
       <div class="m-company co-5">
-        <a class="m-co-wrapper" href="<?php bloginfo('url'); ?>/?p=49"><span class="a-title">Perfect Solutions Live Management</span></a>
+        <div class="m-co-wrapper">
+          <a data-tilt="" href="<?php bloginfo('url'); ?>/?p=49" class="a-company-link">
+            <span class="a-title">Perfect Solutions Live Management</span>
+          </a>
+        </div>
       </div>
     </div>
   </div>
