@@ -68,9 +68,16 @@
     .o-puzzle { display: block; width: 100%; max-width: 600px; margin: 0 auto; }
   }
 
-  // A.1.7. TIMELINE BLOCK --------------------------------
-  &.o-timeline-section {
-    .o-timeline-wrapper {  }
+  // A.1.7. VALUES BLOCK ----------------------------------
+  &.values-section { padding-bottom: 50px;
+    .a-btn { display: block; max-width: 200px; margin: 0 auto; }
+  }
+
+  // A.1.8. BRANDS BLOCK ----------------------------------
+  &.brands-section { padding-bottom: 50px;
+    .m-map-africa { @include aspect-ratio(60%, 100%); margin: 0 auto;
+      #africa-map { @include position(absolute, 0); width: 100%; height: 100%; }
+    }
   }
 
 }
