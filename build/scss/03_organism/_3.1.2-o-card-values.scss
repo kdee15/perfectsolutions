@@ -1,22 +1,64 @@
-// 3. ORGANISM [ 3.1. CARDS ] #########################################################################################
+// 3. ORGANISM [ 3.1.2. VALUES CARDS ] ################################################################################
 
 // A. GLOBAL STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // A.1. GENERAL CARDS -------------------------------------------------------------------------------------------------
-
-.o-header { width: 100%; z-index: 0;
-  &.o-home-header { position: absolute; height: 100vh;
-    .m-figure-logo { width: 30%; max-width: 350px; margin: 0 auto; display: block;
-      path { fill: $kd-blue; }
+.preloader {
+  .o-values-card {
+    .o-card {
+      .m-card-body { opacity: 0; transition: 0.3s; }
     }
-    .m-header-text { color: white; text-align: center; margin-top: 50px; }
-    .o-navigation { margin-top: 50px; }
-    .social-media { display: block; margin: 20px auto 0; text-align: center; }
   }
-
-  //.m-figure { width: 250px; padding: 0; margin: $base 0 $base $base; transition: 0.3s;  }
-
 }
+
+.o-values-card {
+  .o-card {
+    .m-card-image { padding: 15px 0;
+      img { margin: 10px auto; height: 100%; width: auto; max-height: 80px; display: block; }
+    }
+    .m-card-body { opacity: 0;
+      .a-title { text-align: center; }
+      .a-copy {
+        p { font-size: 14px; }
+      }
+    }
+  }
+  &:nth-child(1) {
+    .m-card-image { background: $cream; }
+    .m-card-body {
+      &:after { background: $cream; }
+    }
+  }
+  &:nth-child(2) {
+    .m-card-image { background: $green; }
+    .m-card-body {
+      &:after { background: $green; }
+    }
+  }
+  &:nth-child(3) {
+    .m-card-image { background: $gold; }
+    .m-card-body {
+      &:after { background: $gold; }
+    }
+  }
+  &:nth-child(4) {
+    .m-card-image { background: $red; }
+    .m-card-body {
+      &:after { background: $red; }
+    }
+  }
+}
+
+.kd-app {
+  .o-values-card {
+    .o-card {
+      .m-card-body { opacity: 1; transition: 0.3s;position: relative;
+        &:after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 10px; }
+      }
+    }
+  }
+}
+
 
 // A.1. END -----------------------------------------------------------------------------------------------------------
 
@@ -24,25 +66,15 @@
 
 // B. MAX-WIDTH: 767px ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-@media ($sm-dn) {
+@media ($xs-dn) {}
 
-  .o-header {
-    &.o-home-header {
-      .m-figure-logo { width: 80%; }
-      .m-header-text {
-        h1 { font-size: 28px; }
-      }
-      .social-media { margin: 20px auto 0; }
-    }
-  }
-
-}
+@media ($sm-dn) {} 
 
 // B. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // C. MIN-WIDTH: 768px ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-@media ($sm-up) {}
+@media ($sm-up) {} 
 
 // C. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -54,14 +86,8 @@
 
 // E. MIN-WIDTH: 1200px +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-@media ($lg-up) {}
+@media ($lg-up) {} 
 
 // E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-// F. MIN-WIDTH: 1900px +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-@media ($hd-up) {}
-
-// F. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // END OF FILE ########################################################################################################

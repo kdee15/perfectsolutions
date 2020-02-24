@@ -1,5 +1,5 @@
 <section class="o-section o-timeline-section">
-  <div class="section-header">
+  <div class="section-header animated fadeInUp">
     <h2>MILESTONES</h2>
   </div>
 
@@ -25,7 +25,7 @@
           <article class="m-timeline-item">
             <aside class="m-timeline-date">
               <div class="m-card timeline-date-card">
-                <span class="timeline-date"><?php the_title(); ?></span>
+                <span class="timeline-date"><?php the_time( 'Y' ); ?></span>
               </div>
             </aside>
             <aside class="m-timeline-bar">
@@ -35,18 +35,12 @@
             <aside class="m-timeline-record reveal-on-show">
               <div class="m-card timeline-card toggle-content" id="tl-<?php the_id(); ?>">
                 <div class="m-image-wrap">
-                  <div class="m-card-image" style="background-image:url('http://placehold.it/550x200?=TEXT');">
+                  <div class="m-card-image" style="background-image:url('<?php echo get_the_post_thumbnail_url($post->ID, 'single-post-thumbnail'); ?>');">
                   </div>
                 </div>
                 <div class="m-card-body">
-                  <span class="a-timeline-tag new">NEW</span>
-                  <ul class="m-square-bullets">
-                    <li class="a-list-item">
-                      <span class="a-item-content"><?php the_title(); ?></span>
-                      <span class="a-item-content date"><?php the_title(); ?></span>
-                    </li>
-                  </ul>
-
+                  <h3 class="a-title"><?php the_title(); ?></h3>
+                  <?php the_content(); ?>
                 </div>
               </div>
             </aside>

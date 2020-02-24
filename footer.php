@@ -2,7 +2,20 @@
 
 <footer class="o-footer">
     <div class="container">
-      <p class="col-12 a-credits">&copy; Copyright 2019. Site by <a href="http://www.kdee.co.za" target="_blank">KDee</a>.</p>
+      <div class="row">
+        <aside class="col-12 col-md-4">
+          <ul class="m-contact-info">
+            <li class="m-list-item"><span class="a-icon mail"></span><span>name@contact.co.za</span></li>
+            <li class="m-list-item"><span class="a-icon tel"></span><span>+00000000000</span></li>
+          </ul>
+        </aside>
+        <aside class="col-12 col-md-4">
+          <p>© Copyright 2020 Perfect Solutions TTL</p>
+        </aside>
+        <aside class="col-12 col-md-4">
+          <?php get_template_part( 'inc/social-media' ); ?>
+        </aside>
+      </div>
     </div>
 </footer>
 

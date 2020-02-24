@@ -16,11 +16,16 @@
 
 .m-map-africa { position: relative;
   .tog-div { cursor: pointer;
-    &.on, &:hover { fill: $gold; }
+    &.on, &:hover { fill: $green; }
   }
 
-  .o-brand-info { position: absolute; bottom: 20%; left: 20%; background: $grey-80; padding: 20px; color: white;
-    * { color: white; }
+  .o-brand-info {
+    &#a-za {position: absolute; bottom: 30%; left: 35%; background: $green; padding: 20px; color: white;
+      * { color: white; }
+    }
+    &#a-ke {position: absolute; top: 30%; right: 35%; background: $red; padding: 20px; color: white;
+      * { color: white; }
+    }
   }
 }
 

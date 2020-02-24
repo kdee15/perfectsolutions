@@ -19,7 +19,9 @@ get_header();
 
 <header class="o-header o-home-header">
   <div class="o-logo-card">
-    <?php get_template_part( 'inc/3d-spin' ); ?>
+    <figure class="m-site-logo">
+      <img src="<?php echo get_template_directory_uri(); ?>/dist/images/site/logo-icon.png" class="a-card-image" />
+    </figure>
   </div>
 </header>
 

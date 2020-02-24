@@ -58,7 +58,7 @@ $ald-med: arial;
 
         }
       }
-      .m-card-body { background: white;
+      .m-card-body { background: white; padding: 10px 15px;
         .m-square-bullets {
           .a-list-item { padding: 6px 25px 6px 75px;
             &:after { left: 45px; }
@@ -122,10 +122,14 @@ $ald-med: arial;
 
   .m-timeline-date {
     .m-card {
-      &.timeline-date-card { margin-bottom: 50px;
-        .timeline-date {  }
+      &.timeline-date-card { margin-bottom: 25px;
+        .timeline-date { padding: 15px 0; }
       }
     }
+  }
+
+  .m-timeline-bar {
+    .a-timeline-bullet { top: 20px; }
   }
 
 }

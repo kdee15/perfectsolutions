@@ -180,7 +180,7 @@ add_action( 'init', 'services' );
 
 // A.4.3. End ---------------------------------------------
 
-// A.4.4. MILESTONES ----------------------------------------
+// A.4.4. MILESTONES --------------------------------------
 
 function milestones() {
   $labels = array(
@@ -213,7 +213,7 @@ add_action( 'init', 'milestones' );
 
 // A.4.4. End ---------------------------------------------
 
-// A.4.5. MILESTONES ----------------------------------------
+// A.4.5. MILESTONES --------------------------------------
 
 function testimonials() {
   $labels = array(
@@ -245,7 +245,8 @@ function testimonials() {
 add_action( 'init', 'testimonials' );
 
 // A.4.5. End ---------------------------------------------
-// A.4.5. MILESTONES ----------------------------------------
+
+// A.4.5. MILESTONES --------------------------------------
 
 function featuredPromo() {
   $labels = array(
@@ -275,6 +276,39 @@ function featuredPromo() {
 }
 
 add_action( 'init', 'featuredPromo' );
+
+// A.4.5. End ---------------------------------------------
+
+// A.4.6. VALUES ------------------------------------------
+
+function values() {
+  $labels = array(
+    'Title'              => _x( 'Values', 'post type general name' ),
+    'singular_name'      => _x( 'Value', 'post type singular name' ),
+    'add_new'            => __( 'Add New', 'Value' ),
+    'add_new_item'       => __( 'Add New Value' ),
+    'edit_item'          => __( 'Edit Values' ),
+    'new_item'           => __( 'New Value' ),
+    'all_items'          => __( 'All Values' ),
+    'view_item'          => __( 'View Value' ),
+    'parent_item_colon'  => '',
+    'menu_name'          => 'Values'
+  );
+
+  $args = array(
+    'labels'         => $labels,
+    'description'   => 'A list of Values',
+    'public'        => true,
+    'menu_position' => 6,
+    'supports'      => array( 'title', 'editor', 'thumbnail', 'taxonomies', 'categories', 'media', 'content' ),
+    'has_archive'   => true,
+
+  );
+
+  register_post_type( 'values', $args );
+}
+
+add_action( 'init', 'values' );
 
 // A.4.5. End ---------------------------------------------
 

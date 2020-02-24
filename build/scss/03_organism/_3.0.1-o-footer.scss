@@ -4,7 +4,22 @@
 
 // A.1. GENERAL CARDS -------------------------------------------------------------------------------------------------
 
-.o-footer { background-color: $grey-33; padding: $base-md 0; margin-top: 0;
+.o-footer { background-color: black; padding: $base-md 0; margin-top: 0;
+  ul { list-style-type: none; padding: 0; margin: 0;
+    &.m-contact-info {
+      .m-list-item {
+        span { display: inline-block; padding-left: 5px; vertical-align: middle; color: white; font-size: 13px;
+          &.a-icon { padding-left: 0; background-repeat: no-repeat; background-position: center center; width: 20px; height: 20px;
+            &.mail { background-image: url('../images/icons/icon--email.svg'); background-size: 100% 100%; }
+            &.tel { background-image: url('../images/icons/icon--mobile.svg'); background-size: 70% 70%; }
+          }
+        }
+      }
+    }
+    &.o-aside {
+      &.o-social-media { position: relative; text-align: right; top: 0; right: 0; }
+    }
+  }
   h6 { color: $grey-f2; }
   p { color: white; }
   a { color: white;

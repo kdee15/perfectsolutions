@@ -11,7 +11,7 @@
     &:hover { box-shadow: 0 0 5px $grey-ce;
       .m-card-image {
         &.scalable {
-          .a-image { transform: scale(1.1); transition: 0.3s; }
+          .a-image, img { transform: scale(1.1); transition: 0.3s; }
         }
       }
       .m-card-body { background: darken($grey-f7, 1.5%); transition: 0.3s; }

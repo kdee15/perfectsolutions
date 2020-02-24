@@ -7,7 +7,8 @@ function initEqualheightsFunctions() {
 
   if($(window).width() > 767) {
 
-    equalheight('.classname');
+    equalheight('.o-values-card .m-card-body .a-title');
+    equalheight('.o-values-card .m-card-body .a-copy');
 
   }
 
