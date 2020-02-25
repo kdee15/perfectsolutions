@@ -18,6 +18,11 @@
   .tog-div { cursor: pointer;
     &.on, &:hover { fill: $green; }
   }
+	
+	.a-path{ fill-rule:evenodd; clip-rule:evenodd; fill:#E6E6E6; stroke:#B3B3B3; stroke-linejoin:round; 
+		&.a-footprint{ fill-rule:evenodd; clip-rule:evenodd; fill:$gold; stroke: $grey-80 ; stroke-linejoin:round; }
+	}
+	
 
   .o-brand-info {
     &#a-za {position: absolute; bottom: 30%; left: 35%; background: $green; padding: 20px; color: white;

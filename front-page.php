@@ -41,7 +41,6 @@ get_header();
 
   <?php get_template_part( 'section-values' ); ?>
   <?php get_template_part( 'section-timeline' ); ?>
-  <?php get_template_part( 'section-companies' ); ?>
   <?php get_template_part( 'section-brands' ); ?>
   <?php get_template_part( 'section-contact' ); ?>
 

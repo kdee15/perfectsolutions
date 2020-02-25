@@ -9,8 +9,9 @@ html, body {
   font-weight: 100;
   background: $black;
   overflow-x: hidden;
+	width: 100%;
   -webkit-overflow-scrolling: touch;
-  overflow: auto;
+//  overflow: auto;
 }
 
 
