@@ -22,7 +22,9 @@ get_header();
     <figure class="m-site-logo">
       <img src="<?php echo get_template_directory_uri(); ?>/dist/images/site/logo-icon.png" class="a-card-image" />
     </figure>
+    <span class="a-logo-text">PERFECT SOLUTIONS</span>
   </div>
+  <?php get_template_part( 'inc/social-media' ); ?>
 </header>
 
 <?php get_template_part( 'inc/navigation-home' ); ?>
@@ -42,6 +44,7 @@ get_header();
   <?php get_template_part( 'section-values' ); ?>
   <?php get_template_part( 'section-timeline' ); ?>
   <?php get_template_part( 'section-brands' ); ?>
+  <?php get_template_part( 'section-services' ); ?>
   <?php get_template_part( 'section-contact' ); ?>
 
   <!-- C.3. END ------------------------------------- -->

@@ -42,6 +42,21 @@ function initCarouselFunctions() {
 
   // A.2.2. END -----------------------------------------
 
+  // A.1.2. TESTIMONIAL CAROUSEL ------------------------
+
+  $('.service-carousel').owlCarousel({
+    animateOut: 'slideOutDown',
+    animateIn: 'flipInX',
+    items:5,
+    nav: true,
+    dots: true,
+    loop:true,
+    center: true,
+    smartSpeed:450
+  })
+
+  // A.2.2. END -----------------------------------------
+
 // A.3. END -----------------------------------------------------------------------------------------------------------
 
 }

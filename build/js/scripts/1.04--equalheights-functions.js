@@ -9,6 +9,7 @@ function initEqualheightsFunctions() {
 
     equalheight('.o-values-card .m-card-body .a-title');
     equalheight('.o-values-card .m-card-body .a-copy');
+    equalheight('.service-carousel .owl-item');
 
   }
 

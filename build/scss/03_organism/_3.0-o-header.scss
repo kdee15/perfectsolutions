@@ -5,9 +5,12 @@
 // A.1. GENERAL CARDS -------------------------------------------------------------------------------------------------
 
 .o-header { width: 100%; z-index: 0;
-  &.o-home-header { position: absolute; height: 100vh;
-    .m-figure-logo { width: 30%; max-width: 350px; margin: 0 auto; display: block;
-      path { fill: $kd-blue; }
+  &.o-home-header { position: absolute; height: 100vh; left: 50%; transform: translateX(-50%); max-width: 1200px;
+    .o-logo-card { @include middle-align(); width: 100%;
+      .m-site-logo { @include aspect-ratio(20%, 100%); margin: 0 auto;
+        .a-card-image { width: 100%; height: auto; animation: flat-spin 4s linear infinite;  @include position(absolute, 0); }
+      }
+      .a-logo-text { font-size: 60px; color: white; display: block; text-align: center; text-shadow: 0 0 2px black; }
     }
     .m-header-text { color: white; text-align: center; margin-top: 50px; }
     .o-navigation { margin-top: 50px; }
@@ -19,6 +22,26 @@
 }
 
 // A.1. END -----------------------------------------------------------------------------------------------------------
+
+// A.2. STICKY LAYOUT -------------------------------------------------------------------------------------------------
+
+.sticky {
+
+  // A.2.1. HEADER ----------------------------------------
+  .o-header {
+    &.o-home-header { height: 10%; transition: 0.3s; z-index: 10; position: fixed;
+      .o-logo-card { top: 5px; left: 50%; transform: translateX(-50%) translateY(0%); width: 100%; transition: 0.3s; max-width: 1200px;
+        .m-site-logo { width: 3%; vertical-align: middle; display: inline-block; margin: 0; }
+        .a-logo-text { display: inline-block; vertical-align: middle; margin-left: 10px; font-size: 20px; text-align: left; }
+      }
+    }
+  }
+  // A.2.2. SOCIAL MEDIA ----------------------------------
+  .o-social-media { opacity: 1; transition: 0.3s; }
+}
+
+// A.2. END -----------------------------------------------------------------------------------------------------------
+
 
 // A. GLOBAL STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 

@@ -2,22 +2,6 @@
 
 // A. GLOBAL STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-// A.2. STICKY LAYOUT -------------------------------------------------------------------------------------------------
-
-.sticky {
-
-  // A.2.1. HEADER ----------------------------------------
-  .o-header {
-    &.o-home-header { height: 10%; transition: 0.3s; z-index: 10; position: fixed;
-      .o-logo-card { top: 15px; left: 50%; transform: translateX(-50%) translateY(0%); width: 8%; transition: 0.3s; }
-    }
-  }
-  // A.2.2. SOCIAL MEDIA ----------------------------------
-  .o-social-media { opacity: 1; transition: 0.3s; }
-}
-
-// A.2. END -----------------------------------------------------------------------------------------------------------
-
 // A.3. DEFAULT PAGE LAYOUT -------------------------------------------------------------------------------------------
 
 .p-main { position: relative; z-index: 1; background: white; margin-top: 100vh; }

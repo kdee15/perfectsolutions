@@ -1,5 +1,3 @@
-<?php get_template_part( 'inc/social-media' ); ?>
-
 <div class="o-hamburger m-hamburger--spin burger-nav" name="burger-nav">
   <div class="m-hamburger-box">
     <div class="m-hamburger-inner"></div>

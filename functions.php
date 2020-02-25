@@ -310,7 +310,39 @@ function values() {
 
 add_action( 'init', 'values' );
 
-// A.4.5. End ---------------------------------------------
+// A.4.6. End ---------------------------------------------
+
+// A.4.7. VALUES ------------------------------------------
+
+function subsidiaries() {
+  $labels = array(
+    'Title'              => _x( 'Subsidiaries', 'post type general name' ),
+    'singular_name'      => _x( 'Subsidiary', 'post type singular name' ),
+    'add_new'            => __( 'Add New', 'Subsidiary' ),
+    'add_new_item'       => __( 'Add New Subsidiary' ),
+    'edit_item'          => __( 'Edit Subsidiaries' ),
+    'new_item'           => __( 'New Subsidiary' ),
+    'all_items'          => __( 'All Subsidiaries' ),
+    'view_item'          => __( 'View Subsidiary' ),
+    'parent_item_colon'  => '',
+    'menu_name'          => 'Subsidiaries'
+  );
+
+  $args = array(
+    'labels'         => $labels,
+    'description'   => 'A list of Subsidiaries',
+    'public'        => true,
+    'menu_position' => 6,
+    'supports'      => array( 'title', 'editor', 'thumbnail', 'taxonomies', 'categories', 'media', 'content' ),
+    'has_archive'   => true,
+  );
+
+  register_post_type( 'subsidiaries', $args );
+}
+
+add_action( 'init', 'subsidiaries' );
+
+// A.4.7. End ---------------------------------------------
 
 // A.4 END ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 

@@ -69,12 +69,6 @@
   100% { transform: rotate(360deg); }
 }
 
-.o-logo-card { @include middle-align(); @include aspect-ratio(20%, 100%);
-  .m-site-logo { @include position(absolute, 0);
-    .a-card-image { width: 100%; height: auto; animation: flat-spin 4s linear infinite; }
-  }
-}
-
 .m-3d-spin-card {
 
   @include position(absolute, 0);
