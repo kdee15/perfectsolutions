@@ -139,35 +139,6 @@ $BarRounded:            0px;
 
 // A.3. END -----------------------------------------------
 
-// A.4. TRANSITIONS ---------------------------------------
-
-body { transition: 0.3s;
-  .p-main { transform: translateX(0); transition: 0.3s; }
-  &.p-fixed {
-
-    // A.4.1. HEADER BACKGROUND TRANSITION ----------------
-    .o-header {
-      &:after { transform: translateX(-300px); transition: 0.3s; }
-      &:before { transform: translateX(-300px); transition: 0.3s; background-color: rgba(0,0,0,0.3); }
-    }
-
-    .a-burger-menu {
-      .navbar-nav { @include vertical-align(absolute); display: block; left: 0; right: 0;
-        .navbar-nav-inner { list-style-type: none; margin: 0 auto; padding: 0;
-
-          // A.4.1.1 USER STATUS SETTINGS ---------------------
-          .a-user-logged-in { color: $white; transition: 0.3s; }
-
-        }
-      }
-    }
-
-    // A.4.1. BODY TRANSITION -----------------------------
-    .p-main { @include position(absolute, 0); transform: translateX(-300px); transition: 0.3s; }
-  }
-}
-
-// A.4. END -----------------------------------------------
 
 // A. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -177,15 +148,7 @@ body { transition: 0.3s;
 
 @media ($xs-dn) {
 
-  body.p-fixed {
-    .o-header {
-      &:after { transform: translateX(-100%); }
-      &:before { transform: translateX(-100%); }
-    }
-  }
-
   .a-burger-menu { max-width: none; }
-
   .a-burger { top: 10px; right: 15px; }
 
 }
@@ -234,17 +197,7 @@ body { transition: 0.3s;
 
 // D. MIN-WIDTH: 992px ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-@media ($md-dn) {
-
-  body.p-fixed {
-    .toggle-content {
-      &.a-burger-menu {
-        .navbar-nav { top: 0; transform: translateY(0); height: 100%; overflow-y: auto; }
-      }
-    }
-  }
-
-}
+@media ($md-dn) {}
 
 
 @media ($md-up) {}

@@ -20,7 +20,7 @@
 
 // A.3. DEFAULT PAGE LAYOUT -------------------------------------------------------------------------------------------
 
-.p-main { position: relative; z-index: 1; background: white; top: 100vh; }
+.p-main { position: relative; z-index: 1; background: white; margin-top: 100vh; }
 
 .o-section { position: relative;
   &.o-skew {

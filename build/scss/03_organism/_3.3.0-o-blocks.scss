@@ -9,7 +9,7 @@
   .o-content-container { margin: 100px auto 50px; }
 
   // A.1.0. HERO BLOCK ------------------------------------
-  &.front-section { @include position(fixed, 0);
+  &.front-section { @include position(relative, 0);
     .m-icon {
       &.mouse-icon { position: absolute; bottom: 5%; width: 30px; height: 30px; @include center-align(); }
     }
