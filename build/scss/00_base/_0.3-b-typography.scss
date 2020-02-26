@@ -6,12 +6,33 @@
 
 $default: Roboto, Helvetica, 'Arial Black', sans-serif;
 
+@font-face {
+  font-family: exo-reg, Helvetica, 'Arial', sans-serif;
+  src: url('../fonts/site/Exo2-Regular.otf') format("opentype");
+  src: url('../fonts/site/Exo2-Regular.ttf') format("truetype");
+  src: url('../fonts/site/Exo2-Regular.woff') format("woff");
+}
+
+@font-face {
+  font-family: exo-med;
+  src: url('../fonts/site/Exo2-Medium.otf') format("opentype");
+  src: url('../fonts/site/Exo2-Medium.woff') format("woff");
+}
+
+@font-face {
+  font-family: exo-sem;
+  src: url('../fonts/site/Exo2-SemiBold.otf') format("opentype");
+  src: url('../fonts/site/Exo2-SemiBold.woff') format("woff");
+}
+
 
 h1 { font-size: 40px;
   a { text-decoration: none; color: black;
     &:hover { text-decoration: none; color: black; }
   }
 }
+
+h2 { font-family: exo-sem; }
 
 // A. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 

@@ -19,6 +19,7 @@ function initTimeline() {
     if (window.innerWidth > 767) {
       $('.o-timeline-item-wrapper:nth-child(-n+3) .toggle-both').addClass('on');
       $('.o-timeline-item-wrapper:nth-child(-n+3) .toggle-content').addClass('on');
+      $('.o-timeline-item-wrapper:nth-child(n+10)').addClass('hide');
     }
 
   });
@@ -31,8 +32,14 @@ function initTimeline() {
 
   });
 
-  $('.o-timeline-section .m-cta-wrapper .a-timeline-bullet').on('click touchstart', function () {
+  $('.o-timeline-section .m-cta-wrapper.a-view-more .a-timeline-bullet').on('click touchstart', function () {
     $('.o-timeline-item-wrapper').removeClass('hide');
+    $('.o-timeline-section .m-cta-wrapper').toggleClass('show');
+  });
+
+  $('.o-timeline-section .m-cta-wrapper.a-view-less .a-timeline-bullet').on('click touchstart', function () {
+    $('.o-timeline-item-wrapper:nth-child(n+10)').addClass('hide');
+    $('.o-timeline-section .m-cta-wrapper').toggleClass('show');
   });
   
 }

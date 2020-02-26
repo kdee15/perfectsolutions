@@ -17,6 +17,11 @@ $ald-bld: arial;
       &:before { transform: translateX(-50%) translateY(-50%) rotate(90deg); }
     }
     .a-cta-text { display: block; width: 100%; }
+    &.a-view-less {
+      .a-timeline-bullet {
+        &:before { display: none; }
+      }
+    }
   }
 }
 
@@ -75,7 +80,9 @@ $ald-bld: arial;
 @media ($sm-up)  {
 
   .o-timeline-section {
-    .m-cta-wrapper { display: none; }
+    .m-cta-wrapper { display: none;
+      &.show { display: block; }
+    }
   }
 
   .o-timeline-item-wrapper {
@@ -108,7 +115,7 @@ $ald-bld: arial;
     &:last-of-type {
       .m-timeline-item {
         .m-timeline-bar {
-          .a-timeline-track { display: none; }
+          .a-timeline-track {  }
         }
       }
     }

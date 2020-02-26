@@ -45,6 +45,7 @@ get_header();
   <?php get_template_part( 'section-timeline' ); ?>
   <?php get_template_part( 'section-brands' ); ?>
   <?php get_template_part( 'section-services' ); ?>
+  <?php get_template_part( 'section-promos' ); ?>
   <?php get_template_part( 'section-contact' ); ?>
 
   <!-- C.3. END ------------------------------------- -->
