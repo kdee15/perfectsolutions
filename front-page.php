@@ -15,22 +15,6 @@ get_header();
 
 <?php get_template_part( 'inc/preloader' ); ?>
 
-<!-- C.1. HEADER ---------------------------------- -->
-
-<header class="o-header o-home-header">
-  <div class="o-logo-card">
-    <figure class="m-site-logo">
-      <img src="<?php echo get_template_directory_uri(); ?>/dist/images/site/logo-icon.png" class="a-card-image" />
-    </figure>
-    <span class="a-logo-text">PERFECT SOLUTIONS</span>
-  </div>
-  <?php get_template_part( 'inc/social-media' ); ?>
-</header>
-
-<?php get_template_part( 'inc/navigation-home' ); ?>
-
-<!-- C.1. END ------------------------------------- -->
-
 <!-- C.2. SECTIONS -------------------------------- -->
 
 <?php get_template_part( 'section-front' ); ?>

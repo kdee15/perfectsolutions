@@ -1,5 +1,23 @@
 <section class="o-section front-section" style="height:100vh;">
 
+  <header class="o-header o-home-header">
+    <figure class="m-brand-logo">
+      <?php get_template_part( 'inc/svg--logo-ps' ); ?>
+    </figure>
+    <?php get_template_part( 'inc/social-media' ); ?>
+
+    <div class="o-hamburger m-hamburger--spin burger-nav" name="burger-nav">
+      <div class="m-hamburger-box">
+        <div class="m-hamburger-inner"></div>
+      </div>
+    </div>
+
+  </header>
+
+  <?php get_template_part( 'inc/navigation-home' ); ?>
+
+
+
   <figure class="m-icon mouse-icon">
     <svg version="1.1" class="icon-mouse" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
          viewBox="0 0 100 98" style="enable-background:new 0 0 100 98;" xml:space="preserve">

@@ -68,6 +68,12 @@
   75% { transform: rotate(270deg); }
   100% { transform: rotate(360deg); }
 }
+@keyframes flat-spin-3d {
+  25% { transform: rotate3d(0,0,1,90deg); }
+  50% { transform: rotate3d(0,0,1,180deg); }
+  75% { transform: rotate3d(0,0,1,270deg); }
+  100% { transform: rotate3d(0,0,1,360deg); }
+}
 
 .m-3d-spin-card {
 

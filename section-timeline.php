@@ -1,6 +1,6 @@
 <section class="o-section o-timeline-section">
   <div class="section-header animated fadeInUp">
-    <h2>MILESTONES</h2>
+    <h2>CURRENT PROMOTION</h2>
   </div>
 
   <div class="container o-timeline-wrapper">

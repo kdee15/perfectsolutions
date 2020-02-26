@@ -19,7 +19,8 @@
   &.section-footprint { background: black; overflow: auto; padding-bottom: 10px; }
 
   // A.1.2. PROMO BLOCK -----------------------------------
-  &.section-promos { padding: 100px 0 50px; background: $gold;
+  &.section-promos { padding: 0 0 50px; background: $cream;
+    .section-header {  }
     .m-features {
       .m-promo-player { display: block; margin: 0 auto 30px; outline: none!important; }
       span { display: block; font-size: 12px; text-align: center; }

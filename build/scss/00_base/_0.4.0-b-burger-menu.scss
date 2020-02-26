@@ -116,8 +116,13 @@ $BarRounded:            0px;
   transform: translateX(100%);
   transition: 0.3s;
   z-index: 10000;
-
   &.on { transition: 0.3s; transform: translateX(0%); }
+
+  &.horizontal {
+    transform: translateY(-100%) translateX(0%); max-width: none; z-index: 1; max-height: 100px; z-index: 5; overflow: hidden;
+    &.on { transform: translateX(0%) translateY(0%); }
+  }
+
   &.collapse { transition: 0s; }
   &.show { transform: translateX(0%); transition: 0s; }
 

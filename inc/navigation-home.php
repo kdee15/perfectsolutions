@@ -1,10 +1,4 @@
-<div class="o-hamburger m-hamburger--spin burger-nav" name="burger-nav">
-  <div class="m-hamburger-box">
-    <div class="m-hamburger-inner"></div>
-  </div>
-</div>
-
-<div class="toggle-content a-burger-menu" id="burger-nav">
+<div class="toggle-content a-burger-menu horizontal" id="burger-nav">
 
   <!-- BURGER MENU ---------------------------------- -->
 
