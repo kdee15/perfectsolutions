@@ -47,12 +47,20 @@ function initCarouselFunctions() {
   $('.service-carousel').owlCarousel({
     animateOut: 'slideOutDown',
     animateIn: 'flipInX',
-    items:5,
     nav: true,
     dots: true,
     loop:true,
     center: true,
-    smartSpeed:450
+    smartSpeed:450,
+    responsive : {
+      0 : {
+        items : 1,
+      },
+      768 : {
+        items:5,
+      }
+    }
+
   })
 
   // A.2.2. END -----------------------------------------

@@ -12,3 +12,4 @@ $(window).on('load', function() {
   initToggleFunctions();
   initCarouselFunctions();
   initEqualheightsFunctions();
+  initTimeline();

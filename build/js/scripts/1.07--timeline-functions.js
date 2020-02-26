@@ -31,7 +31,7 @@ function initTimeline() {
 
   });
 
-  $('.o-timeline-block .m-cta-wrapper .a-timeline-bullet').on('click touchstart', function () {
+  $('.o-timeline-section .m-cta-wrapper .a-timeline-bullet').on('click touchstart', function () {
     $('.o-timeline-item-wrapper').removeClass('hide');
   });
   

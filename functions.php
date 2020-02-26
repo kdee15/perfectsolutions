@@ -167,7 +167,7 @@ function services() {
     'labels'         => $labels,
     'description'   => 'A list of Services',
     'public'        => true,
-    'menu_position' => 7,
+    'menu_position' => 6,
     'supports'      => array( 'title', 'editor', 'thumbnail', 'taxonomies', 'categories', 'media', 'content' ),
     'has_archive'   => true,
 
@@ -200,7 +200,7 @@ function milestones() {
     'labels'         => $labels,
     'description'   => 'A list of Milestones',
     'public'        => true,
-    'menu_position' => 4,
+    'menu_position' => 3,
     'supports'      => array( 'title', 'editor', 'thumbnail', 'taxonomies', 'categories', 'media', 'content' ),
     'has_archive'   => true,
 
@@ -299,7 +299,7 @@ function values() {
     'labels'         => $labels,
     'description'   => 'A list of Values',
     'public'        => true,
-    'menu_position' => 6,
+    'menu_position' => 2,
     'supports'      => array( 'title', 'editor', 'thumbnail', 'taxonomies', 'categories', 'media', 'content' ),
     'has_archive'   => true,
 
@@ -332,7 +332,7 @@ function subsidiaries() {
     'labels'         => $labels,
     'description'   => 'A list of Subsidiaries',
     'public'        => true,
-    'menu_position' => 6,
+    'menu_position' => 5,
     'supports'      => array( 'title', 'editor', 'thumbnail', 'taxonomies', 'categories', 'media', 'content' ),
     'has_archive'   => true,
   );

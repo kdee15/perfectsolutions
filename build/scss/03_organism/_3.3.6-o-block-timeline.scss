@@ -16,6 +16,7 @@ $ald-bld: arial;
     .a-timeline-bullet { position: relative; left: auto; top: 0; margin: 15px auto; transform: none;
       &:before { transform: translateX(-50%) translateY(-50%) rotate(90deg); }
     }
+    .a-cta-text { display: block; width: 100%; }
   }
 }
 
@@ -31,6 +32,15 @@ $ald-bld: arial;
     &.m-timeline-bar { flex: 1; max-width: 120px; }
   }
 }
+
+// A.1. END -----------------------------------------------------------------------------------------------------------
+
+// A.1. END -----------------------------------------------------------------------------------------------------------
+
+.o-timeline-item-wrapper {
+  &.hide { display: none; }
+}
+
 
 // A.1. END -----------------------------------------------------------------------------------------------------------
 

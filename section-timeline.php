@@ -57,4 +57,9 @@
 
   </div>
 
+  <div class="row m-cta-wrapper">
+    <div class="a-timeline-bullet"></div>
+    <span class="a-cta-text">VIEW MORE</span>
+  </div>
+
 </section>
