@@ -1,9 +1,9 @@
-<section class="o-block o-video-banner">
+<section class="o-section o-feature-promo">
 
-  <button id="play-button" class="a-video-play video-control"></button>
+  <button id="play-button" class="a-video-play video-control active"></button>
   <button id="pause-button" class="a-video-close video-control"></button>
 
-  <video class="m-video-preloader" width="320" height="240" autoplay loop>
+  <video class="m-video-preloader active" width="320" height="240" autoplay loop>
     <source src="wp-content/themes/kdee/dist/videos/preloader-video.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
@@ -38,11 +38,13 @@
     var playButton = document.getElementById("play-button");
     playButton.addEventListener("click", function() {
       player.playVideo();
+      $('.a-video-play, .m-video-preloader, .m-video-player, .a-video-close').toggleClass('active');
     });
 
     var pauseButton = document.getElementById("pause-button");
     pauseButton.addEventListener("click", function() {
       player.pauseVideo();
+      $('.a-video-play, .m-video-preloader, .m-video-player, .a-video-close').toggleClass('active');
     });
 
   }

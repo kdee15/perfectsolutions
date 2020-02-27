@@ -13,38 +13,38 @@ $default: Roboto, Helvetica, 'Arial Black', sans-serif;
 }
 
 @font-face {
-  font-family: exo-elt, Helvetica, 'Arial', sans-serif;
+  font-family: exo-elt;
   src: url('../fonts/site/Exo2-ExtraLight.otf') format("opentype");
   src: url('../fonts/site/Exo2-ExtraLight.woff') format("woff");
 }
 
 @font-face {
-  font-family: exo-lt, Helvetica, 'Arial', sans-serif;
+  font-family: exo-lt;
   src: url('../fonts/site/Exo2-Light.otf') format("opentype");
   src: url('../fonts/site/Exo2-Light.woff') format("woff");
 }
 
 @font-face {
-  font-family: exo-reg, Helvetica, 'Arial', sans-serif;
+  font-family: exo-reg;
   src: url('../fonts/site/Exo2-Regular.otf') format("opentype");
   src: url('../fonts/site/Exo2-Regular.ttf') format("truetype");
   src: url('../fonts/site/Exo2-Regular.woff') format("woff");
 }
 
 @font-face {
-  font-family: exo-med, Helvetica, 'Arial', sans-serif;
+  font-family: exo-med;
   src: url('../fonts/site/Exo2-Medium.otf') format("opentype");
   src: url('../fonts/site/Exo2-Medium.woff') format("woff");
 }
 
 @font-face {
-  font-family: exo-sem, Helvetica, 'Arial', sans-serif;
+  font-family: exo-sem;
   src: url('../fonts/site/Exo2-SemiBold.otf') format("opentype");
   src: url('../fonts/site/Exo2-SemiBold.woff') format("woff");
 }
 
 @font-face {
-  font-family: exo-bld, Helvetica, 'Arial', sans-serif;
+  font-family: exo-bld;
   src: url('../fonts/site/Exo2-Bold.otf') format("opentype");
   src: url('../fonts/site/Exo2-Bold.woff') format("woff");
 }
@@ -56,7 +56,7 @@ $default: Roboto, Helvetica, 'Arial Black', sans-serif;
 }
 
 @font-face {
-  font-family: exo-blk, Helvetica, 'Arial', sans-serif;
+  font-family: exo-blk;
   src: url('../fonts/site/Exo2-Black.otf') format("opentype");
   src: url('../fonts/site/Exo2-Black.woff') format("woff");
 }

@@ -1,52 +1,40 @@
-<section class="o-section o-feature-promo">
+<div class="container">
+  <div class="row">
 
-  <button id="play-button" class="a-video-play video-control active"></button>
-  <button id="pause-button" class="a-video-close video-control"></button>
+    <?php
 
-  <video class="m-video-preloader active" width="320" height="240" autoplay loop>
-    <source src="wp-content/themes/kdee/dist/videos/preloader-video.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+    $args=array(
+      'post_type' => 'promos',
+      'post_status' => 'publish',
+      'orderby' => 'meta_value date',
+      'order' => 'DESC',
+      'posts_per_page' => 1
+    );
+    $my_query = null;
+    $my_query = new WP_Query($args);
 
-  <iframe class="m-video-player" id="video" src="https://www.youtube.com/embed/SJvHeuCLJAs?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+    if( $my_query->have_posts() ) {
+      while ($my_query->have_posts()) : $my_query->the_post(); ?>
 
-</section>
+        <div class="col-12 col-md-4 m-features">
+          <audio class="m-promo-player" controls>
+            <source src="<?php the_field('player') ?>" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+          <span>Can't download the track? <a href="<?php the_field('download') ?>" class="a-text-link" target="_blank">click here ...</a></span>
+        </div>
+        <div class="col-12 offset-md-2 col-md-6 m-text">
+          <h3><?php the_title(); ?></h3>
+          <?php the_content(); ?>
+        </div>
 
-<script>
+      <?php
 
-  // Inject YouTube API script
-  var tag = document.createElement('script');
-  tag.src = "//www.youtube.com/player_api";
-  var firstScriptTag = document.getElementsByTagName('script')[0];
-  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      endwhile;
+    }
+    wp_reset_query();  // Restore global post data stomped by the_post().
+    ?>
 
-  var player;
+  </div>
+</div>
 
-  function onYouTubePlayerAPIReady() {
-    // create the global player from the specific iframe (#video)
-    player = new YT.Player('video', {
-      events: {
-        // call this function when player is ready to use
-        'onReady': onPlayerReady
-      }
-    });
-  }
-
-  function onPlayerReady(event) {
-
-    // bind events
-    var playButton = document.getElementById("play-button");
-    playButton.addEventListener("click", function() {
-      player.playVideo();
-      $('.a-video-play, .m-video-preloader, .m-video-player, .a-video-close').toggleClass('active');
-    });
-
-    var pauseButton = document.getElementById("pause-button");
-    pauseButton.addEventListener("click", function() {
-      player.pauseVideo();
-      $('.a-video-play, .m-video-preloader, .m-video-player, .a-video-close').toggleClass('active');
-    });
-
-  }
-
-</script>

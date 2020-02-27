@@ -1,6 +1,6 @@
 <section class="o-section section-promos">
   <div class="section-header">
-    <h2>MILESTONES</h2>
+    <h2>CURRENT PROMOTION</h2>
   </div>
   <div class="container p-container">
     <div class="row">
