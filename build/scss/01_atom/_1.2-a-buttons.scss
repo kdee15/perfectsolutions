@@ -58,7 +58,7 @@ $radius-lrg:              15px;
   
   // default hover/active classes
   &.focus, &:focus, &:hover, &.active { 
-    color: #fff; background-color: $btn-default-clr; border-color: $btn-default-clr; outline: none; 
+    color: #fff; background-color: $btn-default-clr; border-color: $btn-default-clr; outline: none; text-decoration: none;
   }
   &:focus, &.focus, &:active:focus, &:active.focus, &.active:focus, &.active.focus { outline: none; }
 
@@ -75,9 +75,9 @@ $radius-lrg:              15px;
 
   // A.1.1. BLUE BUTTON -----------------------------------
   
-  &.btn-blue { color: #fff; background-color: $blue-lt; border-color: $blue-lt; 
+  &.btn-yellow { color: #000; background-color: $yellow; border-color: white;
     // Active styles
-    &.focus, &:focus, &:hover, &.active { color: #fff; background-color: $btn-default-clr; border-color: $btn-default-clr; }
+    &.focus, &:focus, &:hover, &.active { color: #fff; background-color: $gold; border-color: $gold; }
     // Modifiers
     & {}
   }

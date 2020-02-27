@@ -20,6 +20,31 @@
 
 // A.1. END -----------------------------------------------------------------------------------------------------------
 
+// A.2. FEATURE PROMO HEADER ------------------------------------------------------------------------------------------
+
+.o-section {
+  &.front-section {
+    &.promo-hero {
+      .m-promo-background { background-size: cover; background-position: center; }
+      .promo-container { z-index: 10; max-width: 1920px;
+        .m-promo-emblem {
+          img { width: 100%; height: auto; max-width: 750px; margin: 0 auto; display: block; }
+        }
+        .m-text {
+          p { letter-spacing: 10px; font-weight: 300; font-family: Arial; }
+          hr { display: block; margin: 0 auto 20px; border: 3px solid white; width: 75%; }
+          .a-btn { border-width: 2px; margin-top: 3.5%; font-weight: 200; padding: 1.5% 7.5%; border-radius: 50px;
+            &:hover {  }
+          }
+        }
+      }
+
+    }
+  }
+}
+
+// A.2. END -----------------------------------------------------------------------------------------------------------
+
 // A. GLOBAL STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // B. MAX-WIDTH: 767px ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -34,13 +59,50 @@
     }
   }
 
+  .o-section {
+    &.front-section {
+      &.promo-hero {
+        .m-promo-background { @include position(absolute, 0); }
+        .promo-container { position: relative; padding-bottom: 50px;
+          .m-promo-emblem {
+            img { max-width: 400px; }
+          }
+          .m-text {
+            p { letter-spacing: 5px; text-shadow: 0 0 5px black; line-height: 1.6;  }
+            .a-btn { padding: 10px 30px; text-shadow: none;
+              &:hover {  }
+            }
+          }
+        }
+
+      }
+    }
+  }
+
+
 }
 
 // B. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // C. MIN-WIDTH: 768px ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-@media ($sm-up) {}
+@media ($sm-up) {
+
+  .o-section {
+    &.front-section {
+      &.promo-hero { @include aspect-ratio(100%, 35%);
+        .m-promo-background { @include position(absolute, 0); }
+        .promo-container { position: absolute; @include middle-align();
+          .m-promo-emblem {}
+          .m-text { margin-top: 15%;
+            p { line-height: 1.3; letter-spacing: 4px; }
+          }
+        }
+      }
+    }
+  }
+
+}
 
 // C. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -52,7 +114,43 @@
 
 // E. MIN-WIDTH: 1200px +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-@media ($lg-up) {}
+@media ($lg-up) {
+
+  .o-section {
+    &.front-section {
+      &.promo-hero {
+        .promo-container {
+          .m-promo-emblem {}
+          .m-text {
+            p { letter-spacing: 10px; }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+// E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// E. MIN-WIDTH: 1920px +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@media ($hd-up) {
+
+  .o-section {
+    &.front-section {
+      &.promo-hero {
+        .promo-container {
+          .m-promo-emblem {}
+          .m-text { margin-top: 11.5%;
+            p { line-height: 1.4; letter-spacing: 8px; }
+          }
+        }
+      }
+    }
+  }
+
+}
 
 // E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 

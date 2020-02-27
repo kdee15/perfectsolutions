@@ -1,4 +1,4 @@
-<section class="o-section front-section" style="height:100vh;">
+<section class="o-section front-section">
 
   <header class="o-header o-home-header">
     <figure class="m-brand-logo">
@@ -15,11 +15,6 @@
   </header>
 
   <?php get_template_part( 'inc/navigation-home' ); ?>
-
-
-  <?php get_template_part( 'section-feature-promo' ); ?>
-
-
 
   <figure class="m-icon mouse-icon">
     <svg version="1.1" class="icon-mouse" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"

@@ -15,6 +15,14 @@
     .m-header-text { color: white; text-align: center; margin-top: 50px; }
     .o-navigation { margin-top: 50px; }
     .social-media { display: block; margin: 20px auto 0; text-align: center; }
+
+
+//TEMP KAKA HERE
+    &.promo-header { height: auto; z-index: 10000000000; }
+
+
+
+
   }
 
   //.m-figure { width: 250px; padding: 0; margin: $base 0 $base $base; transition: 0.3s;  }
@@ -37,7 +45,9 @@
     }
   }
   // A.2.2. SOCIAL MEDIA ----------------------------------
-  .o-social-media { opacity: 1; transition: 0.3s; }
+  .o-social-media { opacity: 1; transition: 0.3s; padding: 0; margin: 0;
+    &:after { content: ''; right: -15px; @include vertical-align(absolute); top: 42.5%; height: 30px; width: 2px; background: $gold; }
+  }
 }
 
 // A.2. END -----------------------------------------------------------------------------------------------------------

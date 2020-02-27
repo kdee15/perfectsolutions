@@ -17,7 +17,8 @@ get_header();
 
 <!-- C.2. SECTIONS -------------------------------- -->
 
-<?php get_template_part( 'section-front' ); ?>
+<?php get_template_part( 'section-feature-promo' ); ?>
+<?php //get_template_part( 'section-front' ); ?>
 
 <!-- C.2. END ------------------------------------- -->
 

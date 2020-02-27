@@ -71,6 +71,152 @@ h1 { font-size: 40px;
 h2  { font-family: exo-ebld; }
 p   { font-family: exo-thn; }
 
+
+
+// A.2. RESPONSIVE FONTS ----------------------------------
+
+// font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
+
+$view-min-xs:    320;
+$view-max-xs:    767;
+
+$view-min-sm:    768;
+$view-max-sm:    991;
+
+$view-min-md:    992;
+$view-max-md:    1920;
+
+//$view-min-lg:    992;
+//$view-max-lg:    1920;
+
+$h1-min-xs:    14;
+$h1-max-xs:    16;
+$h2-min-xs:    14;
+$h2-max-xs:    16;
+
+$h1-min-sm:    16;
+$h1-max-sm:    18;
+$h2-min-sm:    16;
+$h2-max-sm:    18;
+
+$h1-min-md:    18;
+$h1-max-md:    45;
+$h2-min-md:    16;
+$h2-max-md:    35;
+
+//$h1-min-lg:    45;
+//$h1-max-lg:    75;
+//$h2-min-lg:    35;
+//$h2-max-lg:    65;
+
+$h1-max:       45;
+$h2-max:       35;
+$h3-max:       75;
+$h4-max:       75;
+$h5-max:       75;
+$h6-max:       75;
+
+// A.2. END -----------------------------------------------
+
+// A.3. CUSTOM SITE FONTS ---------------------------------
+
+.promo-hero .m-text           { font-size: $h1-max+px; line-height: 1; }
+.promo-hero .m-text .a-btn    { font-size: $h2-max+px; line-height: 1; }
+//h1,.a-h1      { font-size: $h1-max+px; line-height: 1; }
+//.promo-hero .m-text .a-btn       { font-size: $h2-max+px; line-height: 1; }
+//h3,.a-h3      { font-size: $h3-max+px; }
+//h4,.a-h4      { font-size: $h4-max+px; }
+//h5,.a-h5      { font-size: $h5-max+px; }
+//h6,.a-h6      { font-size: $h6-max+px; }
+
+// A.3. END -----------------------------------------------
+
 // A. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+// B. MOBILE VIEW +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// B.1. MAX-WIDTH: 575px ----------------------------------
+
+@media ($xs-dn) {}
+
+// B.2. MIN-WIDTH: 576px ----------------------------------
+
+@media ($xs-up) {}
+
+// B. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// C. MIN-WIDTH: 768px ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// B.1. MAX-WIDTH: 767px ----------------------------------
+
+@media ($sm-dn) {
+
+  .promo-hero .m-text p {
+    font-size: calc( #{$h1-min-xs}px + (#{$h1-max-xs} - #{$h1-min-xs}) * ((100vw - #{$view-min-xs}px) / (#{$view-max-xs} - #{$view-min-xs})));
+  }
+
+  .promo-hero .m-text .a-btn  {
+    font-size: calc( #{$h2-min-xs}px + (#{$h2-max-xs} - #{$h2-min-xs}) * ((100vw - #{$view-min-xs}px) / (#{$view-max-xs} - #{$view-min-xs})));
+  }
+
+}
+
+// B.2. MIN-WIDTH: 768px ----------------------------------
+
+@media ($sm-up) {
+
+  .promo-hero .m-text p {
+    font-size: calc( #{$h1-min-sm}px + (#{$h1-max-sm} - #{$h1-min-sm}) * ((100vw - #{$view-min-sm}px) / (#{$view-max-sm} - #{$view-min-sm})));
+  }
+
+  .promo-hero .m-text .a-btn  {
+    font-size: calc( #{$h2-min-sm}px + (#{$h2-max-sm} - #{$h2-min-sm}) * ((100vw - #{$view-min-sm}px) / (#{$view-max-sm} - #{$view-min-sm})));
+  }
+
+}
+
+// C. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// D. MIN-WIDTH: 992px ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@media ($md-up) {
+
+  .promo-hero .m-text p {
+    font-size: calc( #{$h1-min-md}px + (#{$h1-max-md} - #{$h1-min-md}) * ((100vw - #{$view-min-md}px) / (#{$view-max-md} - #{$view-min-md})));
+  }
+
+  .promo-hero .m-text .a-btn  {
+    font-size: calc( #{$h2-min-md}px + (#{$h2-max-md} - #{$h2-min-md}) * ((100vw - #{$view-min-md}px) / (#{$view-max-md} - #{$view-min-md})));
+  }
+
+}
+
+// D. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// E. MIN-WIDTH: 1200px +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@media ($lg-up) {
+
+  //.promo-hero .m-text p {
+  //  font-size: calc( #{$h1-min-lg}px + (#{$h1-max-lg} - #{$h1-min-lg}) * ((100vw - #{$view-min-lg}px) / (#{$view-max-lg} - #{$view-min-lg})));
+  //}
+  //
+  //.promo-hero .m-text .a-btn  {
+  //  font-size: calc( #{$h2-min-lg}px + (#{$h2-max-lg} - #{$h2-min-lg}) * ((100vw - #{$view-min-lg}px) / (#{$view-max-lg} - #{$view-min-lg})));
+  //}
+
+}
+
+// E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// F. MIN-WIDTH: 1920px +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@media ($hd-up) {
+
+  .promo-hero .m-text p       { font-size: $h1-max+px; }
+  .promo-hero .m-text .a-btn  { font-size: $h2-max+px; }
+
+}
+
+// F. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // END OF FILE ########################################################################################################
