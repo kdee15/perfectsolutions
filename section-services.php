@@ -1,4 +1,4 @@
-<section class="o-section services-section">
+<section class="o-section services-section" id="section-services">
   <div class="section-header">
     <h2>WHAT WE OFFER</h2>
   </div>

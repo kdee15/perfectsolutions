@@ -1,4 +1,4 @@
-<section class="o-section brands-section">
+<section class="o-section brands-section" id="section-subsidiaries">
   <div class="section-header">
     <h2>SUBSIDIARIES</h2>
   </div>

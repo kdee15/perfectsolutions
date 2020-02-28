@@ -17,7 +17,9 @@
       }
     }
     &.o-aside {
-      &.o-social-media { position: relative; text-align: right; top: 0; right: 0; }
+      &.o-social-media { position: relative; text-align: right; top: 0; right: 0;
+        &:after { display: none; }
+      }
     }
   }
   h6 { color: $grey-f2; }

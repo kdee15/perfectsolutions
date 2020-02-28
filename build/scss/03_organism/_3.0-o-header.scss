@@ -20,13 +20,18 @@
 //TEMP KAKA HERE
     &.promo-header { height: auto; z-index: 10000000000; }
 
-
-
-
   }
 
   //.m-figure { width: 250px; padding: 0; margin: $base 0 $base $base; transition: 0.3s;  }
 
+}
+
+.toggle-content {
+  &.a-burger-menu {
+    .horizontal {
+      &#burger-nav { z-index: 1000; }
+    }
+  }
 }
 
 // A.1. END -----------------------------------------------------------------------------------------------------------
@@ -37,7 +42,7 @@
 
   // A.2.1. HEADER ----------------------------------------
   .o-header {
-    &.o-home-header { height: 10%; transition: 0.3s; z-index: 10; position: fixed;
+    &.o-home-header { height: 50px; transition: 0.3s; z-index: 10; position: fixed;
       .o-logo-card { top: 5px; left: 50%; transform: translateX(-50%) translateY(0%); width: 100%; transition: 0.3s; max-width: 1200px;
         .m-site-logo { width: 3%; vertical-align: middle; display: inline-block; margin: 0; }
         .a-logo-text { display: inline-block; vertical-align: middle; margin-left: 10px; font-size: 20px; text-align: left; }

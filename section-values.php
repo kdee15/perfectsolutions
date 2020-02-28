@@ -1,4 +1,4 @@
-<section class="o-section values-section">
+<section class="o-section values-section" id="section-values">
 
   <div class="section-header reveal-on-show fadeInUp">
     <h2>VALUES</h2>

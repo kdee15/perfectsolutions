@@ -1,4 +1,4 @@
-<section class="o-section contact-section" id="find-me">
+<section class="o-section contact-section" id="section-contact">
   <div class="section-header">
     <h2>CONTACT US</h2>
   </div>

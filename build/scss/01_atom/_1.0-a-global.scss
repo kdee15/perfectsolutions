@@ -4,7 +4,7 @@
 
 // A.1. GENERAL SETTINGS ----------------------------------
 
-html { font-family: $default; font-weight: 100; overflow-x: hidden; }
+html { font-family: $default; font-weight: 100; overflow-x: hidden; scroll-behavior: smooth; }
 body { -webkit-overflow-scrolling: touch; background: $black; }
 
 .a-mail-us { position: fixed; right: 0; bottom: 5%; background: $grey-80; z-index: 1000;

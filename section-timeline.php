@@ -1,4 +1,4 @@
-<section class="o-section o-timeline-section">
+<section class="o-section o-timeline-section" id="section-milestones">
   <div class="section-header animated fadeInUp">
     <h2>MILESTONES</h2>
   </div>

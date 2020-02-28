@@ -1,4 +1,4 @@
-<header class="o-header o-home-header promo-header">
+<header class="o-header o-home-header promo-header" id="section-promo">
   <?php get_template_part( 'inc/social-media' ); ?>
   <div class="o-hamburger m-hamburger--spin burger-nav" name="burger-nav">
     <div class="m-hamburger-box">
