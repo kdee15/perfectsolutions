@@ -14,7 +14,7 @@
           .a-image, img { transform: scale(1.1); transition: 0.3s; }
         }
       }
-      .m-card-body { background: darken($grey-f7, 1.5%); transition: 0.3s; }
+      .m-card-body { background: darken($grey-ce, 1.5%); transition: 0.3s; }
 
     }
     .o-card-image {
@@ -27,7 +27,7 @@
         }
       }
     }
-    .m-card-body { background: $grey-7f; padding: 30px 20px; transition: 0.3s;
+    .m-card-body { background: $grey-7f; padding: 15px 15px 30px; transition: 0.3s;
       .a-card-title { font-size: 20px; line-height: 24px; margin-bottom: 15px; color: $grey-7f;
         span { font-size: 12px; display: block; }
       }
@@ -55,7 +55,7 @@
     // A.1.1.2.1. FLEX LAYOUT -----------------------------
     .o-flex-wrapper { display: flex; flex-direction: row;
       &:hover { box-shadow: 0 0 5px $grey-ce;
-        .m-card-body { background: darken($grey-f7, 1.5%); transition: 0.3s; }
+        .m-card-body { background: darken($grey-ce, 1.5%); transition: 0.3s; }
       }
       .m-card-image {
         &.scalable { @include aspect-ratio(40%, 80%); overflow: hidden; max-width: 200px; margin: 0;
@@ -64,7 +64,7 @@
           }
         }
       }
-      .m-card-body { padding: 30px; text-align: center; background: $grey-f7; text-align: left;
+      .m-card-body { padding: 30px; text-align: center; background: $grey-ce; text-align: left;
         .a-card-title { font-size: 20px; line-height: 24px; margin-bottom: 15px; color: $grey-7f;
           span { font-size: 12px; display: block; }
         }
@@ -77,8 +77,8 @@
 
 
   // A.1.1.4. BOXED CARD ----------------------------------
-  &.boxed { padding: 30px; background: $grey-f7;
-    &:hover { box-shadow: 0 0 5px $grey-ce; background: darken($grey-f7, 1.5%); transition: 0.3s; }
+  &.boxed { padding: 30px; background: $grey-ce;
+    &:hover { box-shadow: 0 0 5px $grey-ce; background: darken($grey-ce, 1.5%); transition: 0.3s; }
     .m-card-image {
       &.scalable { @include aspect-ratio(100%, 100%); overflow: hidden; max-width: 120px; margin: auto;
         .a-image {

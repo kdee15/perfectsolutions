@@ -40,6 +40,8 @@ body { -webkit-overflow-scrolling: touch; background: $black; }
   &.on { opacity: 1; }
 }
 
+.a-dropshadow { width: 100%; height: auto; }
+
 // A.3. END -----------------------------------------------
 
 // A. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -65,12 +67,6 @@ body { -webkit-overflow-scrolling: touch; background: $black; }
 // B.2. MIN-WIDTH: 768px ----------------------------------
 
 @media ($sm-up) {
-
-  h1 { font-size: 40px; }
-  h2 { font-size: 32px; }
-  h2 { font-size: 28px; }
-  h3 { font-size: 24px; }
-  h4 { font-size: 20px; }
 
   .m-logo { width: 70%; }
 

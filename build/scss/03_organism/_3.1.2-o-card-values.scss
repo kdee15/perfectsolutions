@@ -14,37 +14,16 @@
 .o-values-card {
   .o-card {
     .m-card-image { padding: 15px 0;
-      img { margin: 10px auto; height: 100%; width: auto; max-height: 80px; display: block; }
+      img { margin: 10px auto; height: 100%; width: auto; max-height: 150px; display: block; }
     }
-    .m-card-body { opacity: 0;
+    .m-card-body { opacity: 0; margin: 0 10%;
       .a-title { text-align: center; }
       .a-copy {
         p { font-size: 14px; }
       }
-    }
-  }
-  &:nth-child(1) {
-    .m-card-image { background: $cream; }
-    .m-card-body {
-      &:after { background: $cream; }
-    }
-  }
-  &:nth-child(2) {
-    .m-card-image { background: $green; }
-    .m-card-body {
-      &:after { background: $green; }
-    }
-  }
-  &:nth-child(3) {
-    .m-card-image { background: $gold; }
-    .m-card-body {
-      &:after { background: $gold; }
-    }
-  }
-  &:nth-child(4) {
-    .m-card-image { background: $red; }
-    .m-card-body {
-      &:after { background: $red; }
+      .m-card-icon { width: 60px; height: 60px; margin: 30px auto 0; display: block;
+        path { fill: $orange; }
+      }
     }
   }
 }
@@ -52,9 +31,7 @@
 .kd-app {
   .o-values-card {
     .o-card {
-      .m-card-body { opacity: 1; transition: 0.3s;position: relative;
-        &:after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 10px; }
-      }
+      .m-card-body { opacity: 1; transition: 0.3s; position: relative; }
     }
   }
 }

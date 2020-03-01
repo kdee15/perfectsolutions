@@ -90,7 +90,7 @@
 
   .o-section {
     &.front-section {
-      &.promo-hero { @include aspect-ratio(100%, 35%);
+      &.promo-hero { @include aspect-ratio(100%, 41.5%);
         .m-promo-background { @include position(absolute, 0); }
         .promo-container { position: absolute; @include middle-align();
           .m-promo-emblem {}

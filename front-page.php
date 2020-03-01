@@ -28,6 +28,7 @@ get_header();
 
   <!-- C.3. SECTIONS -------------------------------- -->
 
+  <?php get_template_part( 'section-about' ); ?>
   <?php get_template_part( 'section-values' ); ?>
   <?php get_template_part( 'section-timeline' ); ?>
   <?php get_template_part( 'section-brands' ); ?>

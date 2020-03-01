@@ -3,8 +3,10 @@
 // A. FONT SOURCE +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
 
 $default: Roboto, Helvetica, 'Arial Black', sans-serif;
+$open-sans: 'Open Sans', Helvetica, 'Arial Black', sans-serif;
 
 @font-face {
   font-family: exo-thn;
@@ -62,14 +64,15 @@ $default: Roboto, Helvetica, 'Arial Black', sans-serif;
 }
 
 
-h1 { font-size: 40px;
+h1 { font-size: 80px; font-family: exo-med, 'Arial', Helvetica, sans-serif;
   a { text-decoration: none; color: black;
     &:hover { text-decoration: none; color: black; }
   }
 }
 
-h2  { font-family: exo-ebld; }
-p   { font-family: exo-thn; }
+h2  { font-family: $open-sans, 'Arial', Helvetica, sans-serif; letter-spacing: 16px; }
+h3  { font-family: exo-med, 'Arial', Helvetica, sans-serif; }
+p   { font-family: exo-thn, 'Arial', Helvetica, sans-serif; }
 
 
 
@@ -165,6 +168,11 @@ $h6-max:       75;
 
 @media ($sm-up) {
 
+  h1 { font-size: 80px; }
+  h2 { font-size: 43px; }
+  h3 { font-size: 20px; }
+  h4 { font-size: 20px; }
+
   .promo-hero .m-text p {
     font-size: calc( #{$h1-min-sm}px + (#{$h1-max-sm} - #{$h1-min-sm}) * ((100vw - #{$view-min-sm}px) / (#{$view-max-sm} - #{$view-min-sm})));
   }
@@ -196,6 +204,8 @@ $h6-max:       75;
 // E. MIN-WIDTH: 1200px +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 @media ($lg-up) {
+
+  h3 { font-size: 24px; }
 
   //.promo-hero .m-text p {
   //  font-size: calc( #{$h1-min-lg}px + (#{$h1-max-lg} - #{$h1-min-lg}) * ((100vw - #{$view-min-lg}px) / (#{$view-max-lg} - #{$view-min-lg})));

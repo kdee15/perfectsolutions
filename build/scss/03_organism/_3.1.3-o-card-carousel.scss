@@ -6,12 +6,12 @@
 
 .service-card { @include aspect-ratio(80%, 100%); margin: 0 auto; display: block;
   .o-card { @include position(absolute, 0); display: flex; flex-direction: column; justify-content: center;
-    &.icon-card { background: $green; border-radius: 100%;
+    &.icon-card { background: black; border-radius: 100%;
       .m-card-image { max-width: 50px; margin: 0 auto 5px;
-        img { height: auto; }
+        img { height: auto; filter: contrast(160%); }
       }
       .m-card-body {
-        .a-title { display: block; text-align: center; font-size: 18px; }
+        .a-title { display: block; text-align: center; font-size: 18px; color: white; }
       }
     }
   }
@@ -20,7 +20,7 @@
 .owl-item { transition: 0.3s;
   &.active {
     &.center { transition: 0.3s;  opacity: 1;
-      .service-card { @include aspect-ratio(90%, 100%); transition: 0.3s; margin-top: -50%; transform: translateY(50%);
+      .service-card { transition: 0.3s;
         .o-card {
           &.icon-card { background: $gold; box-shadow: 0 0 10px black; }
         }

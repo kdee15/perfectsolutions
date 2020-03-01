@@ -41,6 +41,7 @@
       </aside>
       <figure class="m-map-africa">
         <?php get_template_part( 'inc/svg--map-africa' ); ?>
+        <img src="<?php echo get_template_directory_uri(); ?>/dist/images/site/image--shadow.png" class="a-dropshadow" />
       </figure>
     </div>
   </div>

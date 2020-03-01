@@ -7,6 +7,14 @@
 .section-companies { background: black; padding-bottom: 70px; }
 .o-company-block { display: block; position: relative; overflow: auto; width: 100%; }
 
+.o-section {
+  &.brands-section { padding-bottom: 50px;
+    .m-map-africa { position: relative; width: 100%;
+      #africa-map { position: relative; width: 100%; height: auto; }
+    }
+  }
+}
+
 // A.1. END -----------------------------------------------------------------------------------------------------------
 
 // A.2. SUBSIDIARY MAP ------------------------------------------------------------------------------------------------
@@ -14,19 +22,12 @@
 .o-subsidiary-row { position: relative; }
 
 .o-card {
-  &.o-brand-logo { position: absolute; z-index: 10; max-width: 200px; cursor: pointer;
-    .a-card-image { width: 60px; height: auto; margin: 0 auto; display: block; }
-    span {
-      display: block; text-align: center; margin-top: 10px; color: $red; font-size: 14px; line-height: normal; font-weight: 500;
-    }
-    &.a-89 { top: 40%; left: 10%; }
-    &.a-88 { bottom: 0%; left: 25%; }
-    &.a-87 { bottom: 40%; right: 5%; }
-    &.a-86 { top: 0; left: 15%; }
-    &.a-84 { top: 0; right: 15%; }
+  &.o-brand-logo { z-index: 10; cursor: pointer; display: flex;
+    .a-card-image { height: auto; margin: 0 auto; display: inline-block; }
+    span { font-size: 14px; line-height: normal; font-weight: 500; align-self: center; padding-left: 15px; }
   }
 
-  &.o-brand-info { @include middle-align(); z-index: 100; transition: 0.3s;
+  &.o-brand-info { z-index: 100; transition: 0.3s;
     .m-card-body { background: $green; padding: 25px; border-radius: 5px; box-shadow: 0 0 5px black;
       .a-title { color: white; }
       p { font-size: 12px; line-height: 1.5; color: white; }
@@ -42,19 +43,84 @@
 
 // B. MAX-WIDTH: 767px ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-@media ($sm-dn) {} 
+@media ($sm-dn) {
+
+  .o-section {
+    &.brands-section {
+      .container { position: relative;
+        .m-aside-subs { order: 2; }
+        .m-map-africa { order: 1; }
+      }
+    }
+  }
+
+  .o-card {
+    &.o-brand-logo { position: relative;
+      .a-card-image { width: 30px; height: 30px; }
+      span { vertical-align: middle; width: 90%; }
+    }
+
+    &.o-brand-info {
+      .m-card-body { background: $green; padding: 25px; border-radius: 5px; box-shadow: 0 0 5px black;
+        .a-title { color: white; }
+        p { font-size: 12px; line-height: 1.5; color: white; }
+      }
+    }
+  }
+
+}
 
 // B. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // C. MIN-WIDTH: 768px ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-@media ($sm-up) {} 
+@media ($sm-up) {
+
+  .o-section {
+    &.brands-section { padding-bottom: 50px;
+      .m-map-africa { @include aspect-ratio(60%, 100%); margin: 0 auto;
+        #africa-map { @include position(absolute, 0); width: 100%; height: 100%; }
+      }
+    }
+  }
+
+  .o-card {
+    &.o-brand-logo { position: absolute;
+      .a-card-image { width: 60px; }
+      span {
+      }
+      &.a-89 { top: 50%; left: 0; max-width: 200px; transform: translateY(-50%); }
+      &.a-88 { bottom: 15%; left: 0; max-width: 300px; }
+      &.a-87 { bottom: 15%; left: 75%; max-width: 290px; }
+      &.a-86 { top: 15%; left: 0; max-width: 300px; }
+      &.a-84 { top: 15%; left: 75%; max-width: 260px; }
+    }
+
+    &.o-brand-info { @include middle-align();
+      .m-card-body { background: $green; padding: 25px; border-radius: 5px; box-shadow: 0 0 5px black;
+        .a-title { color: white; }
+        p { font-size: 12px; line-height: 1.5; color: white; }
+      }
+    }
+  }
+
+}
 
 // C. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // D. MIN-WIDTH: 992px ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 @media ($md-up) {}
+@media ($md-dn) {
+
+  .o-section {
+    &.brands-section {
+      .container { max-width: none; }
+    }
+  }
+
+
+}
 
 // D. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 

@@ -344,6 +344,38 @@ add_action( 'init', 'subsidiaries' );
 
 // A.4.7. End ---------------------------------------------
 
+// A.4.7. VALUES ------------------------------------------
+
+function homepage() {
+  $labels = array(
+    'Title'              => _x( 'Homepage Blocks', 'post type general name' ),
+    'singular_name'      => _x( 'Homepage Block', 'post type singular name' ),
+    'add_new'            => __( 'Add New', 'Homepage Block' ),
+    'add_new_item'       => __( 'Add New Homepage Block' ),
+    'edit_item'          => __( 'Edit Homepage Blocks' ),
+    'new_item'           => __( 'New Homepage Block' ),
+    'all_items'          => __( 'All Homepage Blocks' ),
+    'view_item'          => __( 'View Homepage Block' ),
+    'parent_item_colon'  => '',
+    'menu_name'          => 'Homepage Blocks'
+  );
+
+  $args = array(
+    'labels'         => $labels,
+    'description'   => 'A list of Homepage Blocks',
+    'public'        => true,
+    'menu_position' => 5,
+    'supports'      => array( 'title', 'editor', 'thumbnail', 'taxonomies', 'categories', 'media', 'content' ),
+    'has_archive'   => true,
+  );
+
+  register_post_type( 'homepage', $args );
+}
+
+add_action( 'init', 'homepage' );
+
+// A.4.7. End ---------------------------------------------
+
 // A.4 END ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // A.5 END ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

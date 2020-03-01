@@ -19,8 +19,8 @@
     &.on, &:hover { fill: $green; }
   }
 	
-	.a-path{ fill-rule:evenodd; clip-rule:evenodd; fill:#E6E6E6; stroke:#B3B3B3; stroke-linejoin:round; 
-		&.a-footprint{ fill-rule:evenodd; clip-rule:evenodd; fill:$gold; stroke: $grey-80 ; stroke-linejoin:round; }
+	.a-path{ fill-rule: evenodd; clip-rule: evenodd; fill: $grey-8d; stroke: white; stroke-linejoin: round;
+		&.a-footprint{ fill-rule: evenodd; clip-rule: evenodd; fill: $green-lt; stroke: white; stroke-linejoin: round; }
 	}
 	
 
