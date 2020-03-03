@@ -17,81 +17,81 @@ $BarRounded:            0px;
 // A.0. END -----------------------------------------------
 
 // A.1. BURGER MENU ---------------------------------------
-
-.a-burger,
-.navbar-toggler {
-
-  border: 0;
-  outline: none!important;
-  margin: 0;
-  padding: 0;
-  z-index: 1000;
-  position: fixed;
-  top: 20px;
-  right: 30px;
-
-  .a-burger-icon,
-  .navbar-toggler-icon {
-
-    background-image: none;
-    position: relative;
-    width: $ButtonWidth;
-    height: $ButtonHeight;
-    transition: .5s ease-in-out;
-    cursor: pointer;
-    display: block;
-
-    span {
-      display: block;
-      position: absolute;
-      height: $BarHeight;
-      background: $BarColor;
-      border-radius: $BarRounded;
-      opacity: 1;
-      left: 0;
-      transition: .25s ease-in-out;
-
-      &:nth-child(1) { top: $BarSpace; width: 100%; left: 0%; }
-      &:nth-child(2) { top: 50%; width: 100%; transform: translateY(-50%) rotate(0deg); }
-      &:nth-child(3) { top: 50%; width: 100%; transform: translateY(-50%) rotate(0deg); }
-      &:nth-child(4) { bottom: $BarSpace; width: 100%; left: 0%; }
-
-    }
-  }
-
-  // ACTIVE STATE -----------------------------------------
-
-  &.on {
-    .a-burger-icon,
-    .navbar-toggler-icon {
-
-      span { background: $BarColorActive;
-
-        &:nth-child(1) { top: 50%; width: 0%; left: 50%; }
-        &:nth-child(2) { top: 50%; width: 100%; transform: translateY(-50%) rotate(45deg); }
-        &:nth-child(3) { top: 50%; width: 100%; transform: translateY(-50%) rotate(-45deg); }
-        &:nth-child(4) { bottom: 50%; width: 0%; left: 50%; }
-
-      }
-    }
-
-    &:hover {
-      .a-burger-icon,
-      .navbar-toggler-icon {
-        span { background: $BarColorActive; }
-      }
-    }
-  }
-
-  // HOVER STATE ------------------------------------------
-
-  &:hover {
-    .a-burger-icon,
-    .navbar-toggler-icon {
-      span { background: $BarColor; }
-    }
-  }
-}
+//
+//.a-burger,
+//.navbar-toggler {
+//
+//  border: 0;
+//  outline: none!important;
+//  margin: 0;
+//  padding: 0;
+//  z-index: 1000;
+//  position: fixed;
+//  top: 20px;
+//  right: 30px;
+//
+//  .a-burger-icon,
+//  .navbar-toggler-icon {
+//
+//    background-image: none;
+//    position: relative;
+//    width: $ButtonWidth;
+//    height: $ButtonHeight;
+//    transition: .5s ease-in-out;
+//    cursor: pointer;
+//    display: block;
+//
+//    span {
+//      display: block;
+//      position: absolute;
+//      height: $BarHeight;
+//      background: $BarColor;
+//      border-radius: $BarRounded;
+//      opacity: 1;
+//      left: 0;
+//      transition: .25s ease-in-out;
+//
+//      &:nth-child(1) { top: $BarSpace; width: 100%; left: 0%; }
+//      &:nth-child(2) { top: 50%; width: 100%; transform: translateY(-50%) rotate(0deg); }
+//      &:nth-child(3) { top: 50%; width: 100%; transform: translateY(-50%) rotate(0deg); }
+//      &:nth-child(4) { bottom: $BarSpace; width: 100%; left: 0%; }
+//
+//    }
+//  }
+//
+//  // ACTIVE STATE -----------------------------------------
+//
+//  &.on {
+//    .a-burger-icon,
+//    .navbar-toggler-icon {
+//
+//      span { background: $BarColorActive;
+//
+//        &:nth-child(1) { top: 50%; width: 0%; left: 50%; }
+//        &:nth-child(2) { top: 50%; width: 100%; transform: translateY(-50%) rotate(45deg); }
+//        &:nth-child(3) { top: 50%; width: 100%; transform: translateY(-50%) rotate(-45deg); }
+//        &:nth-child(4) { bottom: 50%; width: 0%; left: 50%; }
+//
+//      }
+//    }
+//
+//    &:hover {
+//      .a-burger-icon,
+//      .navbar-toggler-icon {
+//        span { background: $BarColorActive; }
+//      }
+//    }
+//  }
+//
+//  // HOVER STATE ------------------------------------------
+//
+//  &:hover {
+//    .a-burger-icon,
+//    .navbar-toggler-icon {
+//      span { background: $BarColor; }
+//    }
+//  }
+//}
 
 // A.1. END -----------------------------------------------
 
@@ -104,33 +104,14 @@ $BarRounded:            0px;
 // A.3. BURGER MENU CONTENT -------------------------------
 
 .navbar-collapse,
-.a-burger-menu {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  max-width: 500px;
-  background: $red;
-  display: block;
-  transform: translateX(100%);
-  transition: 0.3s;
-  z-index: 10000;
-  &.on { transition: 0.3s; transform: translateX(0%); }
-
-  &.horizontal {
-    transform: translateY(-100%) translateX(0%); max-width: none; z-index: 1; max-height: 100px; z-index: 5; overflow: hidden;
-    &.on { transform: translateX(0%) translateY(0%); }
-  }
-
-  &.collapse { transition: 0s; }
-  &.show { transform: translateX(0%); transition: 0s; }
+.a-burger-menu { background-color: rgba(0,0,0,0.8); display: block; transition: 0.3s; z-index: 10;
+  &.horizontal { position: absolute; width: 100%; left: 0; top: 0; }
 
   .navbar-nav { padding: 0;
     div,.menu-main-container {
       ul,.primary-menu { list-style-type: none; margin: 0; padding: 0; margin-top: $base-xl;
         li,.menu-item { display: inline-block; width: 100%;
-          a { display: block; padding: $base-sm $base; color: $black; font-weight: 400;
+          a { display: block; padding: 15px; color: white; text-align: center; font-size: 10px; font-family: $open-sans; text-transform: uppercase;
             &:hover { background-color: black; color: white; text-decoration: none; }
           }
         }
@@ -138,9 +119,6 @@ $BarRounded:            0px;
     }
   }
 }
-
-
-
 
 // A.3. END -----------------------------------------------
 
@@ -174,9 +152,6 @@ $BarRounded:            0px;
 
 @media ($sm-up) {
 
-  .a-burger-menu,
-  .navbar-collapse  { max-width: 500px; }
-
   .a-burger,
   .navbar-toggler {
 
@@ -202,16 +177,99 @@ $BarRounded:            0px;
 
 // D. MIN-WIDTH: 992px ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-@media ($md-dn) {}
+@media ($md-dn) {
+
+  // A.3. BURGER MENU CONTENT -----------------------------
+
+  .a-burger-menu {
+    &.toggle-content {
+      &.horizontal { transform: translateY(-100%); background-color: rgba(0, 0, 0, 0.95);
+        .navbar-nav {
+          .menu-primary-container {
+            #menu-primary {
+              &.primary-menu {
+                &.horizontal { display: block;
+                  li,.menu-item { display: block;
+                    a { font-size: 16px; }
+                  }
+                }
+              }
+            }
+          }
+        }
+        &.on { transform: translateY(0%); position: fixed; }
+      }
+    }
+  }
+
+  // A.3. END ---------------------------------------------
+
+  // A.3. BURGER MENU CONTENT -----------------------------
+
+  .a-burger-menu {
+    .navbar-nav {
+      div,.menu-main-container {
+        ul,.primary-menu {
+          li,.menu-item {
+            a { font-size: 10px; }
+          }
+        }
+      }
+    }
+    .o-social-media { position: relative; transform: none; top: auto; text-align: center; margin-bottom: 20px;
+      li a .icon svg path { fill: $gold; }
+    }
+  }
+
+  // A.3. END ---------------------------------------------
+}
 
 
-@media ($md-up) {}
+@media ($md-up) {
+
+  // A.3. BURGER MENU CONTENT -----------------------------
+
+  .a-burger-menu {
+    .navbar-nav {
+      div,.menu-main-container {
+        ul,.primary-menu {
+          li,.menu-item {
+            a { font-size: 10px; }
+          }
+        }
+      }
+    }
+    .o-social-media { display: none; }
+  }
+
+  // A.3. END ---------------------------------------------
+
+
+}
 
 // D. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // E. MIN-WIDTH: 1200px +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-@media ($lg-up) {}
+@media ($lg-up) {
+
+  // A.3. BURGER MENU CONTENT -----------------------------
+
+  .navbar-collapse,
+  .a-burger-menu {
+    .navbar-nav {
+      div,.menu-main-container {
+        ul,.primary-menu {
+          li,.menu-item {
+            a { font-size: 14px; }
+          }
+        }
+      }
+    }
+  }
+
+  // A.3. END ---------------------------------------------
+}
 
 // E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 

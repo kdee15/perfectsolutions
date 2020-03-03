@@ -39,7 +39,7 @@
 
 #menu-primary {
   &.primary-menu {
-    &.horizontal { display: flex; max-width: 1200px; width: 100%; margin: 60px auto 0;
+    &.horizontal { display: flex; max-width: 1800px; width: 100%; margin: 0 auto;
       .menu-item {
         &.text-link { display: inline-block; width: auto; flex: 1; }
       }

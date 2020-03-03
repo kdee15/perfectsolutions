@@ -89,6 +89,12 @@
 
 }
 
+.m-see-all {
+  display: block; width: 100%; text-align: center; @include arrow-down(25px, $gold, -20px); padding: 0 0 90px; margin: 0;
+  span { color: $gold; font-family: $open-sans; font-size: 14px; letter-spacing: 5px; }
+  &:after { bottom: 60px; }
+}
+
 // A.4. END -----------------------------------------------
 
 // A. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

@@ -193,6 +193,7 @@ function milestones() {
     'all_items'          => __( 'All Milestones' ),
     'view_item'          => __( 'View Milestone' ),
     'parent_item_colon'  => '',
+    'show_in_rest'       => true,
     'menu_name'          => 'Milestones'
   );
 

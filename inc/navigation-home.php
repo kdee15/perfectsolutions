@@ -3,7 +3,7 @@
   <!-- BURGER MENU ---------------------------------- -->
 
     <?php if ( has_nav_menu( 'primary' ) ) : ?>
-      <nav id="site-navigation" class="main-navigation navbar-nav" role="navigation" aria-label="<?php esc_attr_e( 'Primary Menu', 'mvbc' ); ?>">
+      <nav id="site-navigation" class="main-navigation navbar-nav container" role="navigation" aria-label="<?php esc_attr_e( 'Primary Menu', 'kdee' ); ?>">
         <?php
         wp_nav_menu( array(
           'theme_location' => 'primary',
@@ -12,5 +12,7 @@
         ?>
       </nav>
     <?php endif; ?>
+
+  <?php get_template_part( 'inc/social-media' ); ?>
 
 </div>

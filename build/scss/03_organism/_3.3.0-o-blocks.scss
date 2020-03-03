@@ -34,13 +34,6 @@
     }
   }
 
-  // A.1.4. CONTACT BLOCK ---------------------------------
-  &.contact-section { background: #CCC; padding-bottom: 50px;
-    .o-map-container { @include aspect-ratio (100%, 60%); margin: 0; padding: 0;
-      iframe { @include position(absolute, 0); width: 100%!important; height: 100%!important; }
-    }
-  }
-
   // A.1.5. ABOUT BLOCK -----------------------------------
   &.about-section { position: relative; background: black; border-top: 25px solid $gold; padding-bottom: 120px;
     .section-header {

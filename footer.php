@@ -3,16 +3,10 @@
 <footer class="o-footer">
     <div class="container">
       <div class="row">
-        <aside class="col-12 col-md-4">
-          <ul class="m-contact-info">
-            <li class="m-list-item"><span class="a-icon mail"></span><span>name@contact.co.za</span></li>
-            <li class="m-list-item"><span class="a-icon tel"></span><span>+00000000000</span></li>
-          </ul>
-        </aside>
-        <aside class="col-12 col-md-4">
+        <aside class="col-12 col-md-6 a-copyright">
           <p>© Copyright 2020 Perfect Solutions TTL</p>
         </aside>
-        <aside class="col-12 col-md-4">
+        <aside class="col-12 col-md-6 o-footer-social">
           <?php get_template_part( 'inc/social-media' ); ?>
         </aside>
       </div>

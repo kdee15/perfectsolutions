@@ -18,9 +18,8 @@ get_header();
 <?php get_template_part( 'inc/preloader' ); ?>
 
 <!-- C.2. SECTIONS -------------------------------- -->
-
+<?php get_template_part( 'inc/page-header' ); ?>
 <?php get_template_part( 'section-feature-promo' ); ?>
-<?php //get_template_part( 'section-front' ); ?>
 
 <!-- C.2. END ------------------------------------- -->
 
@@ -30,10 +29,9 @@ get_header();
 
   <?php get_template_part( 'section-about' ); ?>
   <?php get_template_part( 'section-values' ); ?>
-  <?php get_template_part( 'section-timeline' ); ?>
+  <?php get_template_part( 'section-milestones' ); ?>
   <?php get_template_part( 'section-brands' ); ?>
   <?php get_template_part( 'section-services' ); ?>
-<!--  --><?php //get_template_part( 'section-promos' ); ?>
   <?php get_template_part( 'section-contact' ); ?>
 
   <!-- C.3. END ------------------------------------- -->
@@ -53,9 +51,5 @@ get_header();
 <!-- D.1. FOOTER JS -->
 
 <?php get_template_part( 'inc/footer-scripts' ); ?>
-
-<div class="a-mail-us">
-  <span>GET IN TOUCH</span>
-</div>
 
 <!-- D. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->

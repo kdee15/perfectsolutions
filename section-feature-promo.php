@@ -1,14 +1,3 @@
-<header class="o-header o-home-header promo-header" id="section-promo">
-  <?php get_template_part( 'inc/social-media' ); ?>
-  <div class="o-hamburger m-hamburger--spin burger-nav" name="burger-nav">
-    <div class="m-hamburger-box">
-      <div class="m-hamburger-inner"></div>
-    </div>
-  </div>
-</header>
-
-<?php get_template_part( 'inc/navigation-home' ); ?>
-
 <section class="o-section front-section promo-hero">
 
   <?php
@@ -36,6 +25,13 @@
           </div>
           <div class="col-12 col-md-6 m-text">
             <?php the_content(); ?>
+            <div class="m-promo-media <?php the_field('show') ?>">
+              <audio class="m-promo-player" controls>
+                <source src="<?php the_field('player') ?>" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>
+              <span>Can't download the track? <a href="<?php the_field('download') ?>" class="a-text-link" target="_blank">click here ...</a></span>
+            </div>
           </div>
 
         </div>

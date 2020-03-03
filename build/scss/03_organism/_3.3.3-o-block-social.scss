@@ -5,12 +5,12 @@
 // A.1. INSTAGRAM BLOCK -----------------------------------------------------------------------------------------------
 
 .o-social-media {
-  list-style-type: none; text-align: left; position: fixed; top: 13px; right: 70px; z-index: 100000; opacity: 0; transition: 0.3s;
-  li { list-style-type: none; display: inline-block;
+  list-style-type: none; @include vertical-align(absolute); right: 0; z-index: 100000; opacity: 1; transition: 0.3s; margin: 0; padding: 0;
+  li { list-style-type: none; display: inline-block; margin-right: 10px;
     a { display: block;
       .icon { margin: 0; padding: 0; display: block; border-radius: 50px; overflow: hidden;
         svg { width: 30px; height: 30px; display: block;
-          polygon, circle, rect, path { fill: $gold; }
+          polygon, circle, rect, path { fill: black; }
         }
       }
       &:hover {
@@ -21,6 +21,7 @@
         }
       }
     }
+    &:last-child { margin-right: 0; }
   }
 }
 

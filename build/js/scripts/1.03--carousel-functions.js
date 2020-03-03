@@ -57,7 +57,10 @@ function initCarouselFunctions() {
         items : 1,
       },
       768 : {
-        items:5,
+        items:3,
+      },
+      1200 : {
+        items:3,
       }
     }
 

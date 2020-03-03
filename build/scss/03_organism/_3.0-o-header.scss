@@ -1,80 +1,37 @@
-// 3. ORGANISM [ 3.1. CARDS ] #########################################################################################
+// 3. ORGANISM [ 3.0. HEADER ] ########################################################################################
 
 // A. GLOBAL STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // A.1. GENERAL CARDS -------------------------------------------------------------------------------------------------
 
-.o-header { width: 100%; z-index: 0;
-  &.o-home-header { position: absolute; height: 100vh; left: 50%; transform: translateX(-50%); max-width: 1200px;
-    .o-logo-card { @include middle-align(); width: 100%;
-      .m-site-logo { @include aspect-ratio(20%, 100%); margin: 0 auto;
-        .a-card-image { width: 100%; height: auto; animation: flat-spin 4s linear infinite;  @include position(absolute, 0); }
+.o-header {
+  &.o-home-header { background: white; overflow: auto; position: relative; z-index: 1000;
+    .container { position: relative;
+      .m-logo-block { @include aspect-ratio(34%, 13%); margin: 10px;
+        .a-logo-svg { @include position(absolute, 0); width: 100%; height: 100%; }
       }
-      .a-logo-text { font-size: 60px; color: white; display: block; text-align: center; text-shadow: 0 0 2px black; }
     }
-    .m-header-text { color: white; text-align: center; margin-top: 50px; }
-    .o-navigation { margin-top: 50px; }
-    .social-media { display: block; margin: 20px auto 0; text-align: center; }
-
-
-//TEMP KAKA HERE
-    &.promo-header { height: auto; z-index: 10000000000; }
 
   }
-
-  //.m-figure { width: 250px; padding: 0; margin: $base 0 $base $base; transition: 0.3s;  }
-
 }
 
-.toggle-content {
-  &.a-burger-menu {
-    .horizontal {
-      &#burger-nav { z-index: 1000; }
+.sticky {
+  .o-home-header { position: fixed; top: 0; left: 0; right: 0;
+    &.o-home-header {
+      .container {
+        //.m-logo-block { width: 20%; }
+      }
     }
   }
 }
 
 // A.1. END -----------------------------------------------------------------------------------------------------------
 
-// A.2. STICKY LAYOUT -------------------------------------------------------------------------------------------------
-
-.sticky {
-
-  // A.2.1. HEADER ----------------------------------------
-  .o-header {
-    &.o-home-header { height: 50px; transition: 0.3s; z-index: 10; position: fixed;
-      .o-logo-card { top: 5px; left: 50%; transform: translateX(-50%) translateY(0%); width: 100%; transition: 0.3s; max-width: 1200px;
-        .m-site-logo { width: 3%; vertical-align: middle; display: inline-block; margin: 0; }
-        .a-logo-text { display: inline-block; vertical-align: middle; margin-left: 10px; font-size: 20px; text-align: left; }
-      }
-    }
-  }
-  // A.2.2. SOCIAL MEDIA ----------------------------------
-  .o-social-media { opacity: 1; transition: 0.3s; padding: 0; margin: 0;
-    &:after { content: ''; right: -15px; @include vertical-align(absolute); top: 42.5%; height: 30px; width: 2px; background: $gold; }
-  }
-}
-
-// A.2. END -----------------------------------------------------------------------------------------------------------
-
-
 // A. GLOBAL STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // B. MAX-WIDTH: 767px ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-@media ($sm-dn) {
-
-  .o-header {
-    &.o-home-header {
-      .m-figure-logo { width: 80%; }
-      .m-header-text {
-        h1 { font-size: 28px; }
-      }
-      .social-media { margin: 20px auto 0; }
-    }
-  }
-
-}
+@media ($sm-dn) {}
 
 // B. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -86,7 +43,37 @@
 
 // D. MIN-WIDTH: 992px ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-@media ($md-up) {} 
+@media ($md-dn) {
+
+  .o-header {
+    &.o-home-header {
+      .container {
+        .m-logo-block { min-width: 220px;
+          .a-logo-svg { }
+        }
+        .o-social-media { display: none; }
+      }
+
+    }
+  }
+
+}
+
+
+@media ($md-up) {
+
+  .sticky {
+    .o-home-header { height: 0; overflow: hidden; }
+    #burger-nav {
+      &.toggle-content {
+        &.a-burger-menu {
+          &.horizontal { position: fixed; top: 0!important; }
+        }
+      }
+    }
+  }
+
+}
 
 // D. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -98,7 +85,15 @@
 
 // F. MIN-WIDTH: 1900px +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-@media ($hd-up) {}
+@media ($hd-up) {
+
+  .o-header {
+    &.o-home-header {
+      .container { max-width: 1800px; }
+    }
+  }
+
+}
 
 // F. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
