@@ -48,23 +48,24 @@
   .o-section {
     &.brands-section {
       .container { position: relative;
-        .m-aside-subs { order: 2; }
+        .m-aside-subs { order: 2; padding: 0 10px; }
         .m-map-africa { order: 1; }
       }
     }
   }
 
   .o-card {
-    &.o-brand-logo { position: relative;
+    &.o-brand-logo { position: relative; margin-bottom: 10px;
       .a-card-image { width: 30px; height: 30px; }
       span { vertical-align: middle; width: 90%; }
     }
 
-    &.o-brand-info {
-      .m-card-body { background: $green; padding: 25px; border-radius: 5px; box-shadow: 0 0 5px black;
-        .a-title { color: white; }
+    &.o-brand-info { height: 0; overflow: hidden;
+      .m-card-body { background: $green; padding: 25px; border-radius: 5px; box-shadow: 0 0 5px black; margin: 5px 15px 15px;
+        .a-title { color: white; font-size: 16px; }
         p { font-size: 12px; line-height: 1.5; color: white; }
       }
+      &.on { height: auto; overflow: visible; }
     }
   }
 
@@ -89,14 +90,14 @@
       .a-card-image { width: 60px; height: 60px; }
       span {
       }
-      &.a-89 { top: 50%; left: 0; max-width: 200px; transform: translateY(-50%); }
-      &.a-88 { bottom: 15%; left: 0; max-width: 300px; }
-      &.a-87 { bottom: 15%; left: 75%; max-width: 290px; }
-      &.a-86 { top: 15%; left: 0; max-width: 300px; }
-      &.a-84 { top: 15%; left: 75%; max-width: 260px; }
+      &.a-89 { left: 4%; top: 50%; max-width: 200px; transform: translateY(-50%); }
+      &.a-88 { left: 4%; bottom: 15%; max-width: 300px; }
+      &.a-86 { left: 4%; top: 15%; max-width: 300px; }
+      &.a-87 { left: 75%; bottom: 15%; max-width: 290px; }
+      &.a-84 { left: 75%; top: 15%; max-width: 260px; }
     }
 
-    &.o-brand-info { @include middle-align();
+    &.o-brand-info { @include middle-align(); max-width: 35%;
       .m-card-body { background: $green; padding: 25px; border-radius: 5px; box-shadow: 0 0 5px black;
         .a-title { color: white; }
         p { font-size: 12px; line-height: 1.5; color: white; }

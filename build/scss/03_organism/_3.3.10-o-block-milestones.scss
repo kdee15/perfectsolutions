@@ -10,6 +10,9 @@
       * { color: white; }
     }
     .container-fluid {
+      .o-milestone-year {
+        &:nth-child(n+3) { display: none; }
+      }
       .row { margin-left: -120px; margin-right: -120px;
         .m-milestone-tab { position: relative; width: 100%; text-align: center; margin-bottom: 70px;
           &:after { @include vertical-align(absolute); height: 2px; background: $gold; left: 120px; right: 120px; content: ''; z-index: 1; }
