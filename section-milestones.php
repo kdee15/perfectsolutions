@@ -9,8 +9,7 @@
 
     $terms = get_terms( array(
       'taxonomy' => 'year_group',
-      'order' => 'DESC',
-      'parent' => 0, // This helped me eliminate repetitive taxonomies; you may want to skip this
+      'order' => 'DESC'
     ) );
 
     foreach($terms as $term) {
