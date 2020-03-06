@@ -1,5 +1,5 @@
 <section class="o-section o-timeline-section" id="section-milestones">
-  <div class="section-header animated fadeInUp">
+  <div class="section-header">
     <h2>MILESTONES</h2>
   </div>
 
@@ -32,7 +32,7 @@
               <div class="a-timeline-bullet toggle-both tl-<?php the_id(); ?>" name="tl-<?php the_id(); ?>"></div>
               <div class="a-timeline-track"></div>
             </aside>
-            <aside class="m-timeline-record reveal-on-show">
+            <aside class="m-timeline-record">
               <div class="m-card timeline-card toggle-content" id="tl-<?php the_id(); ?>">
                 <div class="m-image-wrap">
                   <div class="m-card-image" style="background-image:url('<?php echo get_the_post_thumbnail_url($post->ID, 'single-post-thumbnail'); ?>');">

@@ -1,6 +1,6 @@
 <section class="o-section brands-section" id="section-subsidiaries">
   <div class="section-header">
-    <h2>SUBSIDIARIES</h2>
+    <h2 class="animated a-siv-fiu">SUBSIDIARIES</h2>
   </div>
   <div class="container">
     <div class="row o-subsidiary-row">

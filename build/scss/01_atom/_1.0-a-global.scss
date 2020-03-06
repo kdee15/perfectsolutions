@@ -42,6 +42,14 @@ body { -webkit-overflow-scrolling: touch; background: $black; }
 
 .a-dropshadow { width: 100%; height: auto; }
 
+.animated { opacity: 0; transition: 0.3s;
+  &.is-in-view { opacity: 1; transition: 0.3s; }
+}
+
+@for $i from 0 through 999 {
+  .o-milestone-year:nth-child(#{$i + 1}) .aimated.a-delayed.card-milestone { transition-delay: 0.05s * $i!important; }
+}
+
 // A.3. END -----------------------------------------------
 
 // A. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

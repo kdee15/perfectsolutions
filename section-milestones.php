@@ -1,6 +1,6 @@
 <section class="o-section o-milestones-section" id="section-milestones">
-  <div class="section-header animated fadeInUp">
-    <h2>MILESTONES</h2>
+  <div class="section-header">
+    <h2 class="animated a-siv-fiu">MILESTONES</h2>
   </div>
 
   <div class="container-fluid">
@@ -41,7 +41,7 @@
           if( $my_query->have_posts() ) {
             while ($my_query->have_posts()) : $my_query->the_post(); ?>
 
-              <article class="col-12 col-sm-6 col-lg-4 card-milestone">
+              <article class="col-12 col-sm-6 col-lg-4 card-milestone animated a-siv-fi a-delayed">
                 <div class="o-card milestone-card">
                   <div class="m-card-image" style="background-image:url('<?php echo get_the_post_thumbnail_url($post->ID, 'single-post-thumbnail'); ?>');">
                   </div>
