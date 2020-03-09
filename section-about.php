@@ -21,10 +21,15 @@
       <div class="container o-content-container">
         <div class="row">
           <article class="col-12 offset-md-1 col-md-10 m-section-text">
-            <?php the_field('about_us_body') ?>
+            <span class="m-preview about-more toggle-both on"><?php the_field('about_us_intro') ?></span>
+            <span class="m-full about-more toggle-both"><?php the_field('about_us_body') ?></span>
+
           </article>
         </div>
-        <a href="<?php the_field('about_us_link') ?>" class="a-text-link">MORE</a>
+        <span name="about-more" id="about-more" class="a-text-link toggle-both">
+          <span class="a-more">MORE</span>
+          <span class="a-less">LESS</span>
+        </span>
       </div>
 
     <?php

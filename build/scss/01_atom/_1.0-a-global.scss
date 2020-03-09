@@ -40,6 +40,18 @@ body { -webkit-overflow-scrolling: touch; background: $black; }
   &.on { opacity: 1; }
 }
 
+.toggle-both { display: none;
+  &.a-text-link { opacity: 1; cursor: pointer;
+    .a-more { display: block; }
+    .a-less { display: none; }
+    &.on {
+      .a-more { display: none; }
+      .a-less { display: block; }
+    }
+  }
+  &.on { display: block; }
+}
+
 .a-dropshadow { width: 100%; height: auto; }
 
 .animated { opacity: 0; transition: 0.3s;

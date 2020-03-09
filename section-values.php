@@ -4,8 +4,8 @@
     <h2 class="animated a-siv-fiu">VALUES</h2>
   </div>
 
-  <div class="container">
-    <div class="row">
+  <div class="container-fluid">
+    <div class="row no-gutters">
 
       <?php
 
@@ -32,7 +32,7 @@
                 <div class="a-copy">
                   <?php the_content(); ?>
                 </div>
-                <a class="m-card-icon" href="<?php the_field('about_us_link'); ?>">
+                <a class="m-card-icon d-none" href="<?php the_field('about_us_link'); ?>">
                   <svg version="1.1" class="a-icon-more-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
                        y="0px" viewBox="0 0 57 57" style="enable-background:new 0 0 57 57;" xml:space="preserve">
                   <path id="icon-path" class="st0" d="M28.5,0C12.8,0,0,12.8,0,28.5S12.8,57,28.5,57S57,44.2,57,28.5S44.2,0,28.5,0z M35.1,42
