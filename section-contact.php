@@ -22,9 +22,7 @@
 
             <?php the_field('contact_us_body') ?>
 
-          <?php
-
-          endwhile;
+          <?php endwhile;
         }
         wp_reset_query();  // Restore global post data stomped by the_post().
         ?>
