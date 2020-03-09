@@ -25,7 +25,15 @@
             'post_type' => 'milestones',
             'post_status' => 'publish',
             'order' => 'DESC',
-            'posts_per_page' => 3
+            'posts_per_page' => 3,
+
+            'tax_query' => array(
+              array (
+                'taxonomy' => 'year_group',
+                'field' => 'slug',
+                'terms' => $term->slug,
+              )
+            )
           );
           $my_query = null;
           $my_query = new WP_Query($args);
