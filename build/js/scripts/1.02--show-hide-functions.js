@@ -66,6 +66,10 @@ function initToggleFunctions() {
 
     });
 
+
+    var documentAtBottom = (document.documentElement.scrollTop + window.innerHeight) >= document.documentElement.scrollHeight;
+    console.log(documentAtBottom);
+
 // A.5. END -----------------------------------------------------------------------------------------------------------
 
 }
