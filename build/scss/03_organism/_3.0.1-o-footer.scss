@@ -4,13 +4,13 @@
 
 // A.1. GENERAL CARDS -------------------------------------------------------------------------------------------------
 
-.o-footer { background-color: black; padding: $base-md 0; margin-top: 0;
+.o-footer { background-color: black; padding: 38px 0 41px; margin-top: 0;
   .a-copyright {
-    * { color: white; }
+    * { color: white; margin: 0; font-size: 19px; }
   }
   .a-credits { font-size: 10px; font-weight: 300; margin: 0; padding: 0; text-align: center; }
   .o-footer-social { text-align: right;
-    .o-social-media { position: relative; margin: 0; padding: 0; text-align: right; top: 0; right: 0;
+    .o-social-media { position: relative; margin: 0; padding: 0; text-align: right; top: 0; right: 0; transform: none;
       li {
         a {
           .icon {

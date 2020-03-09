@@ -15,7 +15,7 @@
       }
       p { font-size: 14px; letter-spacing: 5px; }
     }
-    .o-map-container { @include aspect-ratio (100%, 60%); margin: 0; padding: 0;
+    .o-map-container { @include aspect-ratio (100%, 63.5%); margin: 0; padding: 0;
       iframe { @include position(absolute, 0); width: 100%!important; height: 100%!important; }
     }
     .o-form-aside {
@@ -67,7 +67,17 @@
 
 // C. MIN-WIDTH: 768px ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-@media ($sm-up) {}
+@media ($sm-up) {
+
+  .o-section {
+    &.contact-section {
+      .o-map-container { @include aspect-ratio (100%, 168.5%); }
+    }
+  }
+
+
+
+}
 
 // C. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -79,13 +89,29 @@
 
 // E. MIN-WIDTH: 1200px +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-@media ($lg-up) {}
+@media ($lg-up) {
+
+  .o-section {
+    &.contact-section {
+      .o-map-container { @include aspect-ratio (100%, 102.5%); }
+    }
+  }
+
+
+
+}
 
 // E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // E. MIN-WIDTH: 1900px +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 @media ($hd-up) {
+
+  .o-section {
+    &.contact-section {
+      .o-map-container { @include aspect-ratio (100%, 63.5%); }
+    }
+  }
 
 }
 

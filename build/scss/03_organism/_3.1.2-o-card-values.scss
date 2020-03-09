@@ -12,14 +12,14 @@
 }
 
 .o-values-card {
-  .o-card {
+  .o-card { margin: 0 75px;
     .m-card-image { padding: 15px 0;
       img { margin: 10px auto; height: 100%; width: auto; max-height: 150px; display: block; }
     }
-    .m-card-body { opacity: 0; margin: 0 10%;
+    .m-card-body { opacity: 0;
       .a-title { text-align: center; }
       .a-copy {
-        p { font-size: 14px; }
+        p { font-size: 14px; text-align: center; }
       }
       .m-card-icon { width: 60px; height: 60px; margin: 30px auto 0; display: block;
         path { fill: $orange; }

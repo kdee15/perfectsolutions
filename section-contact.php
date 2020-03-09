@@ -1,6 +1,6 @@
 <section class="o-section contact-section" id="section-contact">
   <div class="section-header">
-    <h2 class="animated a-siv-fiu">CONTACT US</h2>
+    <h2 class="animated a-siv-fiu">CONTACT DETAILS</h2>
   </div>
   <div class="container">
     <div class="row">

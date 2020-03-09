@@ -35,7 +35,7 @@
   }
 
   // A.1.5. ABOUT BLOCK -----------------------------------
-  &.about-section { position: relative; background: black; border-top: 25px solid $gold; padding-bottom: 120px;
+  &.about-section { position: relative; background: black; border-top: 25px solid $gold; padding-bottom: 90px;
     .section-header {
       &.accent { position: relative; margin-bottom: 120px; padding: 80px 0 0 ;
         h1 { line-height: 1; color: $gold; }
@@ -59,8 +59,11 @@
   }
 
   // A.1.7. VALUES BLOCK ----------------------------------
-  &.values-section { padding-bottom: 50px; background: $grey-e8;
-    .section-header { padding: 45px 0 90px; }
+  &.values-section { padding-bottom: 50px; background: $grey-e8; border-bottom: 25px solid $gold;
+    .section-header { padding: 45px 0 70px; }
+    .container-fluid { max-width: 1800px;
+      .row { margin-left: -75px; margin-right: -75px; }
+    }
   }
 
   // A.1.8. BRANDS BLOCK ----------------------------------
