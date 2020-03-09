@@ -24,7 +24,9 @@
       img { filter: none; }
       .service-card { transition: 0.3s;
         .o-card {
-          &.icon-card { background: $gold; box-shadow: 0 0 10px black; }
+          &.icon-card { background: $gold; box-shadow: 0 0 10px black;
+            * { color: black; }
+          }
         }
       }
     }
