@@ -49,29 +49,6 @@ function initToggleFunctions() {
 
 // A.3. END -----------------------------------------------------------------------------------------------------------
 
-// A.5. SHOW HIDE LOGO ------------------------------------------------------------------------------------------------
-
-    var t = $('html').offset().top;
-
-    $(document).scroll(function(){
-
-        // Hide the logo, and show as you scroll
-        if($(this).scrollTop() > t)
-        {
-            $('body').addClass('sticky');
-
-        }else{
-            $('body').removeClass('sticky');
-        }
-
-    });
-
-
-    var documentAtBottom = (document.documentElement.scrollTop + window.innerHeight) >= document.documentElement.scrollHeight;
-    console.log(documentAtBottom);
-
-// A.5. END -----------------------------------------------------------------------------------------------------------
-
 }
 
 // A. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

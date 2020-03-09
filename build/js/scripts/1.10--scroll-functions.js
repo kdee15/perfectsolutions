@@ -51,7 +51,7 @@ function initScrollIntoView() {
 
 // A.3. END -----------------------------------------------------------------------------------------------------------
 
-// A.5. SHOW HIDE LOGO ------------------------------------------------------------------------------------------------
+// A.5. SCROLL TO TOP AND BOTTOM --------------------------------------------------------------------------------------
 
   var t = $('html').offset().top;
 
@@ -72,6 +72,17 @@ function initScrollIntoView() {
     }
 
   });
+
+
+  window.onscroll = function(ev) {
+    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+      $('.animated').removeClass('is-in-view');
+      $('.animated').removeClass('fadeInLeft');
+      $('.animated').removeClass('fadeInUp');
+      $('.animated').removeClass('fadeIn');
+    }
+  };
+
 
 // A.5. END -----------------------------------------------------------------------------------------------------------
 
