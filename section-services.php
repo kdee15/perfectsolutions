@@ -1,6 +1,6 @@
 <section class="o-section services-section" id="section-services">
   <div class="section-header">
-    <h2>WHAT WE OFFER</h2>
+    <h2 class="animated a-siv-fiu">WHAT WE OFFER</h2>
   </div>
   <div class="container-fluid">
     <div class="row no-gutters">

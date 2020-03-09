@@ -1,5 +1,5 @@
 <section class="o-section o-milestones-section" id="section-milestones">
-  <div class="section-header animated fadeInUp">
+  <div class="section-header">
     <h2>MILESTONES</h2>
   </div>
 

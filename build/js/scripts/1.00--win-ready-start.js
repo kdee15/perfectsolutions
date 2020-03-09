@@ -13,3 +13,4 @@ $(window).on('load', function() {
   initCarouselFunctions();
   initEqualheightsFunctions();
   initTimeline();
+  initScrollIntoView();

@@ -5,3 +5,5 @@ if ($('.kd-app').length > 0) {
         $(this).attr('data-tilt','');
     });
 }
+
+// ScrollReveal().reveal('.section-header');

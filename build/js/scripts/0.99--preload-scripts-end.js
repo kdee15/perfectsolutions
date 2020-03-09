@@ -11,8 +11,6 @@ initHeaderHeight();
 function initHeaderHeight() {
 
   var headerHeight = $( '.o-home-header' ).height();
-  console.log(headerHeight);
-
   $('.toggle-content.a-burger-menu.horizontal').css('top', headerHeight );
 
 }

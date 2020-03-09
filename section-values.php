@@ -1,7 +1,7 @@
 <section class="o-section values-section" id="section-values">
 
-  <div class="section-header reveal-on-show fadeInUp">
-    <h2>VALUES</h2>
+  <div class="section-header">
+    <h2 class="animated a-siv-fiu">VALUES</h2>
   </div>
 
   <div class="container">
